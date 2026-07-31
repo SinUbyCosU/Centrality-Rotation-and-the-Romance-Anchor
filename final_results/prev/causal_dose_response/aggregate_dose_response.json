@@ -1,0 +1,126 @@
+{
+  "per_language": {
+    "en": {
+      "mean_lift": 0.0,
+      "mean_scd": 0.0008102846281100824,
+      "mean_baseline": 0.19,
+      "mean_steered": 0.19,
+      "n_models": 5
+    },
+    "es": {
+      "mean_lift": -0.009999999999999986,
+      "mean_scd": 37.87951406919713,
+      "mean_baseline": 0.16999999999999998,
+      "mean_steered": 0.16,
+      "n_models": 5
+    },
+    "fr": {
+      "mean_lift": 0.0,
+      "mean_scd": 46.56755153944471,
+      "mean_baseline": 0.2,
+      "mean_steered": 0.2,
+      "n_models": 5
+    },
+    "pt": {
+      "mean_lift": 0.0,
+      "mean_scd": 41.576290941275055,
+      "mean_baseline": 0.19,
+      "mean_steered": 0.19,
+      "n_models": 5
+    },
+    "de": {
+      "mean_lift": 0.0,
+      "mean_scd": 50.96660911011927,
+      "mean_baseline": 0.2,
+      "mean_steered": 0.2,
+      "n_models": 5
+    },
+    "ru": {
+      "mean_lift": 0.0,
+      "mean_scd": 56.52322108020932,
+      "mean_baseline": 0.2,
+      "mean_steered": 0.2,
+      "n_models": 5
+    },
+    "ar": {
+      "mean_lift": 0.0,
+      "mean_scd": 56.03117392602998,
+      "mean_baseline": 0.2,
+      "mean_steered": 0.2,
+      "n_models": 5
+    },
+    "hi": {
+      "mean_lift": 0.019999999999999997,
+      "mean_scd": 65.14662742256371,
+      "mean_baseline": 0.18,
+      "mean_steered": 0.2,
+      "n_models": 5
+    },
+    "ja": {
+      "mean_lift": 0.0,
+      "mean_scd": 63.80162295678048,
+      "mean_baseline": 0.2,
+      "mean_steered": 0.2,
+      "n_models": 5
+    },
+    "zh-CN": {
+      "mean_lift": 0.0,
+      "mean_scd": 53.007411654069074,
+      "mean_baseline": 0.2,
+      "mean_steered": 0.2,
+      "n_models": 5
+    },
+    "sw": {
+      "mean_lift": 0.0,
+      "mean_scd": 62.65547274956223,
+      "mean_baseline": 0.2,
+      "mean_steered": 0.2,
+      "n_models": 5
+    }
+  },
+  "grand_correlation": {
+    "pearson_r": 0.17650135299006076,
+    "pearson_p": 0.22014605488710662,
+    "spearman_rho": 0.2078876786025711,
+    "spearman_p": 0.14742460073254035,
+    "n": 50
+  },
+  "per_model": {
+    "bloomz-7b1": {
+      "pearson_r": 0.4624448982648354,
+      "pearson_p": 0.17839211471040703,
+      "spearman_rho": 0.4670993664969138,
+      "spearman_p": 0.17348591979442313,
+      "n": 10
+    },
+    "falcon3-7b-instruct": {
+      "pearson_r": NaN,
+      "pearson_p": NaN,
+      "spearman_rho": NaN,
+      "spearman_p": NaN,
+      "n": 10
+    },
+    "mistral-7b-instruct-v0.3": {
+      "pearson_r": NaN,
+      "pearson_p": NaN,
+      "spearman_rho": NaN,
+      "spearman_p": NaN,
+      "n": 10
+    },
+    "qwen2.5-7b-instruct": {
+      "pearson_r": NaN,
+      "pearson_p": NaN,
+      "spearman_rho": NaN,
+      "spearman_p": NaN,
+      "n": 10
+    },
+    "openhermes-2.5-mistral-7b": {
+      "pearson_r": NaN,
+      "pearson_p": NaN,
+      "spearman_rho": NaN,
+      "spearman_p": NaN,
+      "n": 10
+    }
+  },
+  "timestamp": "2026-07-07T10:26:56.361737"
+}

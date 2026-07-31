@@ -1,0 +1,11 @@
+    
+    out_dir = os.path.join(results_dir, "phase17_moral_foundations")
+    out_file = os.path.join(out_dir, "phase17_results.json")
+    
+    if os.path.exists(out_file):
+        print(f"  Already complete, skipping.")
+        return
+    
+    os.makedirs(out_dir, exist_ok=True)
+    
+    hf_token = os.environ.get("HF_TOKEN")

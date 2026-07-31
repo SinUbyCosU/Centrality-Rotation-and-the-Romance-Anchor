@@ -1,0 +1,7 @@
+{
+  "model": "mistral-7b-instruct-v0.3",
+  "total": 700,
+  "complied": 0,
+  "refused": 700,
+  "asr": 0.0
+}

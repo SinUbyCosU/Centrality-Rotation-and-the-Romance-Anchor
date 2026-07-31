@@ -1,0 +1,42 @@
+--- patched
++++ v4
+@@ -389,13 +389,7 @@
+             
+             for pi, prompt in enumerate(prompts_to_use):
+                 try:
+-                    try:
+-                        messages = [{"role": "user", "content": prompt}]
+-                        prompt_formatted = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+-                        if not prompt_formatted: prompt_formatted = prompt
+-                    except Exception:
+-                        prompt_formatted = prompt
+-                    inputs = tokenizer(prompt_formatted, return_tensors="pt")
++                    inputs = tokenizer(prompt, return_tensors="pt")
+                     inputs = {k: v.to(model.device) for k, v in inputs.items()}
+                     
+                     with torch.no_grad():
+@@ -421,16 +415,6 @@
+                         ambiguous += 1
+                     total += 1
+                     
+-                    import json
+-                    raw_logger.write(json.dumps({
+-                        "language": lang,
+-                        "attack_type": atk_name,
+-                        "prompt": prompt,
+-                        "response": response,
+-                        "classification": classification
+-                    }) + "\n")
+-                    raw_logger.flush()
+-                    
+                 except Exception as e:
+                     print(f"    Error on prompt {pi}: {e}", flush=True)
+                     total += 1
+@@ -475,7 +459,6 @@
+         }
+         print(f"\nSCD vs ASR: Pearson r={r:.3f} (p={p:.4f}), Spearman ρ={rho:.3f} (p={rho_p:.4f})")
+     
+-    raw_logger.close()
+     with open(out_file, "w") as f:
+         json.dump(results_data, f, indent=2, default=str)
+     print(f"\n✓ Phase 11 results saved")

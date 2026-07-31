@@ -1,0 +1,20 @@
+python3: can't open file '/root/experiments/11_scaled_adversarial_v5.py': [Errno 2] No such file or directory
+
+[!] BATCH SKIPPED: Model 'qwen2.5-7b-instruct' failed the sanity check or crashed. Exit code: 2
+Continuing to next model.
+
+[10/11] Processing model: qwen2-7b-instruct
+Removing old phase11 dir: /root/clr_paper/results/steering_vectors_qwen2-7b-instruct_20260622_103318/phase11_scaled_adversarial
+python3: can't open file '/root/experiments/11_scaled_adversarial_v5.py': [Errno 2] No such file or directory
+
+[!] BATCH SKIPPED: Model 'qwen2-7b-instruct' failed the sanity check or crashed. Exit code: 2
+Continuing to next model.
+
+[11/11] Processing model: falcon3-7b-instruct
+Removing old phase11 dir: /root/clr_paper/results/steering_vectors_falcon3-7b-instruct_20260622_112238/phase11_scaled_adversarial
+python3: can't open file '/root/experiments/11_scaled_adversarial_v5.py': [Errno 2] No such file or directory
+
+[!] BATCH SKIPPED: Model 'falcon3-7b-instruct' failed the sanity check or crashed. Exit code: 2
+Continuing to next model.
+
+[SUCCESS] Batch Phase 11 rerun completed for all models!

@@ -1,0 +1,9 @@
+{
+  "instability_note": "Run bootstrap analysis: extract steering vectors from 5 random subsets of code-mixed prompts. Variance of directions = instability metric. Expected finding: code-mixed variance >> monolingual variance.",
+  "eacl_connection": {
+    "hypothesis": "Code-mixed inputs activate geometrically unstable steering directions",
+    "psycholinguistic_analog": "Bilingual cognitive load / language control theory",
+    "prediction": "Instability metric correlates with competence collapse severity from EACL",
+    "key_reference": "Green & Abutalebi (2013) Language control in bilinguals"
+  }
+}

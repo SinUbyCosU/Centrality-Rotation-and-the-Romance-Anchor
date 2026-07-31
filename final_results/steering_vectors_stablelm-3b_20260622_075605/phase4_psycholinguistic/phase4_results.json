@@ -1,0 +1,29 @@
+{
+  "regression_models": {
+    "typological": {
+      "name": "Typological only",
+      "r_squared": 0.24247528942854546,
+      "pearson_r": -0.4935741403882803,
+      "pearson_p": 0.14711971356226464,
+      "spearman_r": -0.6363636363636362,
+      "spearman_p": 0.04791172612997544
+    },
+    "psycholinguistic": {
+      "name": "Psycholinguistic only",
+      "r_squared": 0.1998750092433389,
+      "pearson_r": -0.4482025136668456,
+      "pearson_p": 0.1939097766491093,
+      "spearman_r": -0.49090909090909085,
+      "spearman_p": 0.1496556734208368
+    },
+    "combined": {
+      "name": "Combined",
+      "r_squared": 0.24540646972203672,
+      "pearson_r": 0.49698207107348763,
+      "pearson_p": 0.1439152032607163,
+      "spearman_r": 0.6363636363636362,
+      "spearman_p": 0.04791172612997544
+    }
+  },
+  "psycholinguistic_improvement": -0.04260028018520656
+}

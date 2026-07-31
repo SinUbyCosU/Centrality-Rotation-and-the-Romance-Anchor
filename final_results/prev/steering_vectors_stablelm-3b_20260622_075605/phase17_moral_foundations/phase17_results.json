@@ -1,0 +1,198 @@
+{
+  "model": "stablelm-3b",
+  "timestamp": "2026-07-11T06:17:06.739034",
+  "languages": {
+    "en": {
+      "foundations": {
+        "care_harm": {
+          "alignment_with_overall": 0.5399024486541748,
+          "category": "WEIRD"
+        },
+        "fairness_cheating": {
+          "alignment_with_overall": -0.4154024124145508,
+          "category": "WEIRD"
+        },
+        "loyalty_betrayal": {
+          "alignment_with_overall": -0.4939643144607544,
+          "category": "Non-WEIRD"
+        },
+        "authority_subversion": {
+          "alignment_with_overall": -0.527536928653717,
+          "category": "Non-WEIRD"
+        },
+        "sanctity_degradation": {
+          "alignment_with_overall": -0.4929840564727783,
+          "category": "Non-WEIRD"
+        }
+      }
+    },
+    "de": {
+      "foundations": {
+        "care_harm": {
+          "alignment_with_overall": 0.10279437899589539,
+          "category": "WEIRD"
+        },
+        "fairness_cheating": {
+          "alignment_with_overall": -0.2958192229270935,
+          "category": "WEIRD"
+        },
+        "loyalty_betrayal": {
+          "alignment_with_overall": 0.734533429145813,
+          "category": "Non-WEIRD"
+        },
+        "authority_subversion": {
+          "alignment_with_overall": 0.6323717832565308,
+          "category": "Non-WEIRD"
+        },
+        "sanctity_degradation": {
+          "alignment_with_overall": 0.6600024700164795,
+          "category": "Non-WEIRD"
+        }
+      }
+    },
+    "es": {
+      "foundations": {
+        "care_harm": {
+          "alignment_with_overall": 0.4325609505176544,
+          "category": "WEIRD"
+        },
+        "fairness_cheating": {
+          "alignment_with_overall": 0.583869993686676,
+          "category": "WEIRD"
+        },
+        "loyalty_betrayal": {
+          "alignment_with_overall": -0.31996703147888184,
+          "category": "Non-WEIRD"
+        },
+        "authority_subversion": {
+          "alignment_with_overall": -0.4905014932155609,
+          "category": "Non-WEIRD"
+        },
+        "sanctity_degradation": {
+          "alignment_with_overall": -0.37968483567237854,
+          "category": "Non-WEIRD"
+        }
+      }
+    },
+    "fr": {
+      "foundations": {
+        "care_harm": {
+          "alignment_with_overall": 0.4758545756340027,
+          "category": "WEIRD"
+        },
+        "fairness_cheating": {
+          "alignment_with_overall": 0.19047017395496368,
+          "category": "WEIRD"
+        },
+        "loyalty_betrayal": {
+          "alignment_with_overall": -0.34554991126060486,
+          "category": "Non-WEIRD"
+        },
+        "authority_subversion": {
+          "alignment_with_overall": -0.49440550804138184,
+          "category": "Non-WEIRD"
+        },
+        "sanctity_degradation": {
+          "alignment_with_overall": -0.4282984435558319,
+          "category": "Non-WEIRD"
+        }
+      }
+    },
+    "zh-CN": {
+      "foundations": {
+        "care_harm": {
+          "alignment_with_overall": -0.46794307231903076,
+          "category": "WEIRD"
+        },
+        "fairness_cheating": {
+          "alignment_with_overall": 0.3007412850856781,
+          "category": "WEIRD"
+        },
+        "loyalty_betrayal": {
+          "alignment_with_overall": 0.04196915775537491,
+          "category": "Non-WEIRD"
+        },
+        "authority_subversion": {
+          "alignment_with_overall": -0.15325802564620972,
+          "category": "Non-WEIRD"
+        },
+        "sanctity_degradation": {
+          "alignment_with_overall": -0.5646403431892395,
+          "category": "Non-WEIRD"
+        }
+      }
+    },
+    "ar": {
+      "foundations": {
+        "care_harm": {
+          "alignment_with_overall": 0.21785111725330353,
+          "category": "WEIRD"
+        },
+        "fairness_cheating": {
+          "alignment_with_overall": 0.35307642817497253,
+          "category": "WEIRD"
+        },
+        "loyalty_betrayal": {
+          "alignment_with_overall": -0.5923545956611633,
+          "category": "Non-WEIRD"
+        },
+        "authority_subversion": {
+          "alignment_with_overall": -0.6506500244140625,
+          "category": "Non-WEIRD"
+        },
+        "sanctity_degradation": {
+          "alignment_with_overall": -0.2496187835931778,
+          "category": "Non-WEIRD"
+        }
+      }
+    },
+    "hi": {
+      "foundations": {
+        "care_harm": {
+          "alignment_with_overall": -0.6053333878517151,
+          "category": "WEIRD"
+        },
+        "fairness_cheating": {
+          "alignment_with_overall": 0.569720983505249,
+          "category": "WEIRD"
+        },
+        "loyalty_betrayal": {
+          "alignment_with_overall": -0.6129653453826904,
+          "category": "Non-WEIRD"
+        },
+        "authority_subversion": {
+          "alignment_with_overall": -0.7392515540122986,
+          "category": "Non-WEIRD"
+        },
+        "sanctity_degradation": {
+          "alignment_with_overall": -0.4255985617637634,
+          "category": "Non-WEIRD"
+        }
+      }
+    },
+    "sw": {
+      "foundations": {
+        "care_harm": {
+          "alignment_with_overall": 0.8182722330093384,
+          "category": "WEIRD"
+        },
+        "fairness_cheating": {
+          "alignment_with_overall": 0.8083814382553101,
+          "category": "WEIRD"
+        },
+        "loyalty_betrayal": {
+          "alignment_with_overall": -0.5816704630851746,
+          "category": "Non-WEIRD"
+        },
+        "authority_subversion": {
+          "alignment_with_overall": -0.7867876887321472,
+          "category": "Non-WEIRD"
+        },
+        "sanctity_degradation": {
+          "alignment_with_overall": 0.27754151821136475,
+          "category": "Non-WEIRD"
+        }
+      }
+    }
+  }
+}

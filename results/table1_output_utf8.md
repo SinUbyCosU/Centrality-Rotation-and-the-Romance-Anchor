@@ -1,0 +1,29 @@
+﻿| Model | Best Layer (Max-Variance) | Max-Var SCD (deg) | Best Layer (2/3rd Depth) | 2/3rd-Depth SCD (deg) |
+|---|---|---|---|---|
+| aya-23-8b | Layer N/A | N/A | Layer N/A | N/A |
+| bloomz-7b1 | Layer 0 | 75.2░ | Layer 0 | 75.2░ |
+| deepseek-r1-distill-llama-8b | Layer N/A | N/A | Layer N/A | N/A |
+| falcon-7b | Layer N/A | N/A | Layer N/A | N/A |
+| falcon-7b-instruct | Layer N/A | N/A | Layer N/A | N/A |
+| falcon3-7b-instruct | Layer 1 | 40.1░ | Layer 19 | 45.5░ |
+| internlm2.5-7b-chat | Layer N/A | N/A | Layer N/A | N/A |
+| mistral-7b | Layer 22 | 66.8░ | Layer 22 | 66.8░ |
+| mistral-7b-instruct-v0.3 | Layer 22 | 66.7░ | Layer 22 | 66.7░ |
+| mt0-xl | Layer N/A | N/A | Layer N/A | N/A |
+| olmo-2-7b-instruct | Layer N/A | N/A | Layer N/A | N/A |
+| openhermes-2.5-mistral-7b | Layer 22 | 70.1░ | Layer 22 | 70.1░ |
+| phi-3-mini-4k-instruct | Layer 25 | 72.3░ | Layer 22 | 72.8░ |
+| phi-4-mini-instruct | Layer 22 | 28.8░ | Layer 22 | 28.8░ |
+| qwen-7b | Layer 4 | 38.9░ | Layer 22 | 43.3░ |
+| qwen2-7b-instruct | Layer 27 | 70.3░ | Layer 19 | 11.8░ |
+| qwen2.5-3b-instruct | Layer 31 | 58.7░ | Layer 25 | 25.7░ |
+| qwen2.5-7b-instruct | Layer 27 | 67.5░ | Layer 19 | 9.5░ |
+| qwen3-4b-instruct | Layer 4 | 66.7░ | Layer 25 | 15.8░ |
+| qwen3-8b-instruct | Layer 4 | 67.7░ | Layer 25 | 21.3░ |
+| smollm3-3b | Layer 28 | 32.5░ | Layer 25 | 27.0░ |
+| stablelm-2-1.6b-chat | Layer 16 | 35.3░ | Layer 16 | 35.3░ |
+| stablelm-3b | Layer 4 | 26.0░ | Layer 22 | 54.1░ |
+| tinyllama | Layer 16 | 67.2░ | Layer 16 | 67.2░ |
+| yi-1.5-6b-chat | Layer 1 | 118.1░ | Layer 22 | 32.3░ |
+| yi-6b | Layer 10 | 49.8░ | Layer 22 | 60.7░ |
+| zephyr-7b | Layer 22 | 65.7░ | Layer 22 | 65.7░ |

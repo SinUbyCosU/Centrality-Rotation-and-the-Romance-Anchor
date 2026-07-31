@@ -1,0 +1,1242 @@
+{
+  "bloomz-7b1": {
+    "es": {
+      "pre_las_sim": 0.5253353714942932,
+      "post_las_sim": 0.9119415879249573,
+      "improvement": 0.38660621643066406,
+      "rotation_magnitude": 315.97882080078125
+    },
+    "fr": {
+      "pre_las_sim": 0.35696741938591003,
+      "post_las_sim": 0.7676143646240234,
+      "improvement": 0.4106469452381134,
+      "rotation_magnitude": 344.7259216308594
+    },
+    "pt": {
+      "pre_las_sim": 0.5036312937736511,
+      "post_las_sim": 0.8884077668190002,
+      "improvement": 0.3847764730453491,
+      "rotation_magnitude": 336.2825927734375
+    },
+    "de": {
+      "pre_las_sim": 0.07567049562931061,
+      "post_las_sim": 0.741100013256073,
+      "improvement": 0.6654295176267624,
+      "rotation_magnitude": 352.47943115234375
+    },
+    "ru": {
+      "pre_las_sim": -0.0047064111568033695,
+      "post_las_sim": 0.7568995356559753,
+      "improvement": 0.7616059468127787,
+      "rotation_magnitude": 356.1465759277344
+    },
+    "ar": {
+      "pre_las_sim": 0.31144583225250244,
+      "post_las_sim": 0.8805427551269531,
+      "improvement": 0.5690969228744507,
+      "rotation_magnitude": 330.5859069824219
+    },
+    "hi": {
+      "pre_las_sim": 0.09691105037927628,
+      "post_las_sim": 0.8833304643630981,
+      "improvement": 0.7864194139838219,
+      "rotation_magnitude": 329.98455810546875
+    },
+    "ja": {
+      "pre_las_sim": 0.0003765020810533315,
+      "post_las_sim": 0.9159939289093018,
+      "improvement": 0.9156174268282484,
+      "rotation_magnitude": 329.37799072265625
+    },
+    "zh-CN": {
+      "pre_las_sim": 0.2538553774356842,
+      "post_las_sim": 0.8372778296470642,
+      "improvement": 0.58342245221138,
+      "rotation_magnitude": 335.07940673828125
+    },
+    "sw": {
+      "pre_las_sim": 0.17743636667728424,
+      "post_las_sim": 0.8053328990936279,
+      "improvement": 0.6278965324163437,
+      "rotation_magnitude": 350.7168884277344
+    }
+  },
+  "falcon3-7b-instruct": {
+    "es": {
+      "pre_las_sim": 0.9123709201812744,
+      "post_las_sim": 0.7625447511672974,
+      "improvement": -0.14982616901397705,
+      "rotation_magnitude": 266.1993713378906
+    },
+    "fr": {
+      "pre_las_sim": 0.8285650610923767,
+      "post_las_sim": 0.9243758320808411,
+      "improvement": 0.09581077098846436,
+      "rotation_magnitude": 256.37615966796875
+    },
+    "pt": {
+      "pre_las_sim": 0.9173048734664917,
+      "post_las_sim": 0.7968334555625916,
+      "improvement": -0.12047141790390015,
+      "rotation_magnitude": 268.50433349609375
+    },
+    "de": {
+      "pre_las_sim": 0.7969315052032471,
+      "post_las_sim": 0.9925350546836853,
+      "improvement": 0.19560354948043823,
+      "rotation_magnitude": 236.10963439941406
+    },
+    "ru": {
+      "pre_las_sim": 0.5855125784873962,
+      "post_las_sim": 0.9632465243339539,
+      "improvement": 0.3777339458465576,
+      "rotation_magnitude": 258.33154296875
+    },
+    "ar": {
+      "pre_las_sim": 0.582099974155426,
+      "post_las_sim": 0.7757035493850708,
+      "improvement": 0.19360357522964478,
+      "rotation_magnitude": 284.612060546875
+    },
+    "hi": {
+      "pre_las_sim": 0.6006649732589722,
+      "post_las_sim": 0.8685886263847351,
+      "improvement": 0.26792365312576294,
+      "rotation_magnitude": 277.3521423339844
+    },
+    "ja": {
+      "pre_las_sim": 0.3957851529121399,
+      "post_las_sim": 0.9461191892623901,
+      "improvement": 0.5503340363502502,
+      "rotation_magnitude": 272.8617248535156
+    },
+    "zh-CN": {
+      "pre_las_sim": 0.563873827457428,
+      "post_las_sim": 0.9705919027328491,
+      "improvement": 0.40671807527542114,
+      "rotation_magnitude": 243.04098510742188
+    },
+    "sw": {
+      "pre_las_sim": 0.613954484462738,
+      "post_las_sim": 0.980461061000824,
+      "improvement": 0.36650657653808594,
+      "rotation_magnitude": 242.07208251953125
+    }
+  },
+  "mistral-7b-instruct-v0.3": {
+    "es": {
+      "pre_las_sim": 0.6201764345169067,
+      "post_las_sim": 0.8918539881706238,
+      "improvement": 0.27167755365371704,
+      "rotation_magnitude": 346.0825500488281
+    },
+    "fr": {
+      "pre_las_sim": 0.4835042655467987,
+      "post_las_sim": 0.8937625288963318,
+      "improvement": 0.4102582633495331,
+      "rotation_magnitude": 350.9597473144531
+    },
+    "pt": {
+      "pre_las_sim": 0.5002458095550537,
+      "post_las_sim": 0.9068665504455566,
+      "improvement": 0.40662074089050293,
+      "rotation_magnitude": 351.7926940917969
+    },
+    "de": {
+      "pre_las_sim": 0.579612135887146,
+      "post_las_sim": 0.9020258188247681,
+      "improvement": 0.32241368293762207,
+      "rotation_magnitude": 345.7333679199219
+    },
+    "ru": {
+      "pre_las_sim": 0.539135754108429,
+      "post_las_sim": 0.9091758728027344,
+      "improvement": 0.3700401186943054,
+      "rotation_magnitude": 339.6932067871094
+    },
+    "ar": {
+      "pre_las_sim": 0.2067776918411255,
+      "post_las_sim": 0.8719797134399414,
+      "improvement": 0.6652020215988159,
+      "rotation_magnitude": 362.7967529296875
+    },
+    "hi": {
+      "pre_las_sim": 0.06511939316987991,
+      "post_las_sim": 0.8835841417312622,
+      "improvement": 0.8184647485613823,
+      "rotation_magnitude": 332.57305908203125
+    },
+    "ja": {
+      "pre_las_sim": 0.3457139730453491,
+      "post_las_sim": 0.8744712471961975,
+      "improvement": 0.5287572741508484,
+      "rotation_magnitude": 343.8255920410156
+    },
+    "zh-CN": {
+      "pre_las_sim": 0.5448434948921204,
+      "post_las_sim": 0.8177382946014404,
+      "improvement": 0.27289479970932007,
+      "rotation_magnitude": 354.2333068847656
+    },
+    "sw": {
+      "pre_las_sim": -0.024317005649209023,
+      "post_las_sim": 0.9008633494377136,
+      "improvement": 0.9251803550869226,
+      "rotation_magnitude": 352.9873352050781
+    }
+  },
+  "mistral-7b": {
+    "es": {
+      "pre_las_sim": 0.5945230722427368,
+      "post_las_sim": 0.9236758947372437,
+      "improvement": 0.32915282249450684,
+      "rotation_magnitude": 341.6858825683594
+    },
+    "fr": {
+      "pre_las_sim": 0.43632301688194275,
+      "post_las_sim": 0.9296846985816956,
+      "improvement": 0.4933616816997528,
+      "rotation_magnitude": 354.3134460449219
+    },
+    "pt": {
+      "pre_las_sim": 0.47813522815704346,
+      "post_las_sim": 0.8894710540771484,
+      "improvement": 0.411335825920105,
+      "rotation_magnitude": 351.822021484375
+    },
+    "de": {
+      "pre_las_sim": 0.5937827825546265,
+      "post_las_sim": 0.8559263944625854,
+      "improvement": 0.262143611907959,
+      "rotation_magnitude": 348.7077331542969
+    },
+    "ru": {
+      "pre_las_sim": 0.4918268322944641,
+      "post_las_sim": 0.8844054937362671,
+      "improvement": 0.392578661441803,
+      "rotation_magnitude": 351.27459716796875
+    },
+    "ar": {
+      "pre_las_sim": 0.24126467108726501,
+      "post_las_sim": 0.9209267497062683,
+      "improvement": 0.6796620786190033,
+      "rotation_magnitude": 341.24737548828125
+    },
+    "hi": {
+      "pre_las_sim": 0.10208968818187714,
+      "post_las_sim": 0.8020519018173218,
+      "improvement": 0.6999622136354446,
+      "rotation_magnitude": 366.3909606933594
+    },
+    "ja": {
+      "pre_las_sim": 0.36713773012161255,
+      "post_las_sim": 0.8654639720916748,
+      "improvement": 0.49832624197006226,
+      "rotation_magnitude": 355.5877380371094
+    },
+    "zh-CN": {
+      "pre_las_sim": 0.5634074807167053,
+      "post_las_sim": 0.8364914655685425,
+      "improvement": 0.27308398485183716,
+      "rotation_magnitude": 357.58984375
+    },
+    "sw": {
+      "pre_las_sim": -0.008184685371816158,
+      "post_las_sim": 0.9619128704071045,
+      "improvement": 0.9700975557789207,
+      "rotation_magnitude": 328.3772888183594
+    }
+  },
+  "openhermes-2.5-mistral-7b": {
+    "es": {
+      "pre_las_sim": 0.5335748791694641,
+      "post_las_sim": 0.8839976787567139,
+      "improvement": 0.35042279958724976,
+      "rotation_magnitude": 356.8875427246094
+    },
+    "fr": {
+      "pre_las_sim": 0.36143922805786133,
+      "post_las_sim": 0.9048953652381897,
+      "improvement": 0.5434561371803284,
+      "rotation_magnitude": 348.9710388183594
+    },
+    "pt": {
+      "pre_las_sim": 0.4016822576522827,
+      "post_las_sim": 0.9464522004127502,
+      "improvement": 0.5447699427604675,
+      "rotation_magnitude": 353.2667541503906
+    },
+    "de": {
+      "pre_las_sim": 0.5268006324768066,
+      "post_las_sim": 0.8765356540679932,
+      "improvement": 0.3497350215911865,
+      "rotation_magnitude": 346.0697326660156
+    },
+    "ru": {
+      "pre_las_sim": 0.47182542085647583,
+      "post_las_sim": 0.8815016150474548,
+      "improvement": 0.409676194190979,
+      "rotation_magnitude": 356.83941650390625
+    },
+    "ar": {
+      "pre_las_sim": 0.1759834587574005,
+      "post_las_sim": 0.9078454971313477,
+      "improvement": 0.7318620383739471,
+      "rotation_magnitude": 353.8818054199219
+    },
+    "hi": {
+      "pre_las_sim": 0.06716182082891464,
+      "post_las_sim": 0.8206161856651306,
+      "improvement": 0.753454364836216,
+      "rotation_magnitude": 368.4258117675781
+    },
+    "ja": {
+      "pre_las_sim": 0.33221784234046936,
+      "post_las_sim": 0.8812231421470642,
+      "improvement": 0.5490052998065948,
+      "rotation_magnitude": 350.4435119628906
+    },
+    "zh-CN": {
+      "pre_las_sim": 0.5394352674484253,
+      "post_las_sim": 0.8431013226509094,
+      "improvement": 0.30366605520248413,
+      "rotation_magnitude": 358.7774353027344
+    },
+    "sw": {
+      "pre_las_sim": -0.07088740915060043,
+      "post_las_sim": 0.9394979476928711,
+      "improvement": 1.0103853568434715,
+      "rotation_magnitude": 331.8777160644531
+    }
+  },
+  "phi-3-mini-4k-instruct": {
+    "es": {
+      "pre_las_sim": 0.47837507724761963,
+      "post_las_sim": 0.9722422361373901,
+      "improvement": 0.4938671588897705,
+      "rotation_magnitude": 249.6182403564453
+    },
+    "fr": {
+      "pre_las_sim": 0.3480043113231659,
+      "post_las_sim": 0.9778090715408325,
+      "improvement": 0.6298047602176666,
+      "rotation_magnitude": 219.14434814453125
+    },
+    "pt": {
+      "pre_las_sim": 0.37947404384613037,
+      "post_las_sim": 0.9926333427429199,
+      "improvement": 0.6131592988967896,
+      "rotation_magnitude": 225.2578125
+    },
+    "de": {
+      "pre_las_sim": 0.5466736555099487,
+      "post_las_sim": 0.9666415452957153,
+      "improvement": 0.4199678897857666,
+      "rotation_magnitude": 245.45741271972656
+    },
+    "ru": {
+      "pre_las_sim": 0.26617637276649475,
+      "post_las_sim": 0.9754142165184021,
+      "improvement": 0.7092378437519073,
+      "rotation_magnitude": 246.15980529785156
+    },
+    "ar": {
+      "pre_las_sim": 0.14782680571079254,
+      "post_las_sim": 0.9787028431892395,
+      "improvement": 0.830876037478447,
+      "rotation_magnitude": 244.65411376953125
+    },
+    "hi": {
+      "pre_las_sim": 0.013585647568106651,
+      "post_las_sim": 0.9411664009094238,
+      "improvement": 0.9275807533413172,
+      "rotation_magnitude": 238.11865234375
+    },
+    "ja": {
+      "pre_las_sim": 0.31084635853767395,
+      "post_las_sim": 0.8905120491981506,
+      "improvement": 0.5796656906604767,
+      "rotation_magnitude": 253.0225372314453
+    },
+    "zh-CN": {
+      "pre_las_sim": 0.36794424057006836,
+      "post_las_sim": 0.9360010623931885,
+      "improvement": 0.5680568218231201,
+      "rotation_magnitude": 249.04356384277344
+    },
+    "sw": {
+      "pre_las_sim": 0.05672525614500046,
+      "post_las_sim": 0.9570780992507935,
+      "improvement": 0.900352843105793,
+      "rotation_magnitude": 238.86221313476562
+    }
+  },
+  "phi-4-mini-instruct": {
+    "es": {
+      "pre_las_sim": 0.9621542692184448,
+      "post_las_sim": 0.606377124786377,
+      "improvement": -0.35577714443206787,
+      "rotation_magnitude": 257.60162353515625
+    },
+    "fr": {
+      "pre_las_sim": 0.9598670601844788,
+      "post_las_sim": 0.6462217569351196,
+      "improvement": -0.31364530324935913,
+      "rotation_magnitude": 254.30397033691406
+    },
+    "pt": {
+      "pre_las_sim": 0.954265296459198,
+      "post_las_sim": 0.5655414462089539,
+      "improvement": -0.38872385025024414,
+      "rotation_magnitude": 245.4678192138672
+    },
+    "de": {
+      "pre_las_sim": 0.8868045806884766,
+      "post_las_sim": 0.8437809944152832,
+      "improvement": -0.04302358627319336,
+      "rotation_magnitude": 267.19378662109375
+    },
+    "ru": {
+      "pre_las_sim": 0.573096513748169,
+      "post_las_sim": 0.8762405514717102,
+      "improvement": 0.30314403772354126,
+      "rotation_magnitude": 299.3591613769531
+    },
+    "ar": {
+      "pre_las_sim": 0.9300132393836975,
+      "post_las_sim": 0.8293089866638184,
+      "improvement": -0.10070425271987915,
+      "rotation_magnitude": 253.6485137939453
+    },
+    "hi": {
+      "pre_las_sim": 0.9135317802429199,
+      "post_las_sim": 0.7994107604026794,
+      "improvement": -0.11412101984024048,
+      "rotation_magnitude": 257.1795349121094
+    },
+    "ja": {
+      "pre_las_sim": 0.6720601320266724,
+      "post_las_sim": 0.875558614730835,
+      "improvement": 0.2034984827041626,
+      "rotation_magnitude": 273.1734313964844
+    },
+    "zh-CN": {
+      "pre_las_sim": 0.7973697185516357,
+      "post_las_sim": 0.7759230732917786,
+      "improvement": -0.021446645259857178,
+      "rotation_magnitude": 271.87420654296875
+    },
+    "sw": {
+      "pre_las_sim": 0.9041932225227356,
+      "post_las_sim": 0.6246270537376404,
+      "improvement": -0.2795661687850952,
+      "rotation_magnitude": 249.4798126220703
+    }
+  },
+  "qwen-7b": {
+    "es": {
+      "pre_las_sim": 0.8594957590103149,
+      "post_las_sim": 0.7668336033821106,
+      "improvement": -0.09266215562820435,
+      "rotation_magnitude": 371.9776611328125
+    },
+    "fr": {
+      "pre_las_sim": 0.837437629699707,
+      "post_las_sim": 0.7293146252632141,
+      "improvement": -0.10812300443649292,
+      "rotation_magnitude": 371.1896667480469
+    },
+    "pt": {
+      "pre_las_sim": 0.8414031267166138,
+      "post_las_sim": 0.6876806020736694,
+      "improvement": -0.15372252464294434,
+      "rotation_magnitude": 371.3399353027344
+    },
+    "de": {
+      "pre_las_sim": 0.7021970152854919,
+      "post_las_sim": 0.7161611318588257,
+      "improvement": 0.01396411657333374,
+      "rotation_magnitude": 382.7668151855469
+    },
+    "ru": {
+      "pre_las_sim": 0.657829761505127,
+      "post_las_sim": 0.7075845003128052,
+      "improvement": 0.04975473880767822,
+      "rotation_magnitude": 390.92669677734375
+    },
+    "ar": {
+      "pre_las_sim": 0.7034857273101807,
+      "post_las_sim": 0.6725648641586304,
+      "improvement": -0.030920863151550293,
+      "rotation_magnitude": 376.6990661621094
+    },
+    "hi": {
+      "pre_las_sim": 0.5262455940246582,
+      "post_las_sim": 0.7259916663169861,
+      "improvement": 0.19974607229232788,
+      "rotation_magnitude": 370.38568115234375
+    },
+    "ja": {
+      "pre_las_sim": 0.6508496403694153,
+      "post_las_sim": 0.7092020511627197,
+      "improvement": 0.05835241079330444,
+      "rotation_magnitude": 380.3980712890625
+    },
+    "zh-CN": {
+      "pre_las_sim": 0.8002253770828247,
+      "post_las_sim": 0.6706809997558594,
+      "improvement": -0.12954437732696533,
+      "rotation_magnitude": 372.2417297363281
+    },
+    "sw": {
+      "pre_las_sim": 0.6136708855628967,
+      "post_las_sim": 0.7907893657684326,
+      "improvement": 0.1771184802055359,
+      "rotation_magnitude": 356.6415100097656
+    }
+  },
+  "qwen2-7b-instruct": {
+    "es": {
+      "pre_las_sim": 0.993172824382782,
+      "post_las_sim": -0.2810046374797821,
+      "improvement": -1.274177461862564,
+      "rotation_magnitude": 350.7325744628906
+    },
+    "fr": {
+      "pre_las_sim": 0.9925949573516846,
+      "post_las_sim": 0.37671932578086853,
+      "improvement": -0.615875631570816,
+      "rotation_magnitude": 353.0072937011719
+    },
+    "pt": {
+      "pre_las_sim": 0.9918928742408752,
+      "post_las_sim": -0.0028231919277459383,
+      "improvement": -0.9947160661686212,
+      "rotation_magnitude": 350.2344970703125
+    },
+    "de": {
+      "pre_las_sim": 0.9729099869728088,
+      "post_las_sim": 0.40543273091316223,
+      "improvement": -0.5674772560596466,
+      "rotation_magnitude": 357.1137390136719
+    },
+    "ru": {
+      "pre_las_sim": 0.9399075508117676,
+      "post_las_sim": 0.447027325630188,
+      "improvement": -0.4928802251815796,
+      "rotation_magnitude": 349.5008850097656
+    },
+    "ar": {
+      "pre_las_sim": 0.9859246015548706,
+      "post_las_sim": 0.32828792929649353,
+      "improvement": -0.6576366722583771,
+      "rotation_magnitude": 359.7632751464844
+    },
+    "hi": {
+      "pre_las_sim": 0.9733448624610901,
+      "post_las_sim": 0.33307328820228577,
+      "improvement": -0.6402715742588043,
+      "rotation_magnitude": 354.0702819824219
+    },
+    "ja": {
+      "pre_las_sim": 0.9489419460296631,
+      "post_las_sim": 0.00807915348559618,
+      "improvement": -0.9408627925440669,
+      "rotation_magnitude": 353.6542053222656
+    },
+    "zh-CN": {
+      "pre_las_sim": 0.9860434532165527,
+      "post_las_sim": 0.4527413249015808,
+      "improvement": -0.5333021283149719,
+      "rotation_magnitude": 358.39581298828125
+    },
+    "sw": {
+      "pre_las_sim": 0.9764845967292786,
+      "post_las_sim": 0.48625341057777405,
+      "improvement": -0.4902311861515045,
+      "rotation_magnitude": 355.47088623046875
+    }
+  },
+  "qwen2.5-3b-instruct": {
+    "es": {
+      "pre_las_sim": 0.9537436962127686,
+      "post_las_sim": 0.8378382325172424,
+      "improvement": -0.11590546369552612,
+      "rotation_magnitude": 148.41195678710938
+    },
+    "fr": {
+      "pre_las_sim": 0.9519926905632019,
+      "post_las_sim": 0.8925021886825562,
+      "improvement": -0.05949050188064575,
+      "rotation_magnitude": 148.26344299316406
+    },
+    "pt": {
+      "pre_las_sim": 0.9446845054626465,
+      "post_las_sim": 0.8329918384552002,
+      "improvement": -0.11169266700744629,
+      "rotation_magnitude": 146.8835906982422
+    },
+    "de": {
+      "pre_las_sim": 0.8688195943832397,
+      "post_las_sim": 0.9855485558509827,
+      "improvement": 0.11672896146774292,
+      "rotation_magnitude": 143.99581909179688
+    },
+    "ru": {
+      "pre_las_sim": 0.8219708204269409,
+      "post_las_sim": 0.7990211248397827,
+      "improvement": -0.022949695587158203,
+      "rotation_magnitude": 164.71044921875
+    },
+    "ar": {
+      "pre_las_sim": 0.9187049865722656,
+      "post_las_sim": 0.7525827288627625,
+      "improvement": -0.16612225770950317,
+      "rotation_magnitude": 142.33148193359375
+    },
+    "hi": {
+      "pre_las_sim": 0.8395223021507263,
+      "post_las_sim": 0.9127399921417236,
+      "improvement": 0.07321768999099731,
+      "rotation_magnitude": 141.60032653808594
+    },
+    "ja": {
+      "pre_las_sim": 0.8385286331176758,
+      "post_las_sim": 0.8124017119407654,
+      "improvement": -0.0261269211769104,
+      "rotation_magnitude": 143.884521484375
+    },
+    "zh-CN": {
+      "pre_las_sim": 0.9530618786811829,
+      "post_las_sim": 0.9683441519737244,
+      "improvement": 0.015282273292541504,
+      "rotation_magnitude": 139.43182373046875
+    },
+    "sw": {
+      "pre_las_sim": 0.8517323732376099,
+      "post_las_sim": 0.18880116939544678,
+      "improvement": -0.6629312038421631,
+      "rotation_magnitude": 142.23728942871094
+    }
+  },
+  "qwen2.5-7b-instruct": {
+    "es": {
+      "pre_las_sim": 0.9967866539955139,
+      "post_las_sim": -0.01806829124689102,
+      "improvement": -1.014854945242405,
+      "rotation_magnitude": 355.7448425292969
+    },
+    "fr": {
+      "pre_las_sim": 0.996211588382721,
+      "post_las_sim": -0.044851481914520264,
+      "improvement": -1.0410630702972412,
+      "rotation_magnitude": 361.57562255859375
+    },
+    "pt": {
+      "pre_las_sim": 0.9962036609649658,
+      "post_las_sim": -0.19183386862277985,
+      "improvement": -1.1880375295877457,
+      "rotation_magnitude": 361.7950134277344
+    },
+    "de": {
+      "pre_las_sim": 0.9819848537445068,
+      "post_las_sim": 0.38124924898147583,
+      "improvement": -0.600735604763031,
+      "rotation_magnitude": 354.82647705078125
+    },
+    "ru": {
+      "pre_las_sim": 0.9508877992630005,
+      "post_las_sim": -0.10951513797044754,
+      "improvement": -1.060402937233448,
+      "rotation_magnitude": 365.404541015625
+    },
+    "ar": {
+      "pre_las_sim": 0.9919185042381287,
+      "post_las_sim": -0.029237713664770126,
+      "improvement": -1.0211562179028988,
+      "rotation_magnitude": 360.5242919921875
+    },
+    "hi": {
+      "pre_las_sim": 0.9853578209877014,
+      "post_las_sim": 0.29157859086990356,
+      "improvement": -0.6937792301177979,
+      "rotation_magnitude": 358.4950866699219
+    },
+    "ja": {
+      "pre_las_sim": 0.9451188445091248,
+      "post_las_sim": 0.614825427532196,
+      "improvement": -0.3302934169769287,
+      "rotation_magnitude": 362.9470520019531
+    },
+    "zh-CN": {
+      "pre_las_sim": 0.9940552115440369,
+      "post_las_sim": 0.3832996189594269,
+      "improvement": -0.61075559258461,
+      "rotation_magnitude": 353.7961120605469
+    },
+    "sw": {
+      "pre_las_sim": 0.9863038063049316,
+      "post_las_sim": 0.426347553730011,
+      "improvement": -0.5599562525749207,
+      "rotation_magnitude": 359.59686279296875
+    }
+  },
+  "qwen3-4b-instruct": {
+    "es": {
+      "pre_las_sim": 0.9840908050537109,
+      "post_las_sim": 0.6279231905937195,
+      "improvement": -0.35616761445999146,
+      "rotation_magnitude": 157.8596954345703
+    },
+    "fr": {
+      "pre_las_sim": 0.9792773127555847,
+      "post_las_sim": 0.13046273589134216,
+      "improvement": -0.8488145768642426,
+      "rotation_magnitude": 158.17494201660156
+    },
+    "pt": {
+      "pre_las_sim": 0.9834924340248108,
+      "post_las_sim": 0.128196120262146,
+      "improvement": -0.8552963137626648,
+      "rotation_magnitude": 159.24246215820312
+    },
+    "de": {
+      "pre_las_sim": 0.9235643744468689,
+      "post_las_sim": -0.2275242954492569,
+      "improvement": -1.1510886698961258,
+      "rotation_magnitude": 151.39932250976562
+    },
+    "ru": {
+      "pre_las_sim": 0.9118205308914185,
+      "post_las_sim": 0.8671966791152954,
+      "improvement": -0.04462385177612305,
+      "rotation_magnitude": 151.07701110839844
+    },
+    "ar": {
+      "pre_las_sim": 0.9699370861053467,
+      "post_las_sim": 0.36450183391571045,
+      "improvement": -0.6054352521896362,
+      "rotation_magnitude": 159.87120056152344
+    },
+    "hi": {
+      "pre_las_sim": 0.9392697811126709,
+      "post_las_sim": 0.04866873472929001,
+      "improvement": -0.8906010463833809,
+      "rotation_magnitude": 159.64891052246094
+    },
+    "ja": {
+      "pre_las_sim": 0.9694845080375671,
+      "post_las_sim": 0.6314435005187988,
+      "improvement": -0.3380410075187683,
+      "rotation_magnitude": 159.38145446777344
+    },
+    "zh-CN": {
+      "pre_las_sim": 0.9813041090965271,
+      "post_las_sim": 0.1033296063542366,
+      "improvement": -0.8779745027422905,
+      "rotation_magnitude": 158.82000732421875
+    },
+    "sw": {
+      "pre_las_sim": 0.9428002238273621,
+      "post_las_sim": 0.1655111461877823,
+      "improvement": -0.7772890776395798,
+      "rotation_magnitude": 156.39866638183594
+    }
+  },
+  "qwen3-8b-instruct": {
+    "es": {
+      "pre_las_sim": 0.9741122722625732,
+      "post_las_sim": 0.06234030798077583,
+      "improvement": -0.9117719642817974,
+      "rotation_magnitude": 391.6419677734375
+    },
+    "fr": {
+      "pre_las_sim": 0.9659491181373596,
+      "post_las_sim": 0.3643256425857544,
+      "improvement": -0.6016234755516052,
+      "rotation_magnitude": 385.78814697265625
+    },
+    "pt": {
+      "pre_las_sim": 0.9728848934173584,
+      "post_las_sim": 0.4085177779197693,
+      "improvement": -0.5643671154975891,
+      "rotation_magnitude": 374.4180908203125
+    },
+    "de": {
+      "pre_las_sim": 0.8845488429069519,
+      "post_las_sim": 0.08285128325223923,
+      "improvement": -0.8016975596547127,
+      "rotation_magnitude": 398.6720275878906
+    },
+    "ru": {
+      "pre_las_sim": 0.8554152250289917,
+      "post_las_sim": 0.3437584936618805,
+      "improvement": -0.5116567313671112,
+      "rotation_magnitude": 388.6363830566406
+    },
+    "ar": {
+      "pre_las_sim": 0.9534031748771667,
+      "post_las_sim": 0.3820383548736572,
+      "improvement": -0.5713648200035095,
+      "rotation_magnitude": 374.5289001464844
+    },
+    "hi": {
+      "pre_las_sim": 0.8970340490341187,
+      "post_las_sim": 0.5004710555076599,
+      "improvement": -0.39656299352645874,
+      "rotation_magnitude": 388.7037658691406
+    },
+    "ja": {
+      "pre_las_sim": 0.878272294998169,
+      "post_las_sim": -0.01875380426645279,
+      "improvement": -0.8970260992646217,
+      "rotation_magnitude": 400.68804931640625
+    },
+    "zh-CN": {
+      "pre_las_sim": 0.964579701423645,
+      "post_las_sim": 0.18227283656597137,
+      "improvement": -0.7823068648576736,
+      "rotation_magnitude": 393.11578369140625
+    },
+    "sw": {
+      "pre_las_sim": 0.9033480286598206,
+      "post_las_sim": 0.03886159881949425,
+      "improvement": -0.8644864298403263,
+      "rotation_magnitude": 386.64306640625
+    }
+  },
+  "smollm3-3b": {
+    "es": {
+      "pre_las_sim": 0.9688425064086914,
+      "post_las_sim": 0.8466469049453735,
+      "improvement": -0.12219560146331787,
+      "rotation_magnitude": 126.72982788085938
+    },
+    "fr": {
+      "pre_las_sim": 0.9614943861961365,
+      "post_las_sim": 0.8706970810890198,
+      "improvement": -0.0907973051071167,
+      "rotation_magnitude": 130.90098571777344
+    },
+    "pt": {
+      "pre_las_sim": 0.9643352031707764,
+      "post_las_sim": 0.8477067351341248,
+      "improvement": -0.11662846803665161,
+      "rotation_magnitude": 129.9491729736328
+    },
+    "de": {
+      "pre_las_sim": 0.9224851727485657,
+      "post_las_sim": 0.6791374683380127,
+      "improvement": -0.24334770441055298,
+      "rotation_magnitude": 128.15866088867188
+    },
+    "ru": {
+      "pre_las_sim": 0.7956300377845764,
+      "post_las_sim": 0.9787444472312927,
+      "improvement": 0.1831144094467163,
+      "rotation_magnitude": 127.06261444091797
+    },
+    "ar": {
+      "pre_las_sim": 0.9113259315490723,
+      "post_las_sim": 0.6542699337005615,
+      "improvement": -0.25705599784851074,
+      "rotation_magnitude": 126.42539978027344
+    },
+    "hi": {
+      "pre_las_sim": 0.8660315275192261,
+      "post_las_sim": 0.90494304895401,
+      "improvement": 0.038911521434783936,
+      "rotation_magnitude": 128.5709686279297
+    },
+    "ja": {
+      "pre_las_sim": 0.6151872873306274,
+      "post_las_sim": 0.9878767132759094,
+      "improvement": 0.372689425945282,
+      "rotation_magnitude": 127.29241943359375
+    },
+    "zh-CN": {
+      "pre_las_sim": 0.8432350754737854,
+      "post_las_sim": 0.9726231098175049,
+      "improvement": 0.12938803434371948,
+      "rotation_magnitude": 130.29583740234375
+    },
+    "sw": {
+      "pre_las_sim": 0.8998125791549683,
+      "post_las_sim": 0.4736827611923218,
+      "improvement": -0.4261298179626465,
+      "rotation_magnitude": 124.29267120361328
+    }
+  },
+  "stablelm-2-1.6b-chat": {
+    "es": {
+      "pre_las_sim": 0.9391930103302002,
+      "post_las_sim": 0.3475033938884735,
+      "improvement": -0.5916896164417267,
+      "rotation_magnitude": 166.82977294921875
+    },
+    "fr": {
+      "pre_las_sim": 0.926520824432373,
+      "post_las_sim": 0.38963449001312256,
+      "improvement": -0.5368863344192505,
+      "rotation_magnitude": 175.33047485351562
+    },
+    "pt": {
+      "pre_las_sim": 0.939426064491272,
+      "post_las_sim": 0.6098491549491882,
+      "improvement": -0.32957690954208374,
+      "rotation_magnitude": 167.979736328125
+    },
+    "de": {
+      "pre_las_sim": 0.6771795749664307,
+      "post_las_sim": 0.3873535692691803,
+      "improvement": -0.28982600569725037,
+      "rotation_magnitude": 188.0594024658203
+    },
+    "ru": {
+      "pre_las_sim": 0.8788977861404419,
+      "post_las_sim": 0.4053286612033844,
+      "improvement": -0.4735691249370575,
+      "rotation_magnitude": 168.2302703857422
+    },
+    "ar": {
+      "pre_las_sim": 0.7018875479698181,
+      "post_las_sim": 0.5297780632972717,
+      "improvement": -0.1721094846725464,
+      "rotation_magnitude": 178.17422485351562
+    },
+    "hi": {
+      "pre_las_sim": 0.8358386754989624,
+      "post_las_sim": 0.5270240902900696,
+      "improvement": -0.3088145852088928,
+      "rotation_magnitude": 166.2616424560547
+    },
+    "ja": {
+      "pre_las_sim": 0.8204732537269592,
+      "post_las_sim": 0.35165053606033325,
+      "improvement": -0.468822717666626,
+      "rotation_magnitude": 169.1536102294922
+    },
+    "zh-CN": {
+      "pre_las_sim": 0.35895460844039917,
+      "post_las_sim": 0.7577189803123474,
+      "improvement": 0.39876437187194824,
+      "rotation_magnitude": 217.68038940429688
+    },
+    "sw": {
+      "pre_las_sim": 0.8448410034179688,
+      "post_las_sim": 0.5472111701965332,
+      "improvement": -0.29762983322143555,
+      "rotation_magnitude": 165.3362579345703
+    }
+  },
+  "stablelm-3b": {
+    "es": {
+      "pre_las_sim": 0.7922595143318176,
+      "post_las_sim": 0.9995431303977966,
+      "improvement": 0.207283616065979,
+      "rotation_magnitude": 175.2408447265625
+    },
+    "fr": {
+      "pre_las_sim": 0.6976197957992554,
+      "post_las_sim": 0.9991232752799988,
+      "improvement": 0.3015034794807434,
+      "rotation_magnitude": 177.1722869873047
+    },
+    "pt": {
+      "pre_las_sim": 0.7359579205513,
+      "post_las_sim": 0.5655174851417542,
+      "improvement": -0.1704404354095459,
+      "rotation_magnitude": 177.87368774414062
+    },
+    "de": {
+      "pre_las_sim": -0.22503787279129028,
+      "post_las_sim": 0.9984198808670044,
+      "improvement": 1.2234577536582947,
+      "rotation_magnitude": 177.07545471191406
+    },
+    "ru": {
+      "pre_las_sim": 0.6968539357185364,
+      "post_las_sim": 0.9964836239814758,
+      "improvement": 0.29962968826293945,
+      "rotation_magnitude": 179.7339324951172
+    },
+    "ar": {
+      "pre_las_sim": 0.6057059168815613,
+      "post_las_sim": 0.9874716401100159,
+      "improvement": 0.3817657232284546,
+      "rotation_magnitude": 171.5009002685547
+    },
+    "hi": {
+      "pre_las_sim": 0.5510417819023132,
+      "post_las_sim": 0.4288587272167206,
+      "improvement": -0.12218305468559265,
+      "rotation_magnitude": 175.77487182617188
+    },
+    "ja": {
+      "pre_las_sim": 0.6011487245559692,
+      "post_las_sim": 0.414834588766098,
+      "improvement": -0.18631413578987122,
+      "rotation_magnitude": 168.56324768066406
+    },
+    "zh-CN": {
+      "pre_las_sim": 0.6681613326072693,
+      "post_las_sim": 0.9966055154800415,
+      "improvement": 0.3284441828727722,
+      "rotation_magnitude": 174.07757568359375
+    },
+    "sw": {
+      "pre_las_sim": 0.5689123272895813,
+      "post_las_sim": 0.8913846611976624,
+      "improvement": 0.32247233390808105,
+      "rotation_magnitude": 175.28317260742188
+    }
+  },
+  "tinyllama": {
+    "es": {
+      "pre_las_sim": 0.5897150039672852,
+      "post_las_sim": 0.9883484244346619,
+      "improvement": 0.3986334204673767,
+      "rotation_magnitude": 133.09686279296875
+    },
+    "fr": {
+      "pre_las_sim": 0.46620821952819824,
+      "post_las_sim": 0.9947870969772339,
+      "improvement": 0.5285788774490356,
+      "rotation_magnitude": 134.7522735595703
+    },
+    "pt": {
+      "pre_las_sim": 0.4959006905555725,
+      "post_las_sim": 0.9956583380699158,
+      "improvement": 0.49975764751434326,
+      "rotation_magnitude": 136.4387664794922
+    },
+    "de": {
+      "pre_las_sim": 0.5572017431259155,
+      "post_las_sim": 0.9792654514312744,
+      "improvement": 0.4220637083053589,
+      "rotation_magnitude": 133.78350830078125
+    },
+    "ru": {
+      "pre_las_sim": 0.5086435675621033,
+      "post_las_sim": 0.9969232082366943,
+      "improvement": 0.48827964067459106,
+      "rotation_magnitude": 132.64744567871094
+    },
+    "ar": {
+      "pre_las_sim": 0.10729923844337463,
+      "post_las_sim": 0.9926936626434326,
+      "improvement": 0.885394424200058,
+      "rotation_magnitude": 134.55349731445312
+    },
+    "hi": {
+      "pre_las_sim": 0.11076188832521439,
+      "post_las_sim": 0.9937381148338318,
+      "improvement": 0.8829762265086174,
+      "rotation_magnitude": 130.64942932128906
+    },
+    "ja": {
+      "pre_las_sim": 0.3820551037788391,
+      "post_las_sim": 0.9742453098297119,
+      "improvement": 0.5921902060508728,
+      "rotation_magnitude": 137.30487060546875
+    },
+    "zh-CN": {
+      "pre_las_sim": 0.5687167048454285,
+      "post_las_sim": 0.9835796356201172,
+      "improvement": 0.4148629307746887,
+      "rotation_magnitude": 140.96095275878906
+    },
+    "sw": {
+      "pre_las_sim": 0.012805483303964138,
+      "post_las_sim": 0.9923290610313416,
+      "improvement": 0.9795235777273774,
+      "rotation_magnitude": 133.33616638183594
+    }
+  },
+  "yi-1.5-6b-chat": {
+    "es": {
+      "pre_las_sim": 0.9011784195899963,
+      "post_las_sim": 0.6280648708343506,
+      "improvement": -0.27311354875564575,
+      "rotation_magnitude": 318.2236633300781
+    },
+    "fr": {
+      "pre_las_sim": 0.8738691210746765,
+      "post_las_sim": 0.48493289947509766,
+      "improvement": -0.38893622159957886,
+      "rotation_magnitude": 310.6905212402344
+    },
+    "pt": {
+      "pre_las_sim": 0.8856381177902222,
+      "post_las_sim": 0.5290890336036682,
+      "improvement": -0.35654908418655396,
+      "rotation_magnitude": 316.7606201171875
+    },
+    "de": {
+      "pre_las_sim": 0.8814169764518738,
+      "post_las_sim": 0.6648135781288147,
+      "improvement": -0.21660339832305908,
+      "rotation_magnitude": 308.8200988769531
+    },
+    "ru": {
+      "pre_las_sim": 0.8160386085510254,
+      "post_las_sim": 0.455315500497818,
+      "improvement": -0.3607231080532074,
+      "rotation_magnitude": 331.186767578125
+    },
+    "ar": {
+      "pre_las_sim": 0.8030989766120911,
+      "post_las_sim": 0.6340433955192566,
+      "improvement": -0.16905558109283447,
+      "rotation_magnitude": 336.8418884277344
+    },
+    "hi": {
+      "pre_las_sim": 0.7431999444961548,
+      "post_las_sim": 0.6399918794631958,
+      "improvement": -0.10320806503295898,
+      "rotation_magnitude": 321.5287780761719
+    },
+    "ja": {
+      "pre_las_sim": 0.8134175539016724,
+      "post_las_sim": 0.6636539101600647,
+      "improvement": -0.14976364374160767,
+      "rotation_magnitude": 317.656494140625
+    },
+    "zh-CN": {
+      "pre_las_sim": 0.8972257971763611,
+      "post_las_sim": 0.2752818465232849,
+      "improvement": -0.6219439506530762,
+      "rotation_magnitude": 314.9078063964844
+    },
+    "sw": {
+      "pre_las_sim": 0.7998712658882141,
+      "post_las_sim": 0.6470097303390503,
+      "improvement": -0.15286153554916382,
+      "rotation_magnitude": 319.3000793457031
+    }
+  },
+  "yi-6b": {
+    "es": {
+      "pre_las_sim": 0.8868931531906128,
+      "post_las_sim": 0.6852226853370667,
+      "improvement": -0.20167046785354614,
+      "rotation_magnitude": 342.13067626953125
+    },
+    "fr": {
+      "pre_las_sim": 0.8519498705863953,
+      "post_las_sim": 0.487631618976593,
+      "improvement": -0.36431825160980225,
+      "rotation_magnitude": 336.1805114746094
+    },
+    "pt": {
+      "pre_las_sim": 0.8608844876289368,
+      "post_las_sim": 0.4820188283920288,
+      "improvement": -0.37886565923690796,
+      "rotation_magnitude": 321.3443908691406
+    },
+    "de": {
+      "pre_las_sim": 0.8327734470367432,
+      "post_las_sim": 0.6379045248031616,
+      "improvement": -0.19486892223358154,
+      "rotation_magnitude": 332.039306640625
+    },
+    "ru": {
+      "pre_las_sim": 0.7762980461120605,
+      "post_las_sim": 0.6928264498710632,
+      "improvement": -0.08347159624099731,
+      "rotation_magnitude": 342.19964599609375
+    },
+    "ar": {
+      "pre_las_sim": 0.30318722128868103,
+      "post_las_sim": 0.739403486251831,
+      "improvement": 0.43621626496315,
+      "rotation_magnitude": 294.3382263183594
+    },
+    "hi": {
+      "pre_las_sim": 0.29557719826698303,
+      "post_las_sim": 0.8226495981216431,
+      "improvement": 0.52707239985466,
+      "rotation_magnitude": 297.2122497558594
+    },
+    "ja": {
+      "pre_las_sim": -0.5947964191436768,
+      "post_las_sim": 0.9804014563560486,
+      "improvement": 1.5751978754997253,
+      "rotation_magnitude": 319.9359436035156
+    },
+    "zh-CN": {
+      "pre_las_sim": -0.6884806156158447,
+      "post_las_sim": 0.9988858699798584,
+      "improvement": 1.6873664855957031,
+      "rotation_magnitude": 287.1312255859375
+    },
+    "sw": {
+      "pre_las_sim": 0.7698736786842346,
+      "post_las_sim": 0.5397052764892578,
+      "improvement": -0.2301684021949768,
+      "rotation_magnitude": 318.0222473144531
+    }
+  },
+  "zephyr-7b": {
+    "es": {
+      "pre_las_sim": 0.6042402386665344,
+      "post_las_sim": 0.9399848580360413,
+      "improvement": 0.33574461936950684,
+      "rotation_magnitude": 350.9243469238281
+    },
+    "fr": {
+      "pre_las_sim": 0.4507976174354553,
+      "post_las_sim": 0.9251031875610352,
+      "improvement": 0.47430557012557983,
+      "rotation_magnitude": 346.8209228515625
+    },
+    "pt": {
+      "pre_las_sim": 0.4967772364616394,
+      "post_las_sim": 0.9133279919624329,
+      "improvement": 0.41655075550079346,
+      "rotation_magnitude": 351.5164794921875
+    },
+    "de": {
+      "pre_las_sim": 0.5859869718551636,
+      "post_las_sim": 0.8842907547950745,
+      "improvement": 0.2983037829399109,
+      "rotation_magnitude": 345.39007568359375
+    },
+    "ru": {
+      "pre_las_sim": 0.5357556343078613,
+      "post_las_sim": 0.935506284236908,
+      "improvement": 0.39975064992904663,
+      "rotation_magnitude": 338.5535888671875
+    },
+    "ar": {
+      "pre_las_sim": 0.21535846590995789,
+      "post_las_sim": 0.9021093845367432,
+      "improvement": 0.6867509186267853,
+      "rotation_magnitude": 358.2046813964844
+    },
+    "hi": {
+      "pre_las_sim": 0.13191601634025574,
+      "post_las_sim": 0.9017951488494873,
+      "improvement": 0.7698791325092316,
+      "rotation_magnitude": 353.8736572265625
+    },
+    "ja": {
+      "pre_las_sim": 0.3994651436805725,
+      "post_las_sim": 0.8694034814834595,
+      "improvement": 0.46993833780288696,
+      "rotation_magnitude": 346.5521545410156
+    },
+    "zh-CN": {
+      "pre_las_sim": 0.5900718569755554,
+      "post_las_sim": 0.8337151408195496,
+      "improvement": 0.24364328384399414,
+      "rotation_magnitude": 361.1703796386719
+    },
+    "sw": {
+      "pre_las_sim": 0.015691664069890976,
+      "post_las_sim": 0.9258618950843811,
+      "improvement": 0.9101702310144901,
+      "rotation_magnitude": 333.85888671875
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "scd_jailbreak_correlation": {
+    "pearson_r": NaN,
+    "p_value": NaN,
+    "spearman_r": NaN,
+    "spearman_p": NaN,
+    "n": 10
+  },
+  "regression": {
+    "loo_r2_scd": 0.75,
+    "loo_r2_combined": 0.75,
+    "bootstrap_r2_scd_mean": 0.0,
+    "bootstrap_r2_scd_ci_95": [
+      0.0,
+      0.0
+    ],
+    "cohens_d": NaN,
+    "fdr_corrected_pvalues": {
+      "scd_jailbreak_pearson": NaN,
+      "scd_jailbreak_spearman": NaN,
+      "psycho_jailbreak": NaN
+    }
+  }
+}

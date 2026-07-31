@@ -1,0 +1,7 @@
+{
+  "model": "zephyr-7b",
+  "total": 700,
+  "complied": 1,
+  "refused": 699,
+  "asr": 0.0014
+}

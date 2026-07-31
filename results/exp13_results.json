@@ -1,0 +1,120 @@
+{
+  "method": "Linear CKA (dimension-invariant)",
+  "n_models": 20,
+  "model_names": [
+    "bloomz-7b1",
+    "falcon3-7b-instruct",
+    "mistral-7b",
+    "mistral-7b-instruct-v0.3",
+    "openhermes-2.5-mistral-7b",
+    "phi-3-mini-4k-instruct",
+    "phi-4-mini-instruct",
+    "qwen-7b",
+    "qwen2-7b-instruct",
+    "qwen2.5-3b-instruct",
+    "qwen2.5-7b-instruct",
+    "qwen3-4b-instruct",
+    "qwen3-8b-instruct",
+    "smollm3-3b",
+    "stablelm-2-1.6b-chat",
+    "stablelm-3b",
+    "tinyllama",
+    "yi-1.5-6b-chat",
+    "yi-6b",
+    "zephyr-7b"
+  ],
+  "per_language_transfer": {
+    "en": {
+      "within_family_mean": 0.8554235180219014,
+      "within_family_std": 0.1821060293937162,
+      "cross_family_mean": 0.6827512160886692,
+      "cross_family_std": 0.13489759534390447,
+      "n_within": 15,
+      "n_cross": 79
+    },
+    "es": {
+      "within_family_mean": 0.8710854093233744,
+      "within_family_std": 0.17938139409463016,
+      "cross_family_mean": 0.6457969938652425,
+      "cross_family_std": 0.1402919126821374,
+      "n_within": 15,
+      "n_cross": 79
+    },
+    "fr": {
+      "within_family_mean": 0.8637173573176066,
+      "within_family_std": 0.18285571456561617,
+      "cross_family_mean": 0.6213309338575677,
+      "cross_family_std": 0.16956657296255528,
+      "n_within": 15,
+      "n_cross": 79
+    },
+    "pt": {
+      "within_family_mean": 0.8685326675573984,
+      "within_family_std": 0.18215436977331467,
+      "cross_family_mean": 0.611350853986378,
+      "cross_family_std": 0.1531511340257445,
+      "n_within": 15,
+      "n_cross": 79
+    },
+    "de": {
+      "within_family_mean": 0.908734671274821,
+      "within_family_std": 0.11900104515623763,
+      "cross_family_mean": 0.6908768804012975,
+      "cross_family_std": 0.11502014742319344,
+      "n_within": 15,
+      "n_cross": 79
+    },
+    "ru": {
+      "within_family_mean": 0.9191527326901754,
+      "within_family_std": 0.09861294247345063,
+      "cross_family_mean": 0.7286080080497114,
+      "cross_family_std": 0.12643009710016784,
+      "n_within": 15,
+      "n_cross": 79
+    },
+    "ar": {
+      "within_family_mean": 0.8635538736979167,
+      "within_family_std": 0.16293922767616217,
+      "cross_family_mean": 0.6617266630070119,
+      "cross_family_std": 0.15128402019982143,
+      "n_within": 15,
+      "n_cross": 79
+    },
+    "hi": {
+      "within_family_mean": 0.8689545750617981,
+      "within_family_std": 0.15691225880722032,
+      "cross_family_mean": 0.6585036150262326,
+      "cross_family_std": 0.16055189620181776,
+      "n_within": 15,
+      "n_cross": 79
+    },
+    "ja": {
+      "within_family_mean": 0.8876495560010275,
+      "within_family_std": 0.15267784899451364,
+      "cross_family_mean": 0.7056719389142869,
+      "cross_family_std": 0.13853838562394516,
+      "n_within": 15,
+      "n_cross": 79
+    },
+    "zh-CN": {
+      "within_family_mean": 0.8604200005531311,
+      "within_family_std": 0.18956306546600005,
+      "cross_family_mean": 0.6472903082642374,
+      "cross_family_std": 0.14335539258351918,
+      "n_within": 15,
+      "n_cross": 79
+    },
+    "sw": {
+      "within_family_mean": 0.8570012470086416,
+      "within_family_std": 0.2040693074473917,
+      "cross_family_mean": 0.6022443477111526,
+      "cross_family_std": 0.18311784573741557,
+      "n_within": 15,
+      "n_cross": 79
+    }
+  },
+  "overall_within_family_mean": 0.8749296007734356,
+  "overall_cross_family_mean": 0.659650159924708,
+  "mann_whitney_u": 119301.0,
+  "mann_whitney_p": 4.676585883696661e-42
+}

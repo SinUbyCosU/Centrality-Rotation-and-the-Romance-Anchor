@@ -1,0 +1,640 @@
+{
+  "timestamp": "2026-06-24T17:10:32.519972",
+  "n_models": 20,
+  "models": [
+    "bloomz-7b1",
+    "falcon3-7b-instruct",
+    "mistral-7b",
+    "mistral-7b-instruct-v0.3",
+    "openhermes-2.5-mistral-7b",
+    "phi-3-mini-4k-instruct",
+    "phi-4-mini-instruct",
+    "qwen-7b",
+    "qwen2-7b-instruct",
+    "qwen2.5-3b-instruct",
+    "qwen2.5-7b-instruct",
+    "qwen3-4b-instruct",
+    "qwen3-8b-instruct",
+    "smollm3-3b",
+    "stablelm-2-1.6b-chat",
+    "stablelm-3b",
+    "tinyllama",
+    "yi-1.5-6b-chat",
+    "yi-6b",
+    "zephyr-7b"
+  ],
+  "within_family_sim": {
+    "mean": 0.7580294087500079,
+    "std": 0.3778382341347264,
+    "n": 20
+  },
+  "cross_family_sim": {
+    "mean": 0.00048243644732792745,
+    "std": 0.012309025877653893,
+    "n": 64
+  },
+  "per_language_transfer": {
+    "hi": {
+      "mean_transfer_sim": 0.1511535801802622,
+      "std": 0.3464717947391832,
+      "n_pairs": 94
+    },
+    "ar": {
+      "mean_transfer_sim": 0.14754371984816586,
+      "std": 0.3439540311617555,
+      "n_pairs": 94
+    },
+    "zh-CN": {
+      "mean_transfer_sim": 0.11830747714811103,
+      "std": 0.37141924442851904,
+      "n_pairs": 94
+    },
+    "ja": {
+      "mean_transfer_sim": 0.12339104750587486,
+      "std": 0.37462488947628214,
+      "n_pairs": 94
+    },
+    "sw": {
+      "mean_transfer_sim": 0.16609919271518556,
+      "std": 0.3688834737375153,
+      "n_pairs": 94
+    },
+    "fr": {
+      "mean_transfer_sim": 0.16432237068186217,
+      "std": 0.37264285620439097,
+      "n_pairs": 94
+    },
+    "de": {
+      "mean_transfer_sim": 0.16467318313330676,
+      "std": 0.35986232970805027,
+      "n_pairs": 94
+    },
+    "es": {
+      "mean_transfer_sim": 0.16399635207601526,
+      "std": 0.3682900406335541,
+      "n_pairs": 94
+    },
+    "ru": {
+      "mean_transfer_sim": 0.16147326823928335,
+      "std": 0.3629369196442923,
+      "n_pairs": 94
+    },
+    "pt": {
+      "mean_transfer_sim": 0.16688976249752932,
+      "std": 0.3704992467602882,
+      "n_pairs": 94
+    }
+  },
+  "transfer_matrix_sample": {
+    "bloomz-7b1\u2192bloomz-7b1": {
+      "source": "bloomz-7b1",
+      "target": "bloomz-7b1",
+      "source_family": "BLOOM",
+      "target_family": "BLOOM",
+      "same_family": true,
+      "cosine_similarity": 1.0,
+      "source_dim": 4096,
+      "target_dim": 4096,
+      "compatible": true
+    },
+    "bloomz-7b1\u2192falcon3-7b-instruct": {
+      "source": "bloomz-7b1",
+      "target": "falcon3-7b-instruct",
+      "source_family": "BLOOM",
+      "target_family": "Falcon",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 4096,
+      "target_dim": 3072,
+      "compatible": false
+    },
+    "bloomz-7b1\u2192mistral-7b": {
+      "source": "bloomz-7b1",
+      "target": "mistral-7b",
+      "source_family": "BLOOM",
+      "target_family": "Mistral",
+      "same_family": false,
+      "cosine_similarity": 0.0021424300502985716,
+      "source_dim": 4096,
+      "target_dim": 4096,
+      "compatible": true
+    },
+    "bloomz-7b1\u2192mistral-7b-instruct-v0.3": {
+      "source": "bloomz-7b1",
+      "target": "mistral-7b-instruct-v0.3",
+      "source_family": "BLOOM",
+      "target_family": "Mistral",
+      "same_family": false,
+      "cosine_similarity": 0.0004313726385589689,
+      "source_dim": 4096,
+      "target_dim": 4096,
+      "compatible": true
+    },
+    "bloomz-7b1\u2192openhermes-2.5-mistral-7b": {
+      "source": "bloomz-7b1",
+      "target": "openhermes-2.5-mistral-7b",
+      "source_family": "BLOOM",
+      "target_family": "Mistral",
+      "same_family": false,
+      "cosine_similarity": 0.0010241679847240448,
+      "source_dim": 4096,
+      "target_dim": 4096,
+      "compatible": true
+    },
+    "bloomz-7b1\u2192phi-3-mini-4k-instruct": {
+      "source": "bloomz-7b1",
+      "target": "phi-3-mini-4k-instruct",
+      "source_family": "BLOOM",
+      "target_family": "Phi",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 4096,
+      "target_dim": 3072,
+      "compatible": false
+    },
+    "bloomz-7b1\u2192phi-4-mini-instruct": {
+      "source": "bloomz-7b1",
+      "target": "phi-4-mini-instruct",
+      "source_family": "BLOOM",
+      "target_family": "Phi",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 4096,
+      "target_dim": 3072,
+      "compatible": false
+    },
+    "bloomz-7b1\u2192qwen-7b": {
+      "source": "bloomz-7b1",
+      "target": "qwen-7b",
+      "source_family": "BLOOM",
+      "target_family": "Qwen",
+      "same_family": false,
+      "cosine_similarity": 0.007751905359327793,
+      "source_dim": 4096,
+      "target_dim": 4096,
+      "compatible": true
+    },
+    "bloomz-7b1\u2192qwen2-7b-instruct": {
+      "source": "bloomz-7b1",
+      "target": "qwen2-7b-instruct",
+      "source_family": "BLOOM",
+      "target_family": "Qwen",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 4096,
+      "target_dim": 3584,
+      "compatible": false
+    },
+    "bloomz-7b1\u2192qwen2.5-3b-instruct": {
+      "source": "bloomz-7b1",
+      "target": "qwen2.5-3b-instruct",
+      "source_family": "BLOOM",
+      "target_family": "Qwen",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 4096,
+      "target_dim": 2048,
+      "compatible": false
+    },
+    "bloomz-7b1\u2192qwen2.5-7b-instruct": {
+      "source": "bloomz-7b1",
+      "target": "qwen2.5-7b-instruct",
+      "source_family": "BLOOM",
+      "target_family": "Qwen",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 4096,
+      "target_dim": 3584,
+      "compatible": false
+    },
+    "bloomz-7b1\u2192qwen3-4b-instruct": {
+      "source": "bloomz-7b1",
+      "target": "qwen3-4b-instruct",
+      "source_family": "BLOOM",
+      "target_family": "Qwen",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 4096,
+      "target_dim": 2560,
+      "compatible": false
+    },
+    "bloomz-7b1\u2192qwen3-8b-instruct": {
+      "source": "bloomz-7b1",
+      "target": "qwen3-8b-instruct",
+      "source_family": "BLOOM",
+      "target_family": "Qwen",
+      "same_family": false,
+      "cosine_similarity": -0.0025209079030901194,
+      "source_dim": 4096,
+      "target_dim": 4096,
+      "compatible": true
+    },
+    "bloomz-7b1\u2192smollm3-3b": {
+      "source": "bloomz-7b1",
+      "target": "smollm3-3b",
+      "source_family": "BLOOM",
+      "target_family": "SmolLM",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 4096,
+      "target_dim": 2048,
+      "compatible": false
+    },
+    "bloomz-7b1\u2192stablelm-2-1.6b-chat": {
+      "source": "bloomz-7b1",
+      "target": "stablelm-2-1.6b-chat",
+      "source_family": "BLOOM",
+      "target_family": "StableLM",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 4096,
+      "target_dim": 2048,
+      "compatible": false
+    },
+    "bloomz-7b1\u2192stablelm-3b": {
+      "source": "bloomz-7b1",
+      "target": "stablelm-3b",
+      "source_family": "BLOOM",
+      "target_family": "StableLM",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 4096,
+      "target_dim": 2560,
+      "compatible": false
+    },
+    "bloomz-7b1\u2192tinyllama": {
+      "source": "bloomz-7b1",
+      "target": "tinyllama",
+      "source_family": "BLOOM",
+      "target_family": "Llama",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 4096,
+      "target_dim": 2048,
+      "compatible": false
+    },
+    "bloomz-7b1\u2192yi-1.5-6b-chat": {
+      "source": "bloomz-7b1",
+      "target": "yi-1.5-6b-chat",
+      "source_family": "BLOOM",
+      "target_family": "Yi",
+      "same_family": false,
+      "cosine_similarity": 0.014424437656998634,
+      "source_dim": 4096,
+      "target_dim": 4096,
+      "compatible": true
+    },
+    "bloomz-7b1\u2192yi-6b": {
+      "source": "bloomz-7b1",
+      "target": "yi-6b",
+      "source_family": "BLOOM",
+      "target_family": "Yi",
+      "same_family": false,
+      "cosine_similarity": 0.022590933367609978,
+      "source_dim": 4096,
+      "target_dim": 4096,
+      "compatible": true
+    },
+    "bloomz-7b1\u2192zephyr-7b": {
+      "source": "bloomz-7b1",
+      "target": "zephyr-7b",
+      "source_family": "BLOOM",
+      "target_family": "Mistral",
+      "same_family": false,
+      "cosine_similarity": 0.01045649778097868,
+      "source_dim": 4096,
+      "target_dim": 4096,
+      "compatible": true
+    },
+    "falcon3-7b-instruct\u2192bloomz-7b1": {
+      "source": "falcon3-7b-instruct",
+      "target": "bloomz-7b1",
+      "source_family": "Falcon",
+      "target_family": "BLOOM",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 3072,
+      "target_dim": 4096,
+      "compatible": false
+    },
+    "falcon3-7b-instruct\u2192falcon3-7b-instruct": {
+      "source": "falcon3-7b-instruct",
+      "target": "falcon3-7b-instruct",
+      "source_family": "Falcon",
+      "target_family": "Falcon",
+      "same_family": true,
+      "cosine_similarity": 1.0,
+      "source_dim": 3072,
+      "target_dim": 3072,
+      "compatible": true
+    },
+    "falcon3-7b-instruct\u2192mistral-7b": {
+      "source": "falcon3-7b-instruct",
+      "target": "mistral-7b",
+      "source_family": "Falcon",
+      "target_family": "Mistral",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 3072,
+      "target_dim": 4096,
+      "compatible": false
+    },
+    "falcon3-7b-instruct\u2192mistral-7b-instruct-v0.3": {
+      "source": "falcon3-7b-instruct",
+      "target": "mistral-7b-instruct-v0.3",
+      "source_family": "Falcon",
+      "target_family": "Mistral",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 3072,
+      "target_dim": 4096,
+      "compatible": false
+    },
+    "falcon3-7b-instruct\u2192openhermes-2.5-mistral-7b": {
+      "source": "falcon3-7b-instruct",
+      "target": "openhermes-2.5-mistral-7b",
+      "source_family": "Falcon",
+      "target_family": "Mistral",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 3072,
+      "target_dim": 4096,
+      "compatible": false
+    },
+    "falcon3-7b-instruct\u2192phi-3-mini-4k-instruct": {
+      "source": "falcon3-7b-instruct",
+      "target": "phi-3-mini-4k-instruct",
+      "source_family": "Falcon",
+      "target_family": "Phi",
+      "same_family": false,
+      "cosine_similarity": 0.03700147941708565,
+      "source_dim": 3072,
+      "target_dim": 3072,
+      "compatible": true
+    },
+    "falcon3-7b-instruct\u2192phi-4-mini-instruct": {
+      "source": "falcon3-7b-instruct",
+      "target": "phi-4-mini-instruct",
+      "source_family": "Falcon",
+      "target_family": "Phi",
+      "same_family": false,
+      "cosine_similarity": -0.009074234403669834,
+      "source_dim": 3072,
+      "target_dim": 3072,
+      "compatible": true
+    },
+    "falcon3-7b-instruct\u2192qwen-7b": {
+      "source": "falcon3-7b-instruct",
+      "target": "qwen-7b",
+      "source_family": "Falcon",
+      "target_family": "Qwen",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 3072,
+      "target_dim": 4096,
+      "compatible": false
+    },
+    "falcon3-7b-instruct\u2192qwen2-7b-instruct": {
+      "source": "falcon3-7b-instruct",
+      "target": "qwen2-7b-instruct",
+      "source_family": "Falcon",
+      "target_family": "Qwen",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 3072,
+      "target_dim": 3584,
+      "compatible": false
+    },
+    "falcon3-7b-instruct\u2192qwen2.5-3b-instruct": {
+      "source": "falcon3-7b-instruct",
+      "target": "qwen2.5-3b-instruct",
+      "source_family": "Falcon",
+      "target_family": "Qwen",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 3072,
+      "target_dim": 2048,
+      "compatible": false
+    },
+    "falcon3-7b-instruct\u2192qwen2.5-7b-instruct": {
+      "source": "falcon3-7b-instruct",
+      "target": "qwen2.5-7b-instruct",
+      "source_family": "Falcon",
+      "target_family": "Qwen",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 3072,
+      "target_dim": 3584,
+      "compatible": false
+    },
+    "falcon3-7b-instruct\u2192qwen3-4b-instruct": {
+      "source": "falcon3-7b-instruct",
+      "target": "qwen3-4b-instruct",
+      "source_family": "Falcon",
+      "target_family": "Qwen",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 3072,
+      "target_dim": 2560,
+      "compatible": false
+    },
+    "falcon3-7b-instruct\u2192qwen3-8b-instruct": {
+      "source": "falcon3-7b-instruct",
+      "target": "qwen3-8b-instruct",
+      "source_family": "Falcon",
+      "target_family": "Qwen",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 3072,
+      "target_dim": 4096,
+      "compatible": false
+    },
+    "falcon3-7b-instruct\u2192smollm3-3b": {
+      "source": "falcon3-7b-instruct",
+      "target": "smollm3-3b",
+      "source_family": "Falcon",
+      "target_family": "SmolLM",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 3072,
+      "target_dim": 2048,
+      "compatible": false
+    },
+    "falcon3-7b-instruct\u2192stablelm-2-1.6b-chat": {
+      "source": "falcon3-7b-instruct",
+      "target": "stablelm-2-1.6b-chat",
+      "source_family": "Falcon",
+      "target_family": "StableLM",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 3072,
+      "target_dim": 2048,
+      "compatible": false
+    },
+    "falcon3-7b-instruct\u2192stablelm-3b": {
+      "source": "falcon3-7b-instruct",
+      "target": "stablelm-3b",
+      "source_family": "Falcon",
+      "target_family": "StableLM",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 3072,
+      "target_dim": 2560,
+      "compatible": false
+    },
+    "falcon3-7b-instruct\u2192tinyllama": {
+      "source": "falcon3-7b-instruct",
+      "target": "tinyllama",
+      "source_family": "Falcon",
+      "target_family": "Llama",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 3072,
+      "target_dim": 2048,
+      "compatible": false
+    },
+    "falcon3-7b-instruct\u2192yi-1.5-6b-chat": {
+      "source": "falcon3-7b-instruct",
+      "target": "yi-1.5-6b-chat",
+      "source_family": "Falcon",
+      "target_family": "Yi",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 3072,
+      "target_dim": 4096,
+      "compatible": false
+    },
+    "falcon3-7b-instruct\u2192yi-6b": {
+      "source": "falcon3-7b-instruct",
+      "target": "yi-6b",
+      "source_family": "Falcon",
+      "target_family": "Yi",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 3072,
+      "target_dim": 4096,
+      "compatible": false
+    },
+    "falcon3-7b-instruct\u2192zephyr-7b": {
+      "source": "falcon3-7b-instruct",
+      "target": "zephyr-7b",
+      "source_family": "Falcon",
+      "target_family": "Mistral",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 3072,
+      "target_dim": 4096,
+      "compatible": false
+    },
+    "mistral-7b\u2192bloomz-7b1": {
+      "source": "mistral-7b",
+      "target": "bloomz-7b1",
+      "source_family": "Mistral",
+      "target_family": "BLOOM",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 4096,
+      "target_dim": 4096,
+      "compatible": true
+    },
+    "mistral-7b\u2192falcon3-7b-instruct": {
+      "source": "mistral-7b",
+      "target": "falcon3-7b-instruct",
+      "source_family": "Mistral",
+      "target_family": "Falcon",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 4096,
+      "target_dim": 3072,
+      "compatible": false
+    },
+    "mistral-7b\u2192mistral-7b": {
+      "source": "mistral-7b",
+      "target": "mistral-7b",
+      "source_family": "Mistral",
+      "target_family": "Mistral",
+      "same_family": true,
+      "cosine_similarity": 1.0,
+      "source_dim": 4096,
+      "target_dim": 4096,
+      "compatible": true
+    },
+    "mistral-7b\u2192mistral-7b-instruct-v0.3": {
+      "source": "mistral-7b",
+      "target": "mistral-7b-instruct-v0.3",
+      "source_family": "Mistral",
+      "target_family": "Mistral",
+      "same_family": true,
+      "cosine_similarity": 0.9347046613693237,
+      "source_dim": 4096,
+      "target_dim": 4096,
+      "compatible": true
+    },
+    "mistral-7b\u2192openhermes-2.5-mistral-7b": {
+      "source": "mistral-7b",
+      "target": "openhermes-2.5-mistral-7b",
+      "source_family": "Mistral",
+      "target_family": "Mistral",
+      "same_family": true,
+      "cosine_similarity": 0.955665111541748,
+      "source_dim": 4096,
+      "target_dim": 4096,
+      "compatible": true
+    },
+    "mistral-7b\u2192phi-3-mini-4k-instruct": {
+      "source": "mistral-7b",
+      "target": "phi-3-mini-4k-instruct",
+      "source_family": "Mistral",
+      "target_family": "Phi",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 4096,
+      "target_dim": 3072,
+      "compatible": false
+    },
+    "mistral-7b\u2192phi-4-mini-instruct": {
+      "source": "mistral-7b",
+      "target": "phi-4-mini-instruct",
+      "source_family": "Mistral",
+      "target_family": "Phi",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 4096,
+      "target_dim": 3072,
+      "compatible": false
+    },
+    "mistral-7b\u2192qwen-7b": {
+      "source": "mistral-7b",
+      "target": "qwen-7b",
+      "source_family": "Mistral",
+      "target_family": "Qwen",
+      "same_family": false,
+      "cosine_similarity": 0.01156002376228571,
+      "source_dim": 4096,
+      "target_dim": 4096,
+      "compatible": true
+    },
+    "mistral-7b\u2192qwen2-7b-instruct": {
+      "source": "mistral-7b",
+      "target": "qwen2-7b-instruct",
+      "source_family": "Mistral",
+      "target_family": "Qwen",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 4096,
+      "target_dim": 3584,
+      "compatible": false
+    },
+    "mistral-7b\u2192qwen2.5-3b-instruct": {
+      "source": "mistral-7b",
+      "target": "qwen2.5-3b-instruct",
+      "source_family": "Mistral",
+      "target_family": "Qwen",
+      "same_family": false,
+      "cosine_similarity": NaN,
+      "source_dim": 4096,
+      "target_dim": 2048,
+      "compatible": false
+    }
+  }
+}

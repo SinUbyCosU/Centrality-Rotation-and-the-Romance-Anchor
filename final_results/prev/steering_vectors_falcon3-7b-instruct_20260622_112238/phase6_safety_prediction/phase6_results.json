@@ -1,0 +1,24 @@
+{
+  "scd_jailbreak_correlation": {
+    "pearson_r": 0.6477414312304863,
+    "p_value": 0.04285734078185101,
+    "spearman_r": 0.497468338163091,
+    "spearman_p": 0.1434614655950856,
+    "n": 10
+  },
+  "regression": {
+    "loo_r2_scd": 0.20312255783334654,
+    "loo_r2_combined": 0.0022493699028849345,
+    "bootstrap_r2_scd_mean": 0.4365678548714516,
+    "bootstrap_r2_scd_ci_95": [
+      0.07496754371082076,
+      0.8803098659239161
+    ],
+    "cohens_d": NaN,
+    "fdr_corrected_pvalues": {
+      "scd_jailbreak_pearson": 0.06428601117277652,
+      "scd_jailbreak_spearman": 0.06428601117277652,
+      "psycho_jailbreak": 0.06428601117277652
+    }
+  }
+}

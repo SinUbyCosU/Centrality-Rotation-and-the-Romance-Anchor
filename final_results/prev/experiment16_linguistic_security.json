@@ -1,0 +1,2077 @@
+{
+  "models": {
+    "falcon3-7b-instruct": {
+      "n_layers": 11,
+      "languages": {
+        "en": {
+          "directional_stability": 0.8244873122206655,
+          "cross_layer_coherence": 0.5958328342022845,
+          "mean_norm": 0.9999999991136458,
+          "norm_cv": 3.772093106233819e-08,
+          "alignment_mean": 1.0,
+          "alignment_stability": 1.4970244210116102e-16,
+          "linguistic_security_index": 0.927540008872636
+        },
+        "es": {
+          "directional_stability": 0.801968431713578,
+          "cross_layer_coherence": 0.5572152869636082,
+          "mean_norm": 0.9999999808341014,
+          "norm_cv": 4.145162609283453e-08,
+          "alignment_mean": 0.8108496629447726,
+          "alignment_stability": 0.19155725618783945,
+          "linguistic_security_index": 0.8720086404247819
+        },
+        "fr": {
+          "directional_stability": 0.8351717080949651,
+          "cross_layer_coherence": 0.6252597524776604,
+          "mean_norm": 1.0000000196727028,
+          "norm_cv": 5.4286595046023305e-08,
+          "alignment_mean": 0.7379071116118866,
+          "alignment_stability": 0.15843311529984147,
+          "linguistic_security_index": 0.8929456401749691
+        },
+        "pt": {
+          "directional_stability": 0.8224019957769038,
+          "cross_layer_coherence": 0.604887419064821,
+          "mean_norm": 1.0000000264867936,
+          "norm_cv": 6.211232161999667e-08,
+          "alignment_mean": 0.8108793063651774,
+          "alignment_stability": 0.1981017739360487,
+          "linguistic_security_index": 0.8788857178431231
+        },
+        "de": {
+          "directional_stability": 0.7682572409399483,
+          "cross_layer_coherence": 0.5208780992886277,
+          "mean_norm": 1.0000000045887025,
+          "norm_cv": 4.034599816369024e-08,
+          "alignment_mean": 0.667801373449207,
+          "alignment_stability": 0.23775837828513857,
+          "linguistic_security_index": 0.8517023128707878
+        },
+        "ru": {
+          "directional_stability": 0.7059604273981017,
+          "cross_layer_coherence": 0.43687449423525376,
+          "mean_norm": 1.0000000109108795,
+          "norm_cv": 3.3259890946607e-08,
+          "alignment_mean": 0.4356947010300542,
+          "alignment_stability": 0.1940719255914651,
+          "linguistic_security_index": 0.8443363754913304
+        },
+        "ar": {
+          "directional_stability": 0.7674507414995955,
+          "cross_layer_coherence": 0.4843956326265844,
+          "mean_norm": 0.9999999920793833,
+          "norm_cv": 3.695063218689725e-08,
+          "alignment_mean": 0.4520960423421524,
+          "alignment_stability": 0.22559714900034816,
+          "linguistic_security_index": 0.8500815002780274
+        },
+        "hi": {
+          "directional_stability": 0.7543482026860422,
+          "cross_layer_coherence": 0.5445680551426635,
+          "mean_norm": 1.0000000041259427,
+          "norm_cv": 3.6397186691861975e-08,
+          "alignment_mean": 0.5158498293878547,
+          "alignment_stability": 0.27509564806735853,
+          "linguistic_security_index": 0.8435906111124518
+        },
+        "ja": {
+          "directional_stability": 0.7370487092230433,
+          "cross_layer_coherence": 0.4906281839772382,
+          "mean_norm": 0.999999994835408,
+          "norm_cv": 4.095166067019506e-08,
+          "alignment_mean": 0.26029121407042743,
+          "alignment_stability": 0.11008928383594392,
+          "linguistic_security_index": 0.875937280453134
+        },
+        "zh-CN": {
+          "directional_stability": 0.7855754714015453,
+          "cross_layer_coherence": 0.5502593533540765,
+          "mean_norm": 1.0000000049647833,
+          "norm_cv": 3.347966993200704e-08,
+          "alignment_mean": 0.4675262185013191,
+          "alignment_stability": 0.09941135527168103,
+          "linguistic_security_index": 0.892126505906615
+        },
+        "sw": {
+          "directional_stability": 0.8283706070723014,
+          "cross_layer_coherence": 0.6525349517159094,
+          "mean_norm": 1.0000000176680601,
+          "norm_cv": 9.263397694132686e-08,
+          "alignment_mean": 0.5498544651946984,
+          "alignment_stability": 0.28008819794955203,
+          "linguistic_security_index": 0.8650911222026441
+        }
+      }
+    },
+    "mistral-7b": {
+      "n_layers": 12,
+      "languages": {
+        "en": {
+          "directional_stability": 0.7741646714600366,
+          "cross_layer_coherence": 0.39740863856368946,
+          "mean_norm": 0.9999999062968995,
+          "norm_cv": 2.1498144858042151e-07,
+          "alignment_mean": 1.0,
+          "alignment_stability": 1.4686870114880517e-16,
+          "linguistic_security_index": 0.8964466100076036
+        },
+        "es": {
+          "directional_stability": 0.8371267618968172,
+          "cross_layer_coherence": 0.5610091276129279,
+          "mean_norm": 0.9999999643140162,
+          "norm_cv": 1.4846539149528233e-07,
+          "alignment_mean": 0.5809532699339842,
+          "alignment_stability": 0.18250855746709085,
+          "linguistic_security_index": 0.8791398097055976
+        },
+        "fr": {
+          "directional_stability": 0.8480017020975024,
+          "cross_layer_coherence": 0.6132247492388515,
+          "mean_norm": 1.0000000048636053,
+          "norm_cv": 1.6494760399959453e-07,
+          "alignment_mean": 0.4988372424121564,
+          "alignment_stability": 0.21083315619972434,
+          "linguistic_security_index": 0.8799449761302122
+        },
+        "pt": {
+          "directional_stability": 0.8405297665992666,
+          "cross_layer_coherence": 0.5810395752911989,
+          "mean_norm": 0.9999999475703271,
+          "norm_cv": 1.1849067097730343e-07,
+          "alignment_mean": 0.5221439556873394,
+          "alignment_stability": 0.199458833033559,
+          "linguistic_security_index": 0.8778314298552506
+        },
+        "de": {
+          "directional_stability": 0.809028019800634,
+          "cross_layer_coherence": 0.5020888369337655,
+          "mean_norm": 0.9999999296369367,
+          "norm_cv": 2.490749083472407e-07,
+          "alignment_mean": 0.5803075453866814,
+          "alignment_stability": 0.20969031371326527,
+          "linguistic_security_index": 0.8614669663947565
+        },
+        "ru": {
+          "directional_stability": 0.8178627020198423,
+          "cross_layer_coherence": 0.533284448625371,
+          "mean_norm": 0.9999999370270976,
+          "norm_cv": 2.1320881659055291e-07,
+          "alignment_mean": 0.5506422634179698,
+          "alignment_stability": 0.21031672000713525,
+          "linguistic_security_index": 0.8663141605266638
+        },
+        "ar": {
+          "directional_stability": 0.8263880420615576,
+          "cross_layer_coherence": 0.5806223762919165,
+          "mean_norm": 0.9999999674703518,
+          "norm_cv": 3.051348311257081e-07,
+          "alignment_mean": 0.4108036811257673,
+          "alignment_stability": 0.2604698926499918,
+          "linguistic_security_index": 0.8607587528479785
+        },
+        "hi": {
+          "directional_stability": 0.8175713034401091,
+          "cross_layer_coherence": 0.5614009589894534,
+          "mean_norm": 0.9999999601418469,
+          "norm_cv": 2.945133829071726e-07,
+          "alignment_mean": 0.3360756808492238,
+          "alignment_stability": 0.2967678794763717,
+          "linguistic_security_index": 0.8481794893062566
+        },
+        "ja": {
+          "directional_stability": 0.8013400290580552,
+          "cross_layer_coherence": 0.4705417417889218,
+          "mean_norm": 0.9999999418817671,
+          "norm_cv": 2.5768731956873306e-07,
+          "alignment_mean": 0.4702306590369567,
+          "alignment_stability": 0.24653024351211236,
+          "linguistic_security_index": 0.8473525960560142
+        },
+        "zh-CN": {
+          "directional_stability": 0.7894956495118423,
+          "cross_layer_coherence": 0.43165676936411046,
+          "mean_norm": 0.9999999301794538,
+          "norm_cv": 1.9583584636809723e-07,
+          "alignment_mean": 0.5856793846506854,
+          "alignment_stability": 0.22513657840479318,
+          "linguistic_security_index": 0.8463598587993342
+        },
+        "sw": {
+          "directional_stability": 0.848676078819355,
+          "cross_layer_coherence": 0.6533320058669219,
+          "mean_norm": 1.0000000162671836,
+          "norm_cv": 2.2878427967499656e-07,
+          "alignment_mean": 0.27948512878629167,
+          "alignment_stability": 0.3323768941675128,
+          "linguistic_security_index": 0.8546567298478365
+        }
+      }
+    },
+    "mistral-7b-instruct-v0.3": {
+      "n_layers": 12,
+      "languages": {
+        "en": {
+          "directional_stability": 0.7666791530143737,
+          "cross_layer_coherence": 0.3897831403605556,
+          "mean_norm": 0.9999999218159488,
+          "norm_cv": 2.0256450390852403e-07,
+          "alignment_mean": 1.0,
+          "alignment_stability": 1.3597399555105182e-16,
+          "linguistic_security_index": 0.8945577360307402
+        },
+        "es": {
+          "directional_stability": 0.8297196451799942,
+          "cross_layer_coherence": 0.5402793840063356,
+          "mean_norm": 0.9999999630505937,
+          "norm_cv": 1.881756143430792e-07,
+          "alignment_mean": 0.5857594815475956,
+          "alignment_stability": 0.17669108933054944,
+          "linguistic_security_index": 0.8770770592717503
+        },
+        "fr": {
+          "directional_stability": 0.8446244026491777,
+          "cross_layer_coherence": 0.5964504447511041,
+          "mean_norm": 0.9999999782084777,
+          "norm_cv": 1.2572509697391197e-07,
+          "alignment_mean": 0.5163659200911798,
+          "alignment_stability": 0.19256301921312463,
+          "linguistic_security_index": 0.8819935696904798
+        },
+        "pt": {
+          "directional_stability": 0.8383387016983164,
+          "cross_layer_coherence": 0.5820761852681285,
+          "mean_norm": 0.9999999652429984,
+          "norm_cv": 1.3702858077381943e-07,
+          "alignment_mean": 0.5252109536499169,
+          "alignment_stability": 0.18866947308915638,
+          "linguistic_security_index": 0.8803844583413714
+        },
+        "de": {
+          "directional_stability": 0.8082936391799849,
+          "cross_layer_coherence": 0.4823667930825923,
+          "mean_norm": 0.9999999083741877,
+          "norm_cv": 2.3934040578940465e-07,
+          "alignment_mean": 0.5769251262308658,
+          "alignment_stability": 0.19138484873069173,
+          "linguistic_security_index": 0.8634862820150477
+        },
+        "ru": {
+          "directional_stability": 0.8130919176876077,
+          "cross_layer_coherence": 0.5121696216649008,
+          "mean_norm": 0.9999998789561942,
+          "norm_cv": 2.3392315261585938e-07,
+          "alignment_mean": 0.5668906750987498,
+          "alignment_stability": 0.1978953224688521,
+          "linguistic_security_index": 0.8661838033210624
+        },
+        "ar": {
+          "directional_stability": 0.8240512817016352,
+          "cross_layer_coherence": 0.5563650286896177,
+          "mean_norm": 0.9999999138793528,
+          "norm_cv": 2.842701002442609e-07,
+          "alignment_mean": 0.3946358206751969,
+          "alignment_stability": 0.2520870522196859,
+          "linguistic_security_index": 0.8595302046764601
+        },
+        "hi": {
+          "directional_stability": 0.8131220860795721,
+          "cross_layer_coherence": 0.5461505899342103,
+          "mean_norm": 0.9999999015626945,
+          "norm_cv": 2.928440904112873e-07,
+          "alignment_mean": 0.3171113760054054,
+          "alignment_stability": 0.29015895704221606,
+          "linguistic_security_index": 0.8473692720301462
+        },
+        "ja": {
+          "directional_stability": 0.8001491710676283,
+          "cross_layer_coherence": 0.4788529180218042,
+          "mean_norm": 0.9999999353572687,
+          "norm_cv": 2.6593588705606635e-07,
+          "alignment_mean": 0.4607999431931486,
+          "alignment_stability": 0.23945108376965743,
+          "linguistic_security_index": 0.8500124237097929
+        },
+        "zh-CN": {
+          "directional_stability": 0.7936538654469402,
+          "cross_layer_coherence": 0.44259373953706577,
+          "mean_norm": 0.9999999428341725,
+          "norm_cv": 1.8277580378223437e-07,
+          "alignment_mean": 0.5809942421501957,
+          "alignment_stability": 0.20970973739691506,
+          "linguistic_security_index": 0.8521034705798209
+        },
+        "sw": {
+          "directional_stability": 0.8432908169207894,
+          "cross_layer_coherence": 0.6333048973156687,
+          "mean_norm": 0.9999999352238346,
+          "norm_cv": 2.0492105726344766e-07,
+          "alignment_mean": 0.27058184979328864,
+          "alignment_stability": 0.3181046703819214,
+          "linguistic_security_index": 0.8550482454538126
+        }
+      }
+    },
+    "openhermes-2.5-mistral-7b": {
+      "n_layers": 12,
+      "languages": {
+        "en": {
+          "directional_stability": 0.761860209647305,
+          "cross_layer_coherence": 0.3733784015297539,
+          "mean_norm": 0.9999999100400571,
+          "norm_cv": 2.0789429457819512e-07,
+          "alignment_mean": 1.0,
+          "alignment_stability": 1.6024689053196368e-16,
+          "linguistic_security_index": 0.8919047744235588
+        },
+        "es": {
+          "directional_stability": 0.8331162482642445,
+          "cross_layer_coherence": 0.5612681554900605,
+          "mean_norm": 0.9999999516546016,
+          "norm_cv": 1.7916967081263645e-07,
+          "alignment_mean": 0.5554227903950012,
+          "alignment_stability": 0.1914140160722246,
+          "linguistic_security_index": 0.8764445016588143
+        },
+        "fr": {
+          "directional_stability": 0.849305528780098,
+          "cross_layer_coherence": 0.6295387247732326,
+          "mean_norm": 1.0000000228640444,
+          "norm_cv": 1.874431811253279e-07,
+          "alignment_mean": 0.4696287101538224,
+          "alignment_stability": 0.2271977820670906,
+          "linguistic_security_index": 0.8780560393165985
+        },
+        "pt": {
+          "directional_stability": 0.8385094946673045,
+          "cross_layer_coherence": 0.5946862711654254,
+          "mean_norm": 0.999999947524347,
+          "norm_cv": 1.2388459369541218e-07,
+          "alignment_mean": 0.4908655500245777,
+          "alignment_stability": 0.21614204347211732,
+          "linguistic_security_index": 0.8751139288899135
+        },
+        "de": {
+          "directional_stability": 0.8103954675600609,
+          "cross_layer_coherence": 0.510145494380958,
+          "mean_norm": 0.9999999059158532,
+          "norm_cv": 2.24332162258645e-07,
+          "alignment_mean": 0.5522249674781765,
+          "alignment_stability": 0.21267539974070598,
+          "linguistic_security_index": 0.8618987142244103
+        },
+        "ru": {
+          "directional_stability": 0.810852715285117,
+          "cross_layer_coherence": 0.5202383076361694,
+          "mean_norm": 0.9999999437050352,
+          "norm_cv": 2.4039863278883995e-07,
+          "alignment_mean": 0.540492550233756,
+          "alignment_stability": 0.21572776490077866,
+          "linguistic_security_index": 0.8624543765403079
+        },
+        "ar": {
+          "directional_stability": 0.824031905012458,
+          "cross_layer_coherence": 0.5830387485045462,
+          "mean_norm": 0.9999999654959565,
+          "norm_cv": 2.8327519899091084e-07,
+          "alignment_mean": 0.380075984501654,
+          "alignment_stability": 0.2773161373003798,
+          "linguistic_security_index": 0.8565547265457308
+        },
+        "hi": {
+          "directional_stability": 0.8208453380762737,
+          "cross_layer_coherence": 0.5771713220430087,
+          "mean_norm": 0.9999999707216735,
+          "norm_cv": 2.846171351150812e-07,
+          "alignment_mean": 0.32096256684837415,
+          "alignment_stability": 0.3078551476993933,
+          "linguistic_security_index": 0.8477882244357782
+        },
+        "ja": {
+          "directional_stability": 0.8024491086567017,
+          "cross_layer_coherence": 0.4912979449984899,
+          "mean_norm": 0.9999999892761452,
+          "norm_cv": 2.894719453579091e-07,
+          "alignment_mean": 0.4484972973558065,
+          "alignment_stability": 0.2579382411038555,
+          "linguistic_security_index": 0.8472337490629487
+        },
+        "zh-CN": {
+          "directional_stability": 0.7914653245406008,
+          "cross_layer_coherence": 0.43429158224340036,
+          "mean_norm": 0.9999999416787277,
+          "norm_cv": 1.6197997523605457e-07,
+          "alignment_mean": 0.5698358035469034,
+          "alignment_stability": 0.22581695697184082,
+          "linguistic_security_index": 0.8467653336100461
+        },
+        "sw": {
+          "directional_stability": 0.8455112158918571,
+          "cross_layer_coherence": 0.656552273307119,
+          "mean_norm": 0.999999929464829,
+          "norm_cv": 2.28668265192683e-07,
+          "alignment_mean": 0.24804610296049848,
+          "alignment_stability": 0.3590112429150194,
+          "linguistic_security_index": 0.8480050682540509
+        }
+      }
+    },
+    "phi-3-mini-4k-instruct": {
+      "n_layers": 12,
+      "languages": {
+        "en": {
+          "directional_stability": 0.7152902468267416,
+          "cross_layer_coherence": 0.3405936278159489,
+          "mean_norm": 0.9999999898530874,
+          "norm_cv": 3.700901770633377e-08,
+          "alignment_mean": 1.0,
+          "alignment_stability": 1.3597399555105182e-16,
+          "linguistic_security_index": 0.8819854750780819
+        },
+        "es": {
+          "directional_stability": 0.7906850698007087,
+          "cross_layer_coherence": 0.42910089304603044,
+          "mean_norm": 0.999999989523532,
+          "norm_cv": 4.3788989241797634e-08,
+          "alignment_mean": 0.4389519169397291,
+          "alignment_stability": 0.12088338443067695,
+          "linguistic_security_index": 0.8722523883009259
+        },
+        "fr": {
+          "directional_stability": 0.8218546348724906,
+          "cross_layer_coherence": 0.48183701343161,
+          "mean_norm": 1.0000000081748026,
+          "norm_cv": 5.537056753051256e-08,
+          "alignment_mean": 0.35553084755054415,
+          "alignment_stability": 0.15023497982444375,
+          "linguistic_security_index": 0.8754026972392597
+        },
+        "pt": {
+          "directional_stability": 0.7932252156139445,
+          "cross_layer_coherence": 0.4479660099364194,
+          "mean_norm": 0.9999999611645728,
+          "norm_cv": 8.191734751424905e-08,
+          "alignment_mean": 0.39521254119120747,
+          "alignment_stability": 0.13277929938680363,
+          "linguistic_security_index": 0.8719540578677577
+        },
+        "de": {
+          "directional_stability": 0.7874076483626576,
+          "cross_layer_coherence": 0.4113818356058812,
+          "mean_norm": 0.9999999846707134,
+          "norm_cv": 3.3813384394625486e-08,
+          "alignment_mean": 0.4260065720956492,
+          "alignment_stability": 0.16853542616526396,
+          "linguistic_security_index": 0.8577148205014052
+        },
+        "ru": {
+          "directional_stability": 0.7754280066516958,
+          "cross_layer_coherence": 0.4219488627530027,
+          "mean_norm": 1.0000000111403422,
+          "norm_cv": 5.236548429003937e-08,
+          "alignment_mean": 0.27337301756487864,
+          "alignment_stability": 0.19022442510755636,
+          "linguistic_security_index": 0.8521159893073271
+        },
+        "ar": {
+          "directional_stability": 0.8157731817974354,
+          "cross_layer_coherence": 0.4469369413610008,
+          "mean_norm": 0.9999999954837352,
+          "norm_cv": 6.410037855124929e-08,
+          "alignment_mean": 0.20948250934006274,
+          "alignment_stability": 0.1990796449932867,
+          "linguistic_security_index": 0.8580688381213882
+        },
+        "hi": {
+          "directional_stability": 0.818396077130977,
+          "cross_layer_coherence": 0.4880160070036033,
+          "mean_norm": 0.9999999720718282,
+          "norm_cv": 5.1437793590776765e-08,
+          "alignment_mean": 0.17788122901093215,
+          "alignment_stability": 0.22548979087753981,
+          "linguistic_security_index": 0.8569290499379891
+        },
+        "ja": {
+          "directional_stability": 0.8277755203827385,
+          "cross_layer_coherence": 0.4648351227544353,
+          "mean_norm": 1.0000000172338446,
+          "norm_cv": 6.960738052615458e-08,
+          "alignment_mean": 0.31025345948197675,
+          "alignment_stability": 0.16861792602118322,
+          "linguistic_security_index": 0.8694218314850058
+        },
+        "zh-CN": {
+          "directional_stability": 0.7968273221368716,
+          "cross_layer_coherence": 0.451284409431751,
+          "mean_norm": 1.0000000038654189,
+          "norm_cv": 5.8653877446434407e-08,
+          "alignment_mean": 0.361410558422758,
+          "alignment_stability": 0.1592449381591872,
+          "linguistic_security_index": 0.8662027172428117
+        },
+        "sw": {
+          "directional_stability": 0.7947163519925856,
+          "cross_layer_coherence": 0.45843594277217625,
+          "mean_norm": 0.9999999684885882,
+          "norm_cv": 5.852678437002505e-08,
+          "alignment_mean": 0.17931443332112548,
+          "alignment_stability": 0.20797947642677475,
+          "linguistic_security_index": 0.8546491531072055
+        }
+      }
+    },
+    "phi-4-mini-instruct": {
+      "n_layers": 12,
+      "languages": {
+        "en": {
+          "directional_stability": 0.8349358431612534,
+          "cross_layer_coherence": 0.552335618378543,
+          "mean_norm": 1.000000015032021,
+          "norm_cv": 4.67822019979815e-08,
+          "alignment_mean": 1.0,
+          "alignment_stability": 1.4332917616497527e-16,
+          "linguistic_security_index": 0.9234089209969241
+        },
+        "es": {
+          "directional_stability": 0.8171998458800688,
+          "cross_layer_coherence": 0.5453823624155144,
+          "mean_norm": 0.9999999921412246,
+          "norm_cv": 4.165101329412326e-08,
+          "alignment_mean": 0.7812657067601165,
+          "alignment_stability": 0.2874605891982969,
+          "linguistic_security_index": 0.8484576183246204
+        },
+        "fr": {
+          "directional_stability": 0.8394707886663343,
+          "cross_layer_coherence": 0.5671109660420518,
+          "mean_norm": 0.9999999870618068,
+          "norm_cv": 4.007110960127299e-08,
+          "alignment_mean": 0.7698960553528984,
+          "alignment_stability": 0.30226657981581945,
+          "linguistic_security_index": 0.850256064366816
+        },
+        "pt": {
+          "directional_stability": 0.8438508264085077,
+          "cross_layer_coherence": 0.586679310744145,
+          "mean_norm": 1.0000000074845394,
+          "norm_cv": 4.617415692686725e-08,
+          "alignment_mean": 0.772956435161885,
+          "alignment_stability": 0.29522787251049865,
+          "linguistic_security_index": 0.8550092874729177
+        },
+        "de": {
+          "directional_stability": 0.8126199756123996,
+          "cross_layer_coherence": 0.5037922249852302,
+          "mean_norm": 0.9999999797348503,
+          "norm_cv": 3.715254980268155e-08,
+          "alignment_mean": 0.7359007166773487,
+          "alignment_stability": 0.2983282821647938,
+          "linguistic_security_index": 0.8399694452453678
+        },
+        "ru": {
+          "directional_stability": 0.7751318993274986,
+          "cross_layer_coherence": 0.42816834038025975,
+          "mean_norm": 0.9999999923949795,
+          "norm_cv": 4.0341128626530986e-08,
+          "alignment_mean": 0.5649832433578752,
+          "alignment_stability": 0.21794510260157596,
+          "linguistic_security_index": 0.8459262442277936
+        },
+        "ar": {
+          "directional_stability": 0.8527935496397263,
+          "cross_layer_coherence": 0.5856122774244518,
+          "mean_norm": 0.9999999961938216,
+          "norm_cv": 6.138534835243354e-08,
+          "alignment_mean": 0.7238508955372304,
+          "alignment_stability": 0.344024515253069,
+          "linguistic_security_index": 0.843794584223418
+        },
+        "hi": {
+          "directional_stability": 0.8607726853217982,
+          "cross_layer_coherence": 0.6019796070500837,
+          "mean_norm": 1.0000000093365369,
+          "norm_cv": 4.691568918206765e-08,
+          "alignment_mean": 0.7148445792064032,
+          "alignment_stability": 0.3517945461373251,
+          "linguistic_security_index": 0.8448953882832316
+        },
+        "ja": {
+          "directional_stability": 0.8137959934392103,
+          "cross_layer_coherence": 0.45970047804539604,
+          "mean_norm": 1.000000015172273,
+          "norm_cv": 4.5772284279029434e-08,
+          "alignment_mean": 0.6464599705243811,
+          "alignment_stability": 0.30188176521254306,
+          "linguistic_security_index": 0.8337166061893689
+        },
+        "zh-CN": {
+          "directional_stability": 0.8263031502620763,
+          "cross_layer_coherence": 0.49428442027777225,
+          "mean_norm": 0.9999999878786333,
+          "norm_cv": 4.065849927659771e-08,
+          "alignment_mean": 0.6979287379577265,
+          "alignment_stability": 0.30200585388704704,
+          "linguistic_security_index": 0.8395719726810945
+        },
+        "sw": {
+          "directional_stability": 0.8557505234656443,
+          "cross_layer_coherence": 0.6141907814053444,
+          "mean_norm": 1.000000013711477,
+          "norm_cv": 5.856122585793547e-08,
+          "alignment_mean": 0.7077005670406337,
+          "alignment_stability": 0.3575703787708865,
+          "linguistic_security_index": 0.8443500537758455
+        }
+      }
+    },
+    "qwen-7b": {
+      "n_layers": 12,
+      "languages": {
+        "en": {
+          "directional_stability": 0.7673341374150593,
+          "cross_layer_coherence": 0.2831749580715766,
+          "mean_norm": 1.000000015752162,
+          "norm_cv": 4.196457027765678e-08,
+          "alignment_mean": 1.0,
+          "alignment_stability": 1.2819751242557092e-16,
+          "linguistic_security_index": 0.8813136264446869
+        },
+        "es": {
+          "directional_stability": 0.757134539693343,
+          "cross_layer_coherence": 0.2876536721390363,
+          "mean_norm": 0.9999999799378972,
+          "norm_cv": 5.393366321930261e-08,
+          "alignment_mean": 0.733632724188821,
+          "alignment_stability": 0.2607753864608104,
+          "linguistic_security_index": 0.8154046663804291
+        },
+        "fr": {
+          "directional_stability": 0.7723141570061866,
+          "cross_layer_coherence": 0.30363264876217627,
+          "mean_norm": 0.9999999880334968,
+          "norm_cv": 5.013337283364093e-08,
+          "alignment_mean": 0.7183338162411389,
+          "alignment_stability": 0.26821534232063715,
+          "linguistic_security_index": 0.8174395026075428
+        },
+        "pt": {
+          "directional_stability": 0.7614153478897262,
+          "cross_layer_coherence": 0.3116923607040915,
+          "mean_norm": 0.9999999724358779,
+          "norm_cv": 5.2602553822501825e-08,
+          "alignment_mean": 0.7145972827430769,
+          "alignment_stability": 0.2692284584509045,
+          "linguistic_security_index": 0.8168313358108626
+        },
+        "de": {
+          "directional_stability": 0.7257294108043884,
+          "cross_layer_coherence": 0.2694592970662312,
+          "mean_norm": 0.9999999664473874,
+          "norm_cv": 5.569893297363972e-08,
+          "alignment_mean": 0.6366002795281657,
+          "alignment_stability": 0.27974171465014386,
+          "linguistic_security_index": 0.8044631458965582
+        },
+        "ru": {
+          "directional_stability": 0.7311807131318727,
+          "cross_layer_coherence": 0.3078063723227082,
+          "mean_norm": 0.9999999874622006,
+          "norm_cv": 3.4171530803787355e-08,
+          "alignment_mean": 0.5701159850911016,
+          "alignment_stability": 0.30790495620559444,
+          "linguistic_security_index": 0.8028971380875413
+        },
+        "ar": {
+          "directional_stability": 0.7515989810926073,
+          "cross_layer_coherence": 0.2923148150873954,
+          "mean_norm": 0.9999999970407488,
+          "norm_cv": 4.0457320182944226e-08,
+          "alignment_mean": 0.608629848917216,
+          "alignment_stability": 0.3119932296264798,
+          "linguistic_security_index": 0.8024909070015503
+        },
+        "hi": {
+          "directional_stability": 0.7480595833540129,
+          "cross_layer_coherence": 0.34626981742861823,
+          "mean_norm": 0.9999999694542411,
+          "norm_cv": 5.2762144099854874e-08,
+          "alignment_mean": 0.44349634020086265,
+          "alignment_stability": 0.3271173162256356,
+          "linguistic_security_index": 0.805011832850884
+        },
+        "ja": {
+          "directional_stability": 0.7438068161067527,
+          "cross_layer_coherence": 0.3474805685846541,
+          "mean_norm": 0.9999999830431142,
+          "norm_cv": 4.01798805583512e-08,
+          "alignment_mean": 0.5304170215980811,
+          "alignment_stability": 0.3119354064712041,
+          "linguistic_security_index": 0.8084270614236546
+        },
+        "zh-CN": {
+          "directional_stability": 0.7665758153566263,
+          "cross_layer_coherence": 0.34848230791125695,
+          "mean_norm": 0.9999999993255922,
+          "norm_cv": 4.518253218771653e-08,
+          "alignment_mean": 0.6779769653259679,
+          "alignment_stability": 0.28520978352704124,
+          "linguistic_security_index": 0.818079808231092
+        },
+        "sw": {
+          "directional_stability": 0.7652314396087672,
+          "cross_layer_coherence": 0.36133729282432575,
+          "mean_norm": 0.9999999728156822,
+          "norm_cv": 6.827753222587685e-08,
+          "alignment_mean": 0.513162350210722,
+          "alignment_stability": 0.33194333662790776,
+          "linguistic_security_index": 0.8078352403277766
+        }
+      }
+    },
+    "qwen2-7b-instruct": {
+      "n_layers": 11,
+      "languages": {
+        "en": {
+          "directional_stability": 0.8220805651172218,
+          "cross_layer_coherence": 0.5201369808147963,
+          "mean_norm": 0.999999994943592,
+          "norm_cv": 6.763690422177976e-08,
+          "alignment_mean": 1.0,
+          "alignment_stability": 1.5339935537545145e-16,
+          "linguistic_security_index": 0.9177771763322763
+        },
+        "es": {
+          "directional_stability": 0.8138857028748501,
+          "cross_layer_coherence": 0.5380843981068693,
+          "mean_norm": 1.0000000531107858,
+          "norm_cv": 9.089044300128059e-08,
+          "alignment_mean": 0.7729966599663057,
+          "alignment_stability": 0.29966424471461,
+          "linguistic_security_index": 0.8440801787214516
+        },
+        "fr": {
+          "directional_stability": 0.8311858534524429,
+          "cross_layer_coherence": 0.5571410707991882,
+          "mean_norm": 0.999999990824863,
+          "norm_cv": 5.5425520938728666e-08,
+          "alignment_mean": 0.7782350167399019,
+          "alignment_stability": 0.29979212058901694,
+          "linguistic_security_index": 0.8485928215278193
+        },
+        "pt": {
+          "directional_stability": 0.8241111247866997,
+          "cross_layer_coherence": 0.5417289598793243,
+          "mean_norm": 1.0000000034351257,
+          "norm_cv": 4.814813023591772e-08,
+          "alignment_mean": 0.7773788764276823,
+          "alignment_stability": 0.29433539013913146,
+          "linguistic_security_index": 0.8471461510114375
+        },
+        "de": {
+          "directional_stability": 0.7963655028888292,
+          "cross_layer_coherence": 0.5292664307122026,
+          "mean_norm": 1.000000023333994,
+          "norm_cv": 6.728155678257597e-08,
+          "alignment_mean": 0.7367734159984994,
+          "alignment_stability": 0.3225949142668287,
+          "linguistic_security_index": 0.8350552463130325
+        },
+        "ru": {
+          "directional_stability": 0.8050665607817973,
+          "cross_layer_coherence": 0.5131806266148286,
+          "mean_norm": 1.0000000250962668,
+          "norm_cv": 8.43144828578267e-08,
+          "alignment_mean": 0.7230758691114973,
+          "alignment_stability": 0.32875421069609256,
+          "linguistic_security_index": 0.8325923246719343
+        },
+        "ar": {
+          "directional_stability": 0.7960811547083406,
+          "cross_layer_coherence": 0.5266394766986606,
+          "mean_norm": 0.9999999996474304,
+          "norm_cv": 5.551885739352971e-08,
+          "alignment_mean": 0.7169201571210745,
+          "alignment_stability": 0.364111392792341,
+          "linguistic_security_index": 0.8243122168480757
+        },
+        "hi": {
+          "directional_stability": 0.8033376940778407,
+          "cross_layer_coherence": 0.5822774299064101,
+          "mean_norm": 0.9999999955438672,
+          "norm_cv": 5.316451225724935e-08,
+          "alignment_mean": 0.6513190773678821,
+          "alignment_stability": 0.4359285810486193,
+          "linguistic_security_index": 0.8142197319447484
+        },
+        "ja": {
+          "directional_stability": 0.7929242430290536,
+          "cross_layer_coherence": 0.4595913950794358,
+          "mean_norm": 1.000000013015373,
+          "norm_cv": 9.262910400639499e-08,
+          "alignment_mean": 0.7215932900779976,
+          "alignment_stability": 0.3245981493648087,
+          "linguistic_security_index": 0.825414894265083
+        },
+        "zh-CN": {
+          "directional_stability": 0.8043306783139965,
+          "cross_layer_coherence": 0.4773501968009659,
+          "mean_norm": 1.0000000443068293,
+          "norm_cv": 6.616846240277864e-08,
+          "alignment_mean": 0.8125298678378478,
+          "alignment_stability": 0.23615368883056972,
+          "linguistic_security_index": 0.8511716706396123
+        },
+        "sw": {
+          "directional_stability": 0.8291885245249182,
+          "cross_layer_coherence": 0.5489128337666751,
+          "mean_norm": 1.0000000241906564,
+          "norm_cv": 4.091614241953081e-08,
+          "alignment_mean": 0.665522271770218,
+          "alignment_stability": 0.41846484767799985,
+          "linguistic_security_index": 0.8176464476379135
+        }
+      }
+    },
+    "qwen2.5-3b-instruct": {
+      "n_layers": 14,
+      "languages": {
+        "en": {
+          "directional_stability": 0.8860121332312639,
+          "cross_layer_coherence": 0.5131760299457611,
+          "mean_norm": 1.0000000017307717,
+          "norm_cv": 5.476019522954927e-08,
+          "alignment_mean": 1.0,
+          "alignment_stability": 1.3597399555105182e-16,
+          "linguistic_security_index": 0.9248985067070793
+        },
+        "es": {
+          "directional_stability": 0.8416503169948064,
+          "cross_layer_coherence": 0.4961215779508213,
+          "mean_norm": 0.9999999867406663,
+          "norm_cv": 3.913340335074884e-08,
+          "alignment_mean": 0.7885695644942633,
+          "alignment_stability": 0.24761210578093376,
+          "linguistic_security_index": 0.8553184506396192
+        },
+        "fr": {
+          "directional_stability": 0.8481609832136658,
+          "cross_layer_coherence": 0.4928744694295974,
+          "mean_norm": 0.9999999840287356,
+          "norm_cv": 4.249721868095284e-08,
+          "alignment_mean": 0.7737150322026842,
+          "alignment_stability": 0.2699407312946904,
+          "linguistic_security_index": 0.8501442381324307
+        },
+        "pt": {
+          "directional_stability": 0.8468322318021748,
+          "cross_layer_coherence": 0.5157122941970371,
+          "mean_norm": 1.0000000081211409,
+          "norm_cv": 5.3960099931440115e-08,
+          "alignment_mean": 0.786974622470859,
+          "alignment_stability": 0.24213962441154238,
+          "linguistic_security_index": 0.8597831461569909
+        },
+        "de": {
+          "directional_stability": 0.8245915410956257,
+          "cross_layer_coherence": 0.3742171682947408,
+          "mean_norm": 1.0000000000005798,
+          "norm_cv": 5.223790701389415e-08,
+          "alignment_mean": 0.7077729130868375,
+          "alignment_stability": 0.2641397135822394,
+          "linguistic_security_index": 0.8338161472187593
+        },
+        "ru": {
+          "directional_stability": 0.8398837816452025,
+          "cross_layer_coherence": 0.4357417312514273,
+          "mean_norm": 0.9999999969481509,
+          "norm_cv": 4.454204918846707e-08,
+          "alignment_mean": 0.7108831292652396,
+          "alignment_stability": 0.2416248671801288,
+          "linguistic_security_index": 0.8490469611815342
+        },
+        "ar": {
+          "directional_stability": 0.8444142720035241,
+          "cross_layer_coherence": 0.46532494068638114,
+          "mean_norm": 0.999999980994267,
+          "norm_cv": 4.5497724518842124e-08,
+          "alignment_mean": 0.7237315380435899,
+          "alignment_stability": 0.29876179227996463,
+          "linguistic_security_index": 0.8390269421418158
+        },
+        "hi": {
+          "directional_stability": 0.8277977060787667,
+          "cross_layer_coherence": 0.5090914517601605,
+          "mean_norm": 1.000000017135628,
+          "norm_cv": 4.554709176112548e-08,
+          "alignment_mean": 0.5955712163941103,
+          "alignment_stability": 0.389744925419783,
+          "linguistic_security_index": 0.8196749019881472
+        },
+        "ja": {
+          "directional_stability": 0.8452799805004735,
+          "cross_layer_coherence": 0.3974878876466007,
+          "mean_norm": 0.9999999946091364,
+          "norm_cv": 3.1885838725822175e-08,
+          "alignment_mean": 0.7349201459862394,
+          "alignment_stability": 0.2406957322082125,
+          "linguistic_security_index": 0.8451720424948714
+        },
+        "zh-CN": {
+          "directional_stability": 0.8585591679146976,
+          "cross_layer_coherence": 0.4836529293006814,
+          "mean_norm": 1.0000000041940522,
+          "norm_cv": 4.515867868206113e-08,
+          "alignment_mean": 0.8291176387463273,
+          "alignment_stability": 0.18570424808432173,
+          "linguistic_security_index": 0.8713504388411722
+        },
+        "sw": {
+          "directional_stability": 0.8124668648252362,
+          "cross_layer_coherence": 0.4207420740050253,
+          "mean_norm": 0.9999999979846287,
+          "norm_cv": 5.229048883726998e-08,
+          "alignment_mean": 0.6020640971089536,
+          "alignment_stability": 0.4016230024173309,
+          "linguistic_security_index": 0.8037453536768278
+        }
+      }
+    },
+    "qwen2.5-7b-instruct": {
+      "n_layers": 11,
+      "languages": {
+        "en": {
+          "directional_stability": 0.8290573782477209,
+          "cross_layer_coherence": 0.5589158455645132,
+          "mean_norm": 0.9999999816692284,
+          "norm_cv": 5.4073825406710445e-08,
+          "alignment_mean": 1.0,
+          "alignment_stability": 8.856515911953196e-17,
+          "linguistic_security_index": 0.9234966394580729
+        },
+        "es": {
+          "directional_stability": 0.82812974304222,
+          "cross_layer_coherence": 0.5725157266948716,
+          "mean_norm": 0.9999999940769708,
+          "norm_cv": 8.915418410292956e-08,
+          "alignment_mean": 0.79476690046085,
+          "alignment_stability": 0.2763462514819368,
+          "linguistic_security_index": 0.8559940985581062
+        },
+        "fr": {
+          "directional_stability": 0.8432159708037295,
+          "cross_layer_coherence": 0.5931992187449967,
+          "mean_norm": 0.9999999946938002,
+          "norm_cv": 7.654801828428174e-08,
+          "alignment_mean": 0.7887070582969078,
+          "alignment_stability": 0.2894150336701106,
+          "linguistic_security_index": 0.8571981211390586
+        },
+        "pt": {
+          "directional_stability": 0.8353254666056099,
+          "cross_layer_coherence": 0.5678514615392195,
+          "mean_norm": 1.0000000108778169,
+          "norm_cv": 7.498751285669067e-08,
+          "alignment_mean": 0.8008368588557083,
+          "alignment_stability": 0.2714622662694261,
+          "linguistic_security_index": 0.8575315307038689
+        },
+        "de": {
+          "directional_stability": 0.8074489335195363,
+          "cross_layer_coherence": 0.5548101956720218,
+          "mean_norm": 0.9999999959943945,
+          "norm_cv": 6.003945539485711e-08,
+          "alignment_mean": 0.7533417110929451,
+          "alignment_stability": 0.30934092068796976,
+          "linguistic_security_index": 0.8429471459670885
+        },
+        "ru": {
+          "directional_stability": 0.8123460818550623,
+          "cross_layer_coherence": 0.5439390621226937,
+          "mean_norm": 1.0000000213202074,
+          "norm_cv": 7.926673009954451e-08,
+          "alignment_mean": 0.7498522023799048,
+          "alignment_stability": 0.29756552727146846,
+          "linguistic_security_index": 0.8451442413626699
+        },
+        "ar": {
+          "directional_stability": 0.7997508612845776,
+          "cross_layer_coherence": 0.5159404876189961,
+          "mean_norm": 1.0000000068130332,
+          "norm_cv": 5.1647715571891505e-08,
+          "alignment_mean": 0.7419631093195878,
+          "alignment_stability": 0.34499309350802043,
+          "linguistic_security_index": 0.8282131323240127
+        },
+        "hi": {
+          "directional_stability": 0.8129956976326833,
+          "cross_layer_coherence": 0.6193660324696053,
+          "mean_norm": 1.0000000049974467,
+          "norm_cv": 8.702238784541941e-08,
+          "alignment_mean": 0.6912197446338718,
+          "alignment_stability": 0.3976033508994345,
+          "linguistic_security_index": 0.8296443567823305
+        },
+        "ja": {
+          "directional_stability": 0.7905786552634017,
+          "cross_layer_coherence": 0.4493097853019973,
+          "mean_norm": 0.9999999845845985,
+          "norm_cv": 7.346381801152735e-08,
+          "alignment_mean": 0.7270408576137354,
+          "alignment_stability": 0.31170575047869,
+          "linguistic_security_index": 0.8270595990850478
+        },
+        "zh-CN": {
+          "directional_stability": 0.8155119621878819,
+          "cross_layer_coherence": 0.49724009972014765,
+          "mean_norm": 1.0000000185375881,
+          "norm_cv": 7.687556174765415e-08,
+          "alignment_mean": 0.8250571417255148,
+          "alignment_stability": 0.23008807333398534,
+          "linguistic_security_index": 0.856571970186117
+        },
+        "sw": {
+          "directional_stability": 0.8286527021852205,
+          "cross_layer_coherence": 0.5494244234514115,
+          "mean_norm": 1.0000000171129653,
+          "norm_cv": 6.074465691926166e-08,
+          "alignment_mean": 0.6829724159966957,
+          "alignment_stability": 0.4087012228804278,
+          "linguistic_security_index": 0.8200843197983079
+        }
+      }
+    },
+    "qwen3-4b-instruct": {
+      "n_layers": 14,
+      "languages": {
+        "en": {
+          "directional_stability": 0.8749771479293844,
+          "cross_layer_coherence": 0.4788188268053192,
+          "mean_norm": 1.0000000138645573,
+          "norm_cv": 7.096262161493835e-08,
+          "alignment_mean": 1.0,
+          "alignment_stability": 1.2234061875101336e-16,
+          "linguistic_security_index": 0.9192244791011825
+        },
+        "es": {
+          "directional_stability": 0.8424170820787246,
+          "cross_layer_coherence": 0.44983729045099197,
+          "mean_norm": 1.0000000371256839,
+          "norm_cv": 8.809376595165985e-08,
+          "alignment_mean": 0.815660958912516,
+          "alignment_stability": 0.23144050707791214,
+          "linguistic_security_index": 0.853671647773295
+        },
+        "fr": {
+          "directional_stability": 0.8547866056785313,
+          "cross_layer_coherence": 0.46994785756261237,
+          "mean_norm": 1.000000009581144,
+          "norm_cv": 5.980337955154608e-08,
+          "alignment_mean": 0.8058331252794699,
+          "alignment_stability": 0.2450404918556863,
+          "linguistic_security_index": 0.8543316699903765
+        },
+        "pt": {
+          "directional_stability": 0.8474676357830576,
+          "cross_layer_coherence": 0.46180712608517677,
+          "mean_norm": 1.0000000180909505,
+          "norm_cv": 7.707592234770414e-08,
+          "alignment_mean": 0.8179506661237841,
+          "alignment_stability": 0.2280263419573551,
+          "linguistic_security_index": 0.8566527404752099
+        },
+        "de": {
+          "directional_stability": 0.8141630191339202,
+          "cross_layer_coherence": 0.3707720995012608,
+          "mean_norm": 0.9999999748427976,
+          "norm_cv": 9.837498549891613e-08,
+          "alignment_mean": 0.7290387051074784,
+          "alignment_stability": 0.28073540126518887,
+          "linguistic_security_index": 0.827933014919354
+        },
+        "ru": {
+          "directional_stability": 0.8404752733718114,
+          "cross_layer_coherence": 0.4333953043879096,
+          "mean_norm": 0.9999999907152499,
+          "norm_cv": 1.111952614419885e-07,
+          "alignment_mean": 0.7437038949083761,
+          "alignment_stability": 0.2759468149149144,
+          "linguistic_security_index": 0.8402470906924211
+        },
+        "ar": {
+          "directional_stability": 0.8498909363391436,
+          "cross_layer_coherence": 0.4521728739999361,
+          "mean_norm": 1.0000000077063211,
+          "norm_cv": 1.0718724836077674e-07,
+          "alignment_mean": 0.7385952369081873,
+          "alignment_stability": 0.3332152634464278,
+          "linguistic_security_index": 0.8294541336339659
+        },
+        "hi": {
+          "directional_stability": 0.8197354764433713,
+          "cross_layer_coherence": 0.45902500061234036,
+          "mean_norm": 0.9999999555924504,
+          "norm_cv": 5.66657637514694e-08,
+          "alignment_mean": 0.7223092303367492,
+          "alignment_stability": 0.3209727538309584,
+          "linguistic_security_index": 0.8296018570077834
+        },
+        "ja": {
+          "directional_stability": 0.8549272814406792,
+          "cross_layer_coherence": 0.4547994221510415,
+          "mean_norm": 1.0000000466752061,
+          "norm_cv": 6.81001826658888e-08,
+          "alignment_mean": 0.7749109005256191,
+          "alignment_stability": 0.26978453056635393,
+          "linguistic_security_index": 0.846269688282331
+        },
+        "zh-CN": {
+          "directional_stability": 0.8868415060957848,
+          "cross_layer_coherence": 0.5108054283783787,
+          "mean_norm": 1.0000000113117127,
+          "norm_cv": 4.4673392702180366e-08,
+          "alignment_mean": 0.8608735942285624,
+          "alignment_stability": 0.16888033958873314,
+          "linguistic_security_index": 0.882485770743739
+        },
+        "sw": {
+          "directional_stability": 0.8486380180538118,
+          "cross_layer_coherence": 0.4859300153747652,
+          "mean_norm": 0.9999999728510272,
+          "norm_cv": 5.602238050508582e-08,
+          "alignment_mean": 0.6845561349296805,
+          "alignment_stability": 0.36503902658151555,
+          "linguistic_security_index": 0.8255612335275981
+        }
+      }
+    },
+    "qwen3-8b-instruct": {
+      "n_layers": 14,
+      "languages": {
+        "en": {
+          "directional_stability": 0.8684205943835926,
+          "cross_layer_coherence": 0.45529615036047283,
+          "mean_norm": 1.000000009253225,
+          "norm_cv": 7.900017341487831e-08,
+          "alignment_mean": 1.0,
+          "alignment_stability": 1.4835979218054372e-16,
+          "linguistic_security_index": 0.9154645733429648
+        },
+        "es": {
+          "directional_stability": 0.8294826778548772,
+          "cross_layer_coherence": 0.40215225588583114,
+          "mean_norm": 1.0000000112204053,
+          "norm_cv": 6.639593574222663e-08,
+          "alignment_mean": 0.7804643231360711,
+          "alignment_stability": 0.2630184843143509,
+          "linguistic_security_index": 0.8381997290400169
+        },
+        "fr": {
+          "directional_stability": 0.8487805304458867,
+          "cross_layer_coherence": 0.43882490735089896,
+          "mean_norm": 1.000000023172519,
+          "norm_cv": 6.494510106291774e-08,
+          "alignment_mean": 0.7710995732691576,
+          "alignment_stability": 0.27205249619516775,
+          "linguistic_security_index": 0.8429375394395309
+        },
+        "pt": {
+          "directional_stability": 0.8318488992992197,
+          "cross_layer_coherence": 0.41616844628906946,
+          "mean_norm": 1.0000000049659927,
+          "norm_cv": 7.392842644770945e-08,
+          "alignment_mean": 0.7798358492177435,
+          "alignment_stability": 0.26668500000189943,
+          "linguistic_security_index": 0.8393308997159548
+        },
+        "de": {
+          "directional_stability": 0.8028932702032319,
+          "cross_layer_coherence": 0.3236611086158239,
+          "mean_norm": 0.9999999831930712,
+          "norm_cv": 7.638084305418732e-08,
+          "alignment_mean": 0.7056936178408126,
+          "alignment_stability": 0.2918649256691358,
+          "linguistic_security_index": 0.8178530468398872
+        },
+        "ru": {
+          "directional_stability": 0.8181084445582639,
+          "cross_layer_coherence": 0.33516902424816714,
+          "mean_norm": 1.0000000107380733,
+          "norm_cv": 1.0464363415475114e-07,
+          "alignment_mean": 0.6897407117585149,
+          "alignment_stability": 0.3084396839791055,
+          "linguistic_security_index": 0.817049736445119
+        },
+        "ar": {
+          "directional_stability": 0.8435534906483966,
+          "cross_layer_coherence": 0.39800438510270086,
+          "mean_norm": 1.000000021372481,
+          "norm_cv": 4.0858104889810064e-08,
+          "alignment_mean": 0.7181443167773673,
+          "alignment_stability": 0.33645505946572957,
+          "linguistic_security_index": 0.8210809593879286
+        },
+        "hi": {
+          "directional_stability": 0.8247288494891757,
+          "cross_layer_coherence": 0.4556977858294547,
+          "mean_norm": 0.9999999976363183,
+          "norm_cv": 8.783010638628476e-08,
+          "alignment_mean": 0.6633358371433836,
+          "alignment_stability": 0.358299772993176,
+          "linguistic_security_index": 0.8204783642090081
+        },
+        "ja": {
+          "directional_stability": 0.8323866769827135,
+          "cross_layer_coherence": 0.35534084387377823,
+          "mean_norm": 1.0000000473582025,
+          "norm_cv": 1.0626210631417082e-07,
+          "alignment_mean": 0.6924851919116726,
+          "alignment_stability": 0.3115573612398542,
+          "linguistic_security_index": 0.8205765732315714
+        },
+        "zh-CN": {
+          "directional_stability": 0.8779324423153267,
+          "cross_layer_coherence": 0.47530467703703355,
+          "mean_norm": 1.0000000176080612,
+          "norm_cv": 4.369825210932603e-08,
+          "alignment_mean": 0.8261501127197362,
+          "alignment_stability": 0.19887104668517033,
+          "linguistic_security_index": 0.8694368673231894
+        },
+        "sw": {
+          "directional_stability": 0.8401779867442607,
+          "cross_layer_coherence": 0.48113031415917457,
+          "mean_norm": 1.0000000474203294,
+          "norm_cv": 6.363467935226998e-08,
+          "alignment_mean": 0.6510537024239984,
+          "alignment_stability": 0.3726528526013628,
+          "linguistic_security_index": 0.8220003085539188
+        }
+      }
+    },
+    "smollm3-3b": {
+      "n_layers": 14,
+      "languages": {
+        "en": {
+          "directional_stability": 0.8836788978221707,
+          "cross_layer_coherence": 0.6486756097459363,
+          "mean_norm": 1.0000000133745939,
+          "norm_cv": 4.167726639506164e-08,
+          "alignment_mean": 1.0,
+          "alignment_stability": 1.3597399555105182e-16,
+          "linguistic_security_index": 0.9415443030266968
+        },
+        "es": {
+          "directional_stability": 0.8921544888769666,
+          "cross_layer_coherence": 0.6895567988197299,
+          "mean_norm": 1.000000034887541,
+          "norm_cv": 7.349268107269042e-08,
+          "alignment_mean": 0.8791483144116449,
+          "alignment_stability": 0.19303939690985925,
+          "linguistic_security_index": 0.899454043361452
+        },
+        "fr": {
+          "directional_stability": 0.8923713172168655,
+          "cross_layer_coherence": 0.6978825245758236,
+          "mean_norm": 0.9999999909854242,
+          "norm_cv": 7.429979397411992e-08,
+          "alignment_mean": 0.8637306742406843,
+          "alignment_stability": 0.21613221067885927,
+          "linguistic_security_index": 0.8947486589794228
+        },
+        "pt": {
+          "directional_stability": 0.894703673694882,
+          "cross_layer_coherence": 0.7054029389751917,
+          "mean_norm": 0.9999999951308471,
+          "norm_cv": 4.462663051345058e-08,
+          "alignment_mean": 0.876738194302997,
+          "alignment_stability": 0.19290703466059345,
+          "linguistic_security_index": 0.9017865567619532
+        },
+        "de": {
+          "directional_stability": 0.8643168372822392,
+          "cross_layer_coherence": 0.6045044799663154,
+          "mean_norm": 1.0000000126494824,
+          "norm_cv": 6.642251891681047e-08,
+          "alignment_mean": 0.8287462740750057,
+          "alignment_stability": 0.2231803046038284,
+          "linguistic_security_index": 0.8778075718994824
+        },
+        "ru": {
+          "directional_stability": 0.8265869561983034,
+          "cross_layer_coherence": 0.5047284176283189,
+          "mean_norm": 1.0000000034572967,
+          "norm_cv": 4.2599218941442174e-08,
+          "alignment_mean": 0.7423998645578959,
+          "alignment_stability": 0.21907891267633192,
+          "linguistic_security_index": 0.8616446829094401
+        },
+        "ar": {
+          "directional_stability": 0.8584846940912022,
+          "cross_layer_coherence": 0.5871634780644269,
+          "mean_norm": 1.000000008926829,
+          "norm_cv": 6.142415124716554e-08,
+          "alignment_mean": 0.794158100975262,
+          "alignment_stability": 0.2769181918280347,
+          "linguistic_security_index": 0.8614764582064072
+        },
+        "hi": {
+          "directional_stability": 0.8671124983752324,
+          "cross_layer_coherence": 0.6141513188464648,
+          "mean_norm": 0.9999999761188859,
+          "norm_cv": 4.002084568310183e-08,
+          "alignment_mean": 0.7705412726102792,
+          "alignment_stability": 0.2882287810188607,
+          "linguistic_security_index": 0.8631007718927857
+        },
+        "ja": {
+          "directional_stability": 0.8248655870514536,
+          "cross_layer_coherence": 0.4671086188886787,
+          "mean_norm": 1.000000000716254,
+          "norm_cv": 6.59257445157396e-08,
+          "alignment_mean": 0.6459740581394283,
+          "alignment_stability": 0.2585284388346341,
+          "linguistic_security_index": 0.8468646495524219
+        },
+        "zh-CN": {
+          "directional_stability": 0.8652067076134305,
+          "cross_layer_coherence": 0.5867740168478363,
+          "mean_norm": 0.9999999927406439,
+          "norm_cv": 6.377837418310727e-08,
+          "alignment_mean": 0.7910137078356759,
+          "alignment_stability": 0.2203846791466347,
+          "linguistic_security_index": 0.8764014048264062
+        },
+        "sw": {
+          "directional_stability": 0.8975645989933388,
+          "cross_layer_coherence": 0.7217799392617503,
+          "mean_norm": 0.9999999795292333,
+          "norm_cv": 4.5734374484781934e-08,
+          "alignment_mean": 0.7611034615452276,
+          "alignment_stability": 0.33622071385036956,
+          "linguistic_security_index": 0.8683628773857002
+        }
+      }
+    },
+    "stablelm-2-1.6b-chat": {
+      "n_layers": 10,
+      "languages": {
+        "en": {
+          "directional_stability": 0.703853197448019,
+          "cross_layer_coherence": 0.2994533679433939,
+          "mean_norm": 0.9999999979112548,
+          "norm_cv": 3.943314940763939e-08,
+          "alignment_mean": 1.0,
+          "alignment_stability": 1.3136335981433191e-16,
+          "linguistic_security_index": 0.8754133108156392
+        },
+        "es": {
+          "directional_stability": 0.6869621413178638,
+          "cross_layer_coherence": 0.24481984965750003,
+          "mean_norm": 0.9999999825711706,
+          "norm_cv": 6.422286662442138e-08,
+          "alignment_mean": 0.759033059373233,
+          "alignment_stability": 0.18711394126053302,
+          "linguistic_security_index": 0.8196942475010706
+        },
+        "fr": {
+          "directional_stability": 0.6730104189079464,
+          "cross_layer_coherence": 0.23060132949744905,
+          "mean_norm": 0.9999999756556501,
+          "norm_cv": 3.93095314759983e-08,
+          "alignment_mean": 0.7272360616329456,
+          "alignment_stability": 0.23465831819928795,
+          "linguistic_security_index": 0.8042868791734695
+        },
+        "pt": {
+          "directional_stability": 0.6978528998524278,
+          "cross_layer_coherence": 0.2196252625768411,
+          "mean_norm": 0.9999999812650252,
+          "norm_cv": 4.1918585005764803e-08,
+          "alignment_mean": 0.7599550301413917,
+          "alignment_stability": 0.19455227669967487,
+          "linguistic_security_index": 0.8160466906490936
+        },
+        "de": {
+          "directional_stability": 0.7107107963113516,
+          "cross_layer_coherence": 0.36987298942617575,
+          "mean_norm": 0.9999999906845641,
+          "norm_cv": 5.432766746697734e-08,
+          "alignment_mean": 0.5940743079285127,
+          "alignment_stability": 0.22276508799688896,
+          "linguistic_security_index": 0.8293816876360518
+        },
+        "ru": {
+          "directional_stability": 0.6735860810542058,
+          "cross_layer_coherence": 0.2549510652081045,
+          "mean_norm": 0.999999976335069,
+          "norm_cv": 4.80830381359555e-08,
+          "alignment_mean": 0.6068736836903886,
+          "alignment_stability": 0.24146881353660693,
+          "linguistic_security_index": 0.8056999278778776
+        },
+        "ar": {
+          "directional_stability": 0.6854837745329887,
+          "cross_layer_coherence": 0.294878978875951,
+          "mean_norm": 0.9999999778300621,
+          "norm_cv": 4.8770850439972946e-08,
+          "alignment_mean": 0.47274074038941477,
+          "alignment_stability": 0.25304442659189835,
+          "linguistic_security_index": 0.8092842253354303
+        },
+        "hi": {
+          "directional_stability": 0.7070137082914123,
+          "cross_layer_coherence": 0.2573820915495903,
+          "mean_norm": 0.9999999816779275,
+          "norm_cv": 3.8899820385579575e-08,
+          "alignment_mean": 0.5112839632328612,
+          "alignment_stability": 0.2872337714893853,
+          "linguistic_security_index": 0.798741022382824
+        },
+        "ja": {
+          "directional_stability": 0.659696784006975,
+          "cross_layer_coherence": 0.2935268551315439,
+          "mean_norm": 1.000000002310029,
+          "norm_cv": 4.752218281785157e-08,
+          "alignment_mean": 0.4509277304516708,
+          "alignment_stability": 0.22464079827333522,
+          "linguistic_security_index": 0.8129927434434354
+        },
+        "zh-CN": {
+          "directional_stability": 0.7325917945174963,
+          "cross_layer_coherence": 0.3571020695838682,
+          "mean_norm": 1.0000000136922718,
+          "norm_cv": 2.6668506046828786e-08,
+          "alignment_mean": 0.5445395069255824,
+          "alignment_stability": 0.2607406719928154,
+          "linguistic_security_index": 0.8210265583473402
+        },
+        "sw": {
+          "directional_stability": 0.679368014967975,
+          "cross_layer_coherence": 0.20543239342997205,
+          "mean_norm": 0.9999999783406747,
+          "norm_cv": 6.103124523120618e-08,
+          "alignment_mean": 0.58670999450363,
+          "alignment_stability": 0.23736512405792087,
+          "linguistic_security_index": 0.8012587547774518
+        }
+      }
+    },
+    "stablelm-3b": {
+      "n_layers": 12,
+      "languages": {
+        "en": {
+          "directional_stability": 0.8091192974401527,
+          "cross_layer_coherence": 0.42518255350979867,
+          "mean_norm": 0.9999999763178314,
+          "norm_cv": 4.3861165442848275e-08,
+          "alignment_mean": 1.0,
+          "alignment_stability": 1.6653345369377348e-16,
+          "linguistic_security_index": 0.9042877204034525
+        },
+        "es": {
+          "directional_stability": 0.8216438908790514,
+          "cross_layer_coherence": 0.45952647366825833,
+          "mean_norm": 0.9999999725115951,
+          "norm_cv": 1.010964623402722e-07,
+          "alignment_mean": 0.6805347669861788,
+          "alignment_stability": 0.2916658406817391,
+          "linguistic_security_index": 0.8372298101238633
+        },
+        "fr": {
+          "directional_stability": 0.8053172934972566,
+          "cross_layer_coherence": 0.4661029074255777,
+          "mean_norm": 0.9999999778294176,
+          "norm_cv": 9.437687887110593e-08,
+          "alignment_mean": 0.5864973379486389,
+          "alignment_stability": 0.26806640685484784,
+          "linguistic_security_index": 0.8419108998074226
+        },
+        "pt": {
+          "directional_stability": 0.7380701972609184,
+          "cross_layer_coherence": 0.38333860417565446,
+          "mean_norm": 1.000000006313952,
+          "norm_cv": 9.684259864825e-08,
+          "alignment_mean": 0.6864766856079739,
+          "alignment_stability": 0.27324230517409764,
+          "linguistic_security_index": 0.8218654996753975
+        },
+        "de": {
+          "directional_stability": 0.7291295427397239,
+          "cross_layer_coherence": 0.4020206860178703,
+          "mean_norm": 1.0000000050125009,
+          "norm_cv": 1.2505482391730576e-07,
+          "alignment_mean": -0.30525023830026615,
+          "alignment_stability": 0.4567100532590685,
+          "linguistic_security_index": 0.7772162340162262
+        },
+        "ru": {
+          "directional_stability": 0.8397422984944753,
+          "cross_layer_coherence": 0.5280008332858964,
+          "mean_norm": 0.9999999877368534,
+          "norm_cv": 1.3625667217077518e-07,
+          "alignment_mean": 0.6004467642545482,
+          "alignment_stability": 0.3816075329596499,
+          "linguistic_security_index": 0.8255659741684659
+        },
+        "ar": {
+          "directional_stability": 0.7836687364884767,
+          "cross_layer_coherence": 0.40181690447211754,
+          "mean_norm": 0.9999999697062876,
+          "norm_cv": 1.3845413111890223e-07,
+          "alignment_mean": 0.5782949235287665,
+          "alignment_stability": 0.35570655593653194,
+          "linguistic_security_index": 0.8092590315224085
+        },
+        "hi": {
+          "directional_stability": 0.8207369167799906,
+          "cross_layer_coherence": 0.5015121581843675,
+          "mean_norm": 0.9999999611212388,
+          "norm_cv": 1.2083528566232776e-07,
+          "alignment_mean": 0.5343432901870541,
+          "alignment_stability": 0.38783174751034377,
+          "linguistic_security_index": 0.8183231672841375
+        },
+        "ja": {
+          "directional_stability": 0.8336570651377294,
+          "cross_layer_coherence": 0.5305485892428837,
+          "mean_norm": 0.9999999680708486,
+          "norm_cv": 8.7560335824705e-08,
+          "alignment_mean": 0.5666745227236312,
+          "alignment_stability": 0.3798815329806221,
+          "linguistic_security_index": 0.8255553016623373
+        },
+        "zh-CN": {
+          "directional_stability": 0.8412555521298607,
+          "cross_layer_coherence": 0.4836789645028986,
+          "mean_norm": 0.9999999947071858,
+          "norm_cv": 7.91153468081128e-08,
+          "alignment_mean": 0.6213150988738896,
+          "alignment_stability": 0.3401045926600738,
+          "linguistic_security_index": 0.8305906466352397
+        },
+        "sw": {
+          "directional_stability": 0.8486977451690066,
+          "cross_layer_coherence": 0.5489233319262092,
+          "mean_norm": 0.9999999447735607,
+          "norm_cv": 1.155374980586346e-07,
+          "alignment_mean": 0.5358013509302061,
+          "alignment_stability": 0.3871659419285476,
+          "linguistic_security_index": 0.8279111202703905
+        }
+      }
+    },
+    "tinyllama": {
+      "n_layers": 9,
+      "languages": {
+        "en": {
+          "directional_stability": 0.7223250193048312,
+          "cross_layer_coherence": 0.41245687425600613,
+          "mean_norm": 0.9999999404213571,
+          "norm_cv": 1.3100939295892237e-07,
+          "alignment_mean": 1.0,
+          "alignment_stability": 1.2819751242557092e-16,
+          "linguistic_security_index": 0.8918477039427564
+        },
+        "es": {
+          "directional_stability": 0.7166678685015986,
+          "cross_layer_coherence": 0.36848217543381545,
+          "mean_norm": 0.9999999128206011,
+          "norm_cv": 1.5459055873672675e-07,
+          "alignment_mean": 0.36786557762508465,
+          "alignment_stability": 0.13160173948320808,
+          "linguistic_security_index": 0.852743281973485
+        },
+        "fr": {
+          "directional_stability": 0.7327442974738573,
+          "cross_layer_coherence": 0.3896869466525687,
+          "mean_norm": 0.999999945545353,
+          "norm_cv": 1.3155705776221185e-07,
+          "alignment_mean": 0.28162467468011165,
+          "alignment_stability": 0.11624442016112545,
+          "linguistic_security_index": 0.8612427675862575
+        },
+        "pt": {
+          "directional_stability": 0.7280861192132579,
+          "cross_layer_coherence": 0.38278020646799615,
+          "mean_norm": 0.9999999215954346,
+          "norm_cv": 1.5744902768726045e-07,
+          "alignment_mean": 0.30651350378773073,
+          "alignment_stability": 0.11694536733138328,
+          "linguistic_security_index": 0.859621909515054
+        },
+        "de": {
+          "directional_stability": 0.7104973147137508,
+          "cross_layer_coherence": 0.3603418765226849,
+          "mean_norm": 0.9999999134928999,
+          "norm_cv": 1.7022418612422476e-07,
+          "alignment_mean": 0.34062603278292586,
+          "alignment_stability": 0.13667280406731794,
+          "linguistic_security_index": 0.8496866553316785
+        },
+        "ru": {
+          "directional_stability": 0.701170571974661,
+          "cross_layer_coherence": 0.3604122123865811,
+          "mean_norm": 0.9999998822413504,
+          "norm_cv": 1.3623239266323976e-07,
+          "alignment_mean": 0.2840836729693643,
+          "alignment_stability": 0.15063608940000583,
+          "linguistic_security_index": 0.8450387916370556
+        },
+        "ar": {
+          "directional_stability": 0.7185046127984429,
+          "cross_layer_coherence": 0.3866658770021513,
+          "mean_norm": 0.9999998333996043,
+          "norm_cv": 2.465399367126123e-07,
+          "alignment_mean": 0.07287860254207795,
+          "alignment_stability": 0.04524336080639162,
+          "linguistic_security_index": 0.8768354093884921
+        },
+        "hi": {
+          "directional_stability": 0.7232145539282848,
+          "cross_layer_coherence": 0.4008339399951865,
+          "mean_norm": 0.9999998228411806,
+          "norm_cv": 3.011272770358444e-07,
+          "alignment_mean": 0.06754941676870242,
+          "alignment_stability": 0.049832866381931316,
+          "linguistic_security_index": 0.8780477698631318
+        },
+        "ja": {
+          "directional_stability": 0.7139221400362774,
+          "cross_layer_coherence": 0.38068290273406613,
+          "mean_norm": 0.9999998857440074,
+          "norm_cv": 2.0169862291840618e-07,
+          "alignment_mean": 0.22629704198407724,
+          "alignment_stability": 0.08937359592913707,
+          "linguistic_security_index": 0.8644821809393528
+        },
+        "zh-CN": {
+          "directional_stability": 0.7241411026846722,
+          "cross_layer_coherence": 0.4078378614364121,
+          "mean_norm": 0.9999999152334144,
+          "norm_cv": 1.3725973948233278e-07,
+          "alignment_mean": 0.3355493056713974,
+          "alignment_stability": 0.15117497369413777,
+          "linguistic_security_index": 0.8537035927766662
+        },
+        "sw": {
+          "directional_stability": 0.7147915669618794,
+          "cross_layer_coherence": 0.39565639291165733,
+          "mean_norm": 0.9999999038556278,
+          "norm_cv": 2.2301203081763502e-07,
+          "alignment_mean": 0.010478350588249486,
+          "alignment_stability": 0.042198183832781615,
+          "linguistic_security_index": 0.878256393272989
+        }
+      }
+    },
+    "yi-1.5-6b-chat": {
+      "n_layers": 12,
+      "languages": {
+        "en": {
+          "directional_stability": 0.697557880133362,
+          "cross_layer_coherence": 0.2796636519680811,
+          "mean_norm": 0.9999999356546022,
+          "norm_cv": 9.951161048893541e-08,
+          "alignment_mean": 1.0,
+          "alignment_stability": 9.614813431917819e-17,
+          "linguistic_security_index": 0.8721526666347778
+        },
+        "es": {
+          "directional_stability": 0.7241059745995078,
+          "cross_layer_coherence": 0.2957639224383497,
+          "mean_norm": 0.9999999985755994,
+          "norm_cv": 1.5802452959893382e-07,
+          "alignment_mean": 0.48090886408632283,
+          "alignment_stability": 0.5930193236782723,
+          "linguistic_security_index": 0.7292288667040318
+        },
+        "fr": {
+          "directional_stability": 0.6667361930559063,
+          "cross_layer_coherence": 0.27025431143724604,
+          "mean_norm": 0.9999999823704632,
+          "norm_cv": 7.66713753331883e-08,
+          "alignment_mean": 0.6615079446249013,
+          "alignment_stability": 0.31577263829607316,
+          "linguistic_security_index": 0.7881806343197818
+        },
+        "pt": {
+          "directional_stability": 0.7421223380079316,
+          "cross_layer_coherence": 0.3016918413339721,
+          "mean_norm": 1.0000000445354553,
+          "norm_cv": 1.3944998912348396e-07,
+          "alignment_mean": 0.4421712374397882,
+          "alignment_stability": 0.6318463623977504,
+          "linguistic_security_index": 0.7225151469558031
+        },
+        "de": {
+          "directional_stability": 0.7469882224918364,
+          "cross_layer_coherence": 0.33210163456898767,
+          "mean_norm": 0.9999999683270345,
+          "norm_cv": 1.1452430356660043e-07,
+          "alignment_mean": 0.45383643868047147,
+          "alignment_stability": 0.5992272640130016,
+          "linguistic_security_index": 0.7350793874982767
+        },
+        "ru": {
+          "directional_stability": 0.766337160133371,
+          "cross_layer_coherence": 0.3204482277009022,
+          "mean_norm": 1.0000000095384887,
+          "norm_cv": 9.720038183756396e-08,
+          "alignment_mean": 0.342613181473934,
+          "alignment_stability": 0.6421149327532807,
+          "linguistic_security_index": 0.7253194159908685
+        },
+        "ar": {
+          "directional_stability": 0.7395730317047728,
+          "cross_layer_coherence": 0.27487063413360335,
+          "mean_norm": 1.0000000088659091,
+          "norm_cv": 1.610049636024558e-07,
+          "alignment_mean": 0.3348213559406999,
+          "alignment_stability": 0.6300158432682955,
+          "linguistic_security_index": 0.7193014571614823
+        },
+        "hi": {
+          "directional_stability": 0.7051602259784222,
+          "cross_layer_coherence": 0.2726873156709565,
+          "mean_norm": 0.9999999756217539,
+          "norm_cv": 1.7281750694032414e-07,
+          "alignment_mean": 0.33221901239811386,
+          "alignment_stability": 0.6266563265976149,
+          "linguistic_security_index": 0.7155668178523918
+        },
+        "ja": {
+          "directional_stability": 0.7118929521312656,
+          "cross_layer_coherence": 0.2726865753577507,
+          "mean_norm": 0.9999999764791974,
+          "norm_cv": 9.57662292707931e-08,
+          "alignment_mean": 0.6557943291436357,
+          "alignment_stability": 0.3142354462516717,
+          "linguistic_security_index": 0.7945135554316518
+        },
+        "zh-CN": {
+          "directional_stability": 0.7169054258307755,
+          "cross_layer_coherence": 0.3007494837937611,
+          "mean_norm": 1.0000000428552305,
+          "norm_cv": 7.937978748494352e-08,
+          "alignment_mean": 0.7565745530775206,
+          "alignment_stability": 0.2564863035659252,
+          "linguistic_security_index": 0.8130852679666389
+        },
+        "sw": {
+          "directional_stability": 0.8016186198501175,
+          "cross_layer_coherence": 0.36127362982587685,
+          "mean_norm": 0.9999999912425238,
+          "norm_cv": 1.2097316754673875e-07,
+          "alignment_mean": 0.3950313517019528,
+          "alignment_stability": 0.5643843979119652,
+          "linguistic_security_index": 0.7542654014882161
+        }
+      }
+    },
+    "yi-6b": {
+      "n_layers": 12,
+      "languages": {
+        "en": {
+          "directional_stability": 0.6936557931432822,
+          "cross_layer_coherence": 0.2690107769238144,
+          "mean_norm": 0.9999999805256775,
+          "norm_cv": 5.6203349125062415e-08,
+          "alignment_mean": 1.0,
+          "alignment_stability": 1.6024689053196368e-16,
+          "linguistic_security_index": 0.8703333072075499
+        },
+        "es": {
+          "directional_stability": 0.708461331711472,
+          "cross_layer_coherence": 0.277004655336018,
+          "mean_norm": 0.9999999777760956,
+          "norm_cv": 1.1555296156293276e-07,
+          "alignment_mean": 0.5173213301467406,
+          "alignment_stability": 0.5337430083744751,
+          "linguistic_security_index": 0.739747467399077
+        },
+        "fr": {
+          "directional_stability": 0.7658231621687341,
+          "cross_layer_coherence": 0.33168332430251685,
+          "mean_norm": 1.000000046880143,
+          "norm_cv": 1.0195168671802895e-07,
+          "alignment_mean": 0.4284074634139243,
+          "alignment_stability": 0.5980267131068262,
+          "linguistic_security_index": 0.7376816070442782
+        },
+        "pt": {
+          "directional_stability": 0.7570114835292873,
+          "cross_layer_coherence": 0.31586147660293284,
+          "mean_norm": 0.9999999669952754,
+          "norm_cv": 1.1320325332614411e-07,
+          "alignment_mean": 0.45369798896929026,
+          "alignment_stability": 0.584386363816121,
+          "linguistic_security_index": 0.7380125007616839
+        },
+        "de": {
+          "directional_stability": 0.7273925864809229,
+          "cross_layer_coherence": 0.30367698532279613,
+          "mean_norm": 1.0000000137471214,
+          "norm_cv": 1.300510124853389e-07,
+          "alignment_mean": 0.4486727371308093,
+          "alignment_stability": 0.5547579820005376,
+          "linguistic_security_index": 0.7401941684625774
+        },
+        "ru": {
+          "directional_stability": 0.7565571879942553,
+          "cross_layer_coherence": 0.3464355286182362,
+          "mean_norm": 1.0000000141860512,
+          "norm_cv": 1.2760619897816759e-07,
+          "alignment_mean": 0.34460621146644416,
+          "alignment_stability": 0.6008364363987097,
+          "linguistic_security_index": 0.7376649485753343
+        },
+        "ar": {
+          "directional_stability": 0.7685273405168606,
+          "cross_layer_coherence": 0.36740538677652246,
+          "mean_norm": 0.999999957156306,
+          "norm_cv": 1.0637689109758631e-07,
+          "alignment_mean": 0.07101076085058435,
+          "alignment_stability": 0.4093970683059925,
+          "linguistic_security_index": 0.789642297240952
+        },
+        "hi": {
+          "directional_stability": 0.7422562864914167,
+          "cross_layer_coherence": 0.3755984765008829,
+          "mean_norm": 0.9999999742465141,
+          "norm_cv": 1.5870636695660486e-07,
+          "alignment_mean": 0.057076709977016506,
+          "alignment_stability": 0.3953506001725533,
+          "linguistic_security_index": 0.7908941556543074
+        },
+        "ja": {
+          "directional_stability": 0.7846076719091964,
+          "cross_layer_coherence": 0.3805582472013367,
+          "mean_norm": 0.9999999681906936,
+          "norm_cv": 1.18297807036924e-07,
+          "alignment_mean": -0.5116646028997608,
+          "alignment_stability": 0.3872347726538609,
+          "linguistic_security_index": 0.7988370171508996
+        },
+        "zh-CN": {
+          "directional_stability": 0.8059680247631561,
+          "cross_layer_coherence": 0.4260158775528387,
+          "mean_norm": 1.0000000105042932,
+          "norm_cv": 1.2556483531183072e-07,
+          "alignment_mean": -0.52364418915099,
+          "alignment_stability": 0.4297577742901699,
+          "linguistic_security_index": 0.796558512825748
+        },
+        "sw": {
+          "directional_stability": 0.7811708202830292,
+          "cross_layer_coherence": 0.33676030021440806,
+          "mean_norm": 1.000000042193795,
+          "norm_cv": 1.917715743758014e-07,
+          "alignment_mean": 0.39906987990908577,
+          "alignment_stability": 0.5263688251537514,
+          "linguistic_security_index": 0.7581491358308483
+        }
+      }
+    },
+    "zephyr-7b": {
+      "n_layers": 12,
+      "languages": {
+        "en": {
+          "directional_stability": 0.7786793662684562,
+          "cross_layer_coherence": 0.4044320427940536,
+          "mean_norm": 0.9999999269195423,
+          "norm_cv": 1.909034153985053e-07,
+          "alignment_mean": 1.0,
+          "alignment_stability": 1.4332917616497527e-16,
+          "linguistic_security_index": 0.8978888784069599
+        },
+        "es": {
+          "directional_stability": 0.8365832618764494,
+          "cross_layer_coherence": 0.5735305275879757,
+          "mean_norm": 0.9999999522677415,
+          "norm_cv": 1.7699640692482238e-07,
+          "alignment_mean": 0.5896485248356274,
+          "alignment_stability": 0.18586191746287914,
+          "linguistic_security_index": 0.8797987000682317
+        },
+        "fr": {
+          "directional_stability": 0.8499781608173929,
+          "cross_layer_coherence": 0.6298232047540082,
+          "mean_norm": 1.000000052569602,
+          "norm_cv": 1.734415810334133e-07,
+          "alignment_mean": 0.5102267887619761,
+          "alignment_stability": 0.2093662346923965,
+          "linguistic_security_index": 0.8826335686629307
+        },
+        "pt": {
+          "directional_stability": 0.8419608048922277,
+          "cross_layer_coherence": 0.5989940696731152,
+          "mean_norm": 0.9999999579082193,
+          "norm_cv": 1.3039098900933055e-07,
+          "alignment_mean": 0.5307284225588409,
+          "alignment_stability": 0.20090414030711062,
+          "linguistic_security_index": 0.879893291646143
+        },
+        "de": {
+          "directional_stability": 0.8128563588341496,
+          "cross_layer_coherence": 0.5113243084332018,
+          "mean_norm": 0.9999999161905645,
+          "norm_cv": 2.642067606077511e-07,
+          "alignment_mean": 0.5848003840204289,
+          "alignment_stability": 0.20769433569136955,
+          "linguistic_security_index": 0.8635989334338864
+        },
+        "ru": {
+          "directional_stability": 0.8176520801277953,
+          "cross_layer_coherence": 0.5395609459927257,
+          "mean_norm": 0.9999999402520915,
+          "norm_cv": 2.457766756743601e-07,
+          "alignment_mean": 0.5672609931351167,
+          "alignment_stability": 0.21118504089610649,
+          "linguistic_security_index": 0.8668553065968696
+        },
+        "ar": {
+          "directional_stability": 0.8266994885045833,
+          "cross_layer_coherence": 0.5672818829688233,
+          "mean_norm": 0.9999998911511337,
+          "norm_cv": 2.968375875146207e-07,
+          "alignment_mean": 0.40166336338150854,
+          "alignment_stability": 0.2653039992379312,
+          "linguistic_security_index": 0.8579215974152963
+        },
+        "hi": {
+          "directional_stability": 0.8232956655469863,
+          "cross_layer_coherence": 0.5559853657418342,
+          "mean_norm": 0.9999998761220056,
+          "norm_cv": 2.926927367893752e-07,
+          "alignment_mean": 0.3510079670059376,
+          "alignment_stability": 0.2884206762694175,
+          "linguistic_security_index": 0.850304886670564
+        },
+        "ja": {
+          "directional_stability": 0.8064801281980913,
+          "cross_layer_coherence": 0.4699772835573446,
+          "mean_norm": 0.9999999463213406,
+          "norm_cv": 2.705560252405778e-07,
+          "alignment_mean": 0.4815060784699517,
+          "alignment_stability": 0.24198737088516287,
+          "linguistic_security_index": 0.8490602661091324
+        },
+        "zh-CN": {
+          "directional_stability": 0.796670172701567,
+          "cross_layer_coherence": 0.4392732239373522,
+          "mean_norm": 0.9999999688183573,
+          "norm_cv": 2.0294525526981945e-07,
+          "alignment_mean": 0.6029167408857208,
+          "alignment_stability": 0.21341975151911843,
+          "linguistic_security_index": 0.8511379359637715
+        },
+        "sw": {
+          "directional_stability": 0.8497923400407682,
+          "cross_layer_coherence": 0.6463477246452493,
+          "mean_norm": 0.999999952315754,
+          "norm_cv": 2.2859054960868213e-07,
+          "alignment_mean": 0.3021638657426716,
+          "alignment_stability": 0.3210268392592045,
+          "linguistic_security_index": 0.8567607411233137
+        }
+      }
+    }
+  },
+  "aggregate": {
+    "en": {
+      "mean_lsi": 0.9027098114333494,
+      "std_lsi": 0.020673532559931228,
+      "mean_stability": 0.7902194128534153,
+      "mean_coherence": 0.43145925945022623,
+      "n_models": 19,
+      "interpretation": "Secure"
+    },
+    "es": {
+      "mean_lsi": 0.8445234318910851,
+      "std_lsi": 0.04310726556263313,
+      "mean_stability": 0.8004786854230075,
+      "mean_coherence": 0.46575287019497597,
+      "n_models": 19,
+      "interpretation": "Secure"
+    },
+    "fr": {
+      "mean_lsi": 0.8494698892278241,
+      "std_lsi": 0.03849839009369373,
+      "mean_stability": 0.8117291425736299,
+      "mean_coherence": 0.4939513880004826,
+      "n_models": 19,
+      "interpretation": "Secure"
+    },
+    "pt": {
+      "mean_lsi": 0.8450629621110415,
+      "std_lsi": 0.04532437990877682,
+      "mean_stability": 0.806508643335877,
+      "mean_coherence": 0.47999946420893475,
+      "n_models": 19,
+      "interpretation": "Secure"
+    },
+    "de": {
+      "mean_lsi": 0.8300668908781387,
+      "std_lsi": 0.03916407415556831,
+      "mean_stability": 0.7825834383134311,
+      "mean_coherence": 0.43350960759986146,
+      "n_models": 19,
+      "interpretation": "Secure"
+    },
+    "ru": {
+      "mean_lsi": 0.8311630257690326,
+      "std_lsi": 0.03899379433848176,
+      "mean_stability": 0.785632676825839,
+      "mean_coherence": 0.43560281195070827,
+      "n_models": 19,
+      "interpretation": "Secure"
+    },
+    "ar": {
+      "mean_lsi": 0.8314256512789906,
+      "std_lsi": 0.0351881373975436,
+      "mean_stability": 0.7987747408645434,
+      "mean_coherence": 0.46144479612556755,
+      "n_models": 19,
+      "interpretation": "Secure"
+    },
+    "hi": {
+      "mean_lsi": 0.8274927195520473,
+      "std_lsi": 0.03447815812219886,
+      "mean_stability": 0.7952895029053878,
+      "mean_coherence": 0.48785077498204715,
+      "n_models": 19,
+      "interpretation": "Secure"
+    },
+    "ja": {
+      "mean_lsi": 0.8362578978962134,
+      "std_lsi": 0.02222798474405707,
+      "mean_stability": 0.7882939217695494,
+      "mean_coherence": 0.4271029139124946,
+      "n_models": 19,
+      "interpretation": "Secure"
+    },
+    "zh-CN": {
+      "mean_lsi": 0.8491963317961291,
+      "std_lsi": 0.02434523664383955,
+      "mean_stability": 0.8039900597750079,
+      "mean_coherence": 0.452559863737453,
+      "n_models": 19,
+      "interpretation": "Secure"
+    },
+    "sw": {
+      "mean_lsi": 0.8296651421217183,
+      "std_lsi": 0.033531407199481056,
+      "mean_stability": 0.8165092019142559,
+      "mean_coherence": 0.512210606219981,
+      "n_models": 19,
+      "interpretation": "Secure"
+    }
+  },
+  "lsi_vs_scd": {
+    "pearson_r": 0.13527443055663774,
+    "pearson_p": 0.06276005351546177,
+    "spearman_rho": 0.2157741649061572,
+    "spearman_p": 0.0027905363700666355,
+    "n": 190
+  }
+}

@@ -1,0 +1,24 @@
+
+[Judge] Will judge 10 models: ['falcon3-7b-instruct', 'mistral-7b-instruct-v0.3', 'openhermes-2.5-mistral-7b', 'qwen2-7b-instruct', 'qwen2.5-3b-instruct', 'qwen2.5-7b-instruct', 'qwen3-4b-instruct', 'smollm3-3b', 'stablelm-2-1.6b-chat', 'zephyr-7b']
+[Judge] Total responses: 7000
+[Judge] Estimated batches (size 16): 438
+[Judge] Est. time @ ~1.5s/batch: 11 min
+[Judge] Loading Qwen/Qwen2.5-3B-Instruct on GPU 0...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Traceback (most recent call last):
+  File "/root/clr_paper/llm_judge_v2.py", line 288, in <module>
+    main()
+  File "/root/clr_paper/llm_judge_v2.py", line 239, in main
+    model, tokenizer, yes_tok, no_tok = load_model()
+                                        ^^^^^^^^^^^^
+  File "/root/clr_paper/llm_judge_v2.py", line 66, in load_model
+    model = AutoModelForCausalLM.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/transformers/models/auto/auto_factory.py", line 405, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/transformers/modeling_utils.py", line 4201, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Qwen2ForCausalLM.__init__() got an unexpected keyword argument 'load_in_4bit'

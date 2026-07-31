@@ -1,0 +1,7 @@
+{
+  "model": "qwen2.5-3b-instruct",
+  "total": 700,
+  "complied": 0,
+  "refused": 700,
+  "asr": 0.0
+}

@@ -1,0 +1,7 @@
+{
+  "model": "stablelm-2-1.6b-chat",
+  "total": 700,
+  "complied": 0,
+  "refused": 700,
+  "asr": 0.0
+}

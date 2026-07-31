@@ -1,0 +1,33 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+SANITY CHECK FAILED: > 5% byte-identical responses.
+[!] BATCH SKIPPED: Model 'openhermes-2.5-mistral-7b' failed. Exit code: 1
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+SANITY CHECK FAILED: > 5% byte-identical responses.
+[!] BATCH SKIPPED: Model 'smollm3-3b' failed. Exit code: 1
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+SANITY CHECK FAILED: > 5% byte-identical responses.
+[!] BATCH SKIPPED: Model 'zephyr-7b' failed. Exit code: 1
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+SANITY CHECK FAILED: > 5% byte-identical responses.
+[!] BATCH SKIPPED: Model 'mistral-7b-instruct-v0.3' failed. Exit code: 1
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+SANITY CHECK FAILED: > 5% byte-identical responses.
+[!] BATCH SKIPPED: Model 'stablelm-2-1.6b-chat' failed. Exit code: 1
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+SANITY CHECK FAILED: > 5% byte-identical responses.
+[!] BATCH SKIPPED: Model 'qwen3-4b-instruct' failed. Exit code: 1
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[!] BATCH SKIPPED: Model 'phi-3-mini-4k-instruct' failed. Exit code: 1
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+SANITY CHECK FAILED: > 5% byte-identical responses.
+[!] BATCH SKIPPED: Model 'qwen2.5-3b-instruct' failed. Exit code: 1
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+SANITY CHECK FAILED: > 5% byte-identical responses.
+[!] BATCH SKIPPED: Model 'qwen2.5-7b-instruct' failed. Exit code: 1
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+SANITY CHECK FAILED: > 5% byte-identical responses.
+[!] BATCH SKIPPED: Model 'qwen2-7b-instruct' failed. Exit code: 1
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+SANITY CHECK FAILED: > 5% byte-identical responses.
+[!] BATCH SKIPPED: Model 'falcon3-7b-instruct' failed. Exit code: 1
+[SUCCESS] Batch Phase 11 GPU 0 completed!

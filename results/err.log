@@ -1,0 +1,15 @@
+[transformers] This model config has set a `rope_parameters['original_max_position_embeddings']` field, to be used together with `max_position_embeddings` to determine a scaling factor. Please set the `factor` field of `rope_parameters`with this ratio instead -- we recommend the use of this field over `original_max_position_embeddings`, as it is compatible with most model architectures.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+============================================================
+Experiment 11: phi-4-mini-instruct
+============================================================
+Loading weights:   0%|          | 0/194 [00:00<?, ?it/s]Loading weights:   1%|          | 1/194 [00:00<01:36,  2.00it/s]Loading weights:  25%|██▍       | 48/194 [00:00<00:01, 105.63it/s]Loading weights:  39%|███▉      | 76/194 [00:00<00:00, 124.67it/s]Loading weights:  51%|█████     | 98/194 [00:00<00:00, 137.51it/s]Loading weights:  61%|██████▏   | 119/194 [00:01<00:00, 139.52it/s]Loading weights:  71%|███████   | 138/194 [00:01<00:00, 150.69it/s]Loading weights:  81%|████████  | 157/194 [00:01<00:00, 152.32it/s]Loading weights:  91%|█████████ | 177/194 [00:01<00:00, 154.63it/s]Loading weights: 100%|██████████| 194/194 [00:01<00:00, 129.96it/s]
+Traceback (most recent call last):
+  File "/root/clr_paper/experiments/11_scaled_adversarial_patched.py", line 507, in <module>
+    run_experiment_11(args.model_key, args.results_dir, n_prompts=args.n_prompts)
+  File "/root/clr_paper/experiments/11_scaled_adversarial_patched.py", line 361, in run_experiment_11
+    raw_logger = jsonlines.open(raw_log_file, mode="w")
+                 ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'jsonlines' where it is not associated with a value

@@ -1,0 +1,1474 @@
+==================================================
+RETRY: falcon-7b on GPU 0
+==================================================
+==================================================
+RETRY: falcon-7b-instruct on GPU 1
+==================================================
+Running Phase 1 for falcon-7b...
+Running Phase 1 for falcon-7b-instruct...
+
+============================================================
+CLR Paper — Phase 1: Steering Vector Extraction
+Model: falcon-7b-instruct | Languages: ['fr', 'en', 'hi', 'de', 'sw', 'pt', 'ru', 'ja', 'ar', 'zh-CN', 'es']
+Output: results/steering_vectors_falcon-7b-instruct_20260622_124403
+============================================================
+
+
+============================================================
+CLR Paper — Phase 1: Steering Vector Extraction
+Model: falcon-7b | Languages: ['fr', 'en', 'hi', 'de', 'sw', 'pt', 'ru', 'ja', 'ar', 'zh-CN', 'es']
+Output: results/steering_vectors_falcon-7b_20260622_124404
+============================================================
+
+[transformers] You are loading your model using eetq but no linear modules were found in your model. Please double check your model architecture, or submit an issue on github if you think this is a bug.
+Traceback (most recent call last):
+  File "/root/clr_paper/experiments/01_extract_steering_vectors.py", line 258, in <module>
+    extract_steering_vectors(
+  File "/root/clr_paper/experiments/01_extract_steering_vectors.py", line 100, in extract_steering_vectors
+    model, tokenizer = loader.load(model_key, quantize_4bit=quantize, hf_token=hf_token)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/models/model_loader.py", line 89, in load
+    model = AutoModelForCausalLM.from_pretrained(model_id, token=hf_token, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 404, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4300, in from_pretrained
+    device_map = _get_device_map(model, device_map, max_memory, hf_quantizer)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/integrations/accelerate.py", line 373, in _get_device_map
+    hf_quantizer.validate_environment(device_map=device_map)
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/quantizers/quantizer_bnb_4bit.py", line 74, in validate_environment
+    raise ValueError(
+ValueError: Some modules are dispatched on the CPU or the disk. Make sure you have enough GPU RAM to fit the quantized model. If you want to dispatch the model on the CPU or the disk while keeping these modules in 32-bit, you need to set `llm_int8_enable_fp32_cpu_offload=True` and pass a custom `device_map` to `from_pretrained`. Check https://huggingface.co/docs/transformers/main/en/main_classes/quantization#offload-between-cpu-and-gpu for more details. 
+[transformers] You are loading your model using eetq but no linear modules were found in your model. Please double check your model architecture, or submit an issue on github if you think this is a bug.
+Traceback (most recent call last):
+  File "/root/clr_paper/experiments/01_extract_steering_vectors.py", line 258, in <module>
+    extract_steering_vectors(
+  File "/root/clr_paper/experiments/01_extract_steering_vectors.py", line 100, in extract_steering_vectors
+    model, tokenizer = loader.load(model_key, quantize_4bit=quantize, hf_token=hf_token)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/models/model_loader.py", line 89, in load
+    model = AutoModelForCausalLM.from_pretrained(model_id, token=hf_token, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 404, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4300, in from_pretrained
+    device_map = _get_device_map(model, device_map, max_memory, hf_quantizer)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/integrations/accelerate.py", line 373, in _get_device_map
+    hf_quantizer.validate_environment(device_map=device_map)
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/quantizers/quantizer_bnb_4bit.py", line 74, in validate_environment
+    raise ValueError(
+ValueError: Some modules are dispatched on the CPU or the disk. Make sure you have enough GPU RAM to fit the quantized model. If you want to dispatch the model on the CPU or the disk while keeping these modules in 32-bit, you need to set `llm_int8_enable_fp32_cpu_offload=True` and pass a custom `device_map` to `from_pretrained`. Check https://huggingface.co/docs/transformers/main/en/main_classes/quantization#offload-between-cpu-and-gpu for more details. 
+RETRY ERROR falcon-7b-instruct on GPU 1: Command '['python', '-u', 'experiments/01_extract_steering_vectors.py', '--model', 'falcon-7b-instruct', '--output', './results']' returned non-zero exit status 1.
+==================================================
+RETRY: phi-3-mini-4k-instruct on GPU 1
+==================================================
+Running Phase 1 for phi-3-mini-4k-instruct...
+RETRY ERROR falcon-7b on GPU 0: Command '['python', '-u', 'experiments/01_extract_steering_vectors.py', '--model', 'falcon-7b', '--output', './results']' returned non-zero exit status 1.
+==================================================
+RETRY: phi-4-mini-instruct on GPU 0
+==================================================
+Running Phase 1 for phi-4-mini-instruct...
+
+============================================================
+CLR Paper — Phase 1: Steering Vector Extraction
+Model: phi-3-mini-4k-instruct | Languages: ['fr', 'en', 'hi', 'de', 'sw', 'pt', 'ru', 'ja', 'ar', 'zh-CN', 'es']
+Output: results/steering_vectors_phi-3-mini-4k-instruct_20260622_124412
+============================================================
+
+
+============================================================
+CLR Paper — Phase 1: Steering Vector Extraction
+Model: phi-4-mini-instruct | Languages: ['fr', 'en', 'hi', 'de', 'sw', 'pt', 'ru', 'ja', 'ar', 'zh-CN', 'es']
+Output: results/steering_vectors_phi-4-mini-instruct_20260622_124413
+============================================================
+
+[transformers] This model config has set a `rope_parameters['original_max_position_embeddings']` field, to be used together with `max_position_embeddings` to determine a scaling factor. Please set the `factor` field of `rope_parameters`with this ratio instead -- we recommend the use of this field over `original_max_position_embeddings`, as it is compatible with most model architectures.
+`flash-attention` package not found, consider installing for better performance: No module named 'flash_attn'.
+Current `flash-attention` does not support `window_size`. Either upgrade or use `attn_implementation='eager'`.
+Traceback (most recent call last):
+  File "/root/clr_paper/experiments/01_extract_steering_vectors.py", line 258, in <module>
+    extract_steering_vectors(
+  File "/root/clr_paper/experiments/01_extract_steering_vectors.py", line 100, in extract_steering_vectors
+    model, tokenizer = loader.load(model_key, quantize_4bit=quantize, hf_token=hf_token)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/models/model_loader.py", line 89, in load
+    model = AutoModelForCausalLM.from_pretrained(model_id, token=hf_token, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 389, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4276, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.cache/huggingface/modules/transformers_modules/microsoft/Phi_hyphen_3_hyphen_mini_hyphen_4k_hyphen_instruct/f39ac1d28e925b323eae81227eaba4464caced4e/modeling_phi3.py", line 1163, in __init__
+    self.model = Phi3Model(config)
+                 ^^^^^^^^^^^^^^^^^
+  File "/root/.cache/huggingface/modules/transformers_modules/microsoft/Phi_hyphen_3_hyphen_mini_hyphen_4k_hyphen_instruct/f39ac1d28e925b323eae81227eaba4464caced4e/modeling_phi3.py", line 1004, in __init__
+    [Phi3DecoderLayer(config, layer_idx) for layer_idx in range(config.num_hidden_layers)]
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.cache/huggingface/modules/transformers_modules/microsoft/Phi_hyphen_3_hyphen_mini_hyphen_4k_hyphen_instruct/f39ac1d28e925b323eae81227eaba4464caced4e/modeling_phi3.py", line 796, in __init__
+    self.self_attn = PHI3_ATTENTION_CLASSES[config._attn_implementation](config, layer_idx=layer_idx)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.cache/huggingface/modules/transformers_modules/microsoft/Phi_hyphen_3_hyphen_mini_hyphen_4k_hyphen_instruct/f39ac1d28e925b323eae81227eaba4464caced4e/modeling_phi3.py", line 286, in __init__
+    self._init_rope()
+  File "/root/.cache/huggingface/modules/transformers_modules/microsoft/Phi_hyphen_3_hyphen_mini_hyphen_4k_hyphen_instruct/f39ac1d28e925b323eae81227eaba4464caced4e/modeling_phi3.py", line 296, in _init_rope
+    scaling_type = self.config.rope_scaling["type"]
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'type'
+Traceback (most recent call last):
+  File "/root/clr_paper/experiments/01_extract_steering_vectors.py", line 258, in <module>
+    extract_steering_vectors(
+  File "/root/clr_paper/experiments/01_extract_steering_vectors.py", line 100, in extract_steering_vectors
+    model, tokenizer = loader.load(model_key, quantize_4bit=quantize, hf_token=hf_token)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/models/model_loader.py", line 89, in load
+    model = AutoModelForCausalLM.from_pretrained(model_id, token=hf_token, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 378, in from_pretrained
+    model_class = get_class_from_dynamic_module(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 623, in get_class_from_dynamic_module
+    return get_class_in_module(class_name, final_module, force_reload=force_download)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 309, in get_class_in_module
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/root/.cache/huggingface/modules/transformers_modules/microsoft/Phi_hyphen_4_hyphen_mini_hyphen_instruct/cfbefacb99257ffa30c83adab238a50856ac3083/modeling_phi3.py", line 37, in <module>
+    from transformers.utils import (
+ImportError: cannot import name 'LossKwargs' from 'transformers.utils' (/root/clr_paper/venv/lib/python3.12/site-packages/transformers/utils/__init__.py)
+RETRY ERROR phi-3-mini-4k-instruct on GPU 1: Command '['python', '-u', 'experiments/01_extract_steering_vectors.py', '--model', 'phi-3-mini-4k-instruct', '--output', './results']' returned non-zero exit status 1.
+==================================================
+RETRY: qwen3-4b-instruct on GPU 1
+==================================================
+Running Phase 1 for qwen3-4b-instruct...
+RETRY ERROR phi-4-mini-instruct on GPU 0: Command '['python', '-u', 'experiments/01_extract_steering_vectors.py', '--model', 'phi-4-mini-instruct', '--output', './results']' returned non-zero exit status 1.
+==================================================
+RETRY: qwen3-8b-instruct on GPU 0
+==================================================
+Running Phase 1 for qwen3-8b-instruct...
+
+============================================================
+CLR Paper — Phase 1: Steering Vector Extraction
+Model: qwen3-4b-instruct | Languages: ['fr', 'en', 'hi', 'de', 'sw', 'pt', 'ru', 'ja', 'ar', 'zh-CN', 'es']
+Output: results/steering_vectors_qwen3-4b-instruct_20260622_124421
+============================================================
+
+
+============================================================
+CLR Paper — Phase 1: Steering Vector Extraction
+Model: qwen3-8b-instruct | Languages: ['fr', 'en', 'hi', 'de', 'sw', 'pt', 'ru', 'ja', 'ar', 'zh-CN', 'es']
+Output: results/steering_vectors_qwen3-8b-instruct_20260622_124421
+============================================================
+
+Fetching 3 files:   0%|          | 0/3 [00:00<?, ?it/s]Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 3 files:  33%|███▎      | 1/3 [00:11<00:23, 11.76s/it]Fetching 3 files:  67%|██████▋   | 2/3 [00:12<00:05,  5.14s/it]Fetching 3 files: 100%|██████████| 3/3 [00:12<00:00,  4.09s/it]
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<00:53,  7.40it/s]Loading weights:   4%|▍         | 15/398 [00:00<00:05, 72.69it/s]Loading weights:   9%|▉         | 37/398 [00:00<00:02, 130.31it/s]Loading weights:  15%|█▍        | 59/398 [00:00<00:02, 160.23it/s]Loading weights:  20%|██        | 81/398 [00:00<00:01, 176.65it/s]Loading weights:  26%|██▌       | 103/398 [00:00<00:01, 186.43it/s]Loading weights:  31%|███▏      | 125/398 [00:00<00:01, 191.08it/s]Loading weights:  37%|███▋      | 147/398 [00:00<00:01, 194.40it/s]Loading weights:  42%|████▏     | 169/398 [00:00<00:01, 195.08it/s]Loading weights:  48%|████▊     | 191/398 [00:01<00:01, 197.99it/s]Loading weights:  54%|█████▎    | 213/398 [00:01<00:00, 199.13it/s]Loading weights:  59%|█████▉    | 235/398 [00:01<00:00, 200.36it/s]Loading weights:  65%|██████▍   | 257/398 [00:01<00:00, 200.74it/s]Loading weights:  70%|███████   | 279/398 [00:01<00:00, 200.71it/s]Loading weights:  76%|███████▌  | 301/398 [00:01<00:00, 202.58it/s]Loading weights:  81%|████████  | 323/398 [00:01<00:00, 204.63it/s]Loading weights:  87%|████████▋ | 345/398 [00:01<00:00, 203.42it/s]Loading weights:  92%|█████████▏| 367/398 [00:01<00:00, 201.38it/s]Loading weights:  98%|█████████▊| 389/398 [00:02<00:00, 201.30it/s]Loading weights: 100%|██████████| 398/398 [00:02<00:00, 188.39it/s]
+Fetching 5 files:  20%|██        | 1/5 [00:14<00:59, 14.90s/it]Fetching 5 files: 100%|██████████| 5/5 [00:14<00:00,  2.98s/it]
+Analyzing layers: [0, 1, 4, 7, 10, 13, 16, 19, 22, 25, 28, 31, 34, 35] (14 total)
+
+Extracting: fr (French) — 150 prompt pairs
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:00<01:23,  4.77it/s]Loading weights:   1%|          | 2/399 [00:00<01:23,  4.78it/s]Loading weights:   2%|▏         | 9/399 [00:00<00:16, 23.29it/s]Loading weights:   5%|▌         | 21/399 [00:00<00:07, 50.29it/s]Loading weights:   9%|▊         | 34/399 [00:00<00:05, 72.21it/s]Loading weights:  12%|█▏        | 48/399 [00:00<00:04, 86.27it/s]Loading weights:  15%|█▌        | 60/399 [00:00<00:03, 90.19it/s]Loading weights:  18%|█▊        | 72/399 [00:01<00:03, 93.30it/s]Loading weights:  22%|██▏       | 87/399 [00:01<00:02, 107.04it/s]Loading weights:  25%|██▌       | 100/399 [00:01<00:02, 111.45it/s]Loading weights:  29%|██▊       | 114/399 [00:01<00:02, 112.35it/s]Loading weights:  32%|███▏      | 126/399 [00:01<00:02, 108.31it/s]Loading weights:  35%|███▍      | 138/399 [00:01<00:02, 105.64it/s]Loading weights:  38%|███▊      | 153/399 [00:01<00:02, 115.33it/s]Loading weights:  42%|████▏     | 166/399 [00:01<00:01, 117.58it/s]Loading weights:  45%|████▌     | 180/399 [00:02<00:01, 115.77it/s]Loading weights:  48%|████▊     | 192/399 [00:02<00:01, 110.96it/s]Loading weights:  51%|█████     | 204/399 [00:02<00:01, 107.98it/s]Loading weights:  55%|█████▍    | 219/399 [00:02<00:01, 116.60it/s]Loading weights:  58%|█████▊    | 232/399 [00:02<00:01, 118.73it/s]Loading weights:  62%|██████▏   | 246/399 [00:02<00:01, 117.25it/s]Loading weights:  65%|██████▍   | 258/399 [00:02<00:01, 112.11it/s]Loading weights:  68%|██████▊   | 270/399 [00:02<00:01, 108.92it/s]Loading weights:  71%|███████▏  | 285/399 [00:02<00:00, 117.85it/s]Loading weights:  75%|███████▍  | 298/399 [00:03<00:00, 119.77it/s]Loading weights:  78%|███████▊  | 311/399 [00:03<00:00, 122.42it/s]Loading weights:  81%|████████  | 324/399 [00:03<00:00, 110.98it/s]Loading weights:  84%|████████▍ | 336/399 [00:03<00:00, 108.10it/s]Loading weights:  88%|████████▊ | 350/399 [00:03<00:00, 116.23it/s]Loading weights:  91%|█████████ | 362/399 [00:03<00:00, 116.26it/s]Loading weights:  94%|█████████▍| 375/399 [00:03<00:00, 118.07it/s]Loading weights:  97%|█████████▋| 389/399 [00:03<00:00, 117.14it/s]Loading weights: 100%|██████████| 399/399 [00:03<00:00, 102.41it/s]
+Analyzing layers: [0, 1, 4, 7, 10, 13, 16, 19, 22, 25, 28, 31, 34, 35] (14 total)
+
+Extracting: fr (French) — 150 prompt pairs
+  Saved 14 layer vectors for fr
+
+Extracting: en (English) — 150 prompt pairs
+  Saved 14 layer vectors for en
+
+Extracting: hi (Hindi) — 150 prompt pairs
+  Saved 14 layer vectors for fr
+
+Extracting: en (English) — 150 prompt pairs
+  Saved 14 layer vectors for en
+
+Extracting: hi (Hindi) — 150 prompt pairs
+  Saved 14 layer vectors for hi
+
+Extracting: de (German) — 150 prompt pairs
+  Saved 14 layer vectors for de
+
+Extracting: sw (Swahili) — 150 prompt pairs
+  Saved 14 layer vectors for sw
+
+Extracting: pt (Portuguese) — 150 prompt pairs
+  Saved 14 layer vectors for pt
+
+Extracting: ru (Russian) — 150 prompt pairs
+  Saved 14 layer vectors for hi
+
+Extracting: de (German) — 150 prompt pairs
+  Saved 14 layer vectors for ru
+
+Extracting: ja (Japanese) — 150 prompt pairs
+  Saved 14 layer vectors for ja
+
+Extracting: ar (Arabic) — 150 prompt pairs
+  Saved 14 layer vectors for de
+
+Extracting: sw (Swahili) — 150 prompt pairs
+  Saved 14 layer vectors for ar
+
+Extracting: zh-CN (Chinese) — 150 prompt pairs
+  Saved 14 layer vectors for zh-CN
+
+Extracting: es (Spanish) — 150 prompt pairs
+  Saved 14 layer vectors for es
+
+Running bootstrap CI analysis (10 iterations, 80% subsets)...
+  fr: SCD = 8.3° ± 3.9° (95% CI: [4.7°, 14.3°])
+  hi: SCD = 11.7° ± 2.3° (95% CI: [8.7°, 15.5°])
+  de: SCD = 34.1° ± 39.5° (95% CI: [10.9°, 121.7°])
+  sw: SCD = 12.8° ± 4.1° (95% CI: [8.3°, 19.5°])
+  pt: SCD = 8.1° ± 4.0° (95% CI: [4.0°, 14.4°])
+  ru: SCD = 22.8° ± 19.0° (95% CI: [7.6°, 63.3°])
+  ja: SCD = 10.5° ± 3.4° (95% CI: [6.2°, 15.7°])
+  ar: SCD = 11.0° ± 5.1° (95% CI: [5.8°, 20.4°])
+  zh-CN: SCD = 10.0° ± 3.3° (95% CI: [5.1°, 14.3°])
+  es: SCD = 7.8° ± 3.5° (95% CI: [4.6°, 14.1°])
+
+✓ Phase 1 complete. Results saved to: results/steering_vectors_qwen3-4b-instruct_20260622_124421
+  Run Phase 2: python experiments/02_pivot_language_analysis.py --input results/steering_vectors_qwen3-4b-instruct_20260622_124421
+
+============================================================
+CLR Paper — Phase 2: Pivot Language Analysis
+============================================================
+
+Finding most discriminative layer...
+  Most discriminative layer: 0 (SCD variance = 0.1651)
+
+Computing pairwise cosine similarity matrix...
+  Saved similarity matrix: results/steering_vectors_qwen3-4b-instruct_20260622_124421/phase2_pivot_analysis/cosine_similarity_matrix.csv
+
+Detecting pivot language...
+  Pivot (centrality method): en
+  Pivot (projection method): en
+
+  Centrality scores (higher = more central):
+    en: 0.2670
+    zh-CN: 0.2518
+    pt: 0.2444
+    es: 0.2365
+    fr: 0.2121
+    ja: 0.2024
+    de: 0.1743
+    ru: 0.1037
+    ar: 0.0842
+    sw: 0.0605
+    hi: 0.0377
+
+Computing Steering Concept Drift (SCD) scores...
+
+  SCD scores (angular distance from English steering direction):
+    hi: 86.3° (HIGH drift)
+    sw: 84.0° (HIGH drift)
+    ar: 83.9° (HIGH drift)
+    ru: 81.8° (HIGH drift)
+    fr: 74.5° (HIGH drift)
+    de: 74.5° (HIGH drift)
+    es: 69.3° (HIGH drift)
+    pt: 69.1° (HIGH drift)
+    ja: 65.6° (HIGH drift)
+    zh-CN: 53.5° (HIGH drift)
+    en: 0.0° (LOW drift)
+
+Analyzing language family clustering in steering space...
+
+  Within-family mean cosine similarities:
+    Romance: 0.4367
+    Germanic: 0.2678
+
+  Cross-family baseline similarity: 0.1529
+  → Within-family similarities are consistently higher: supports family clustering hypothesis
+
+Computing PCA projection of steering space...
+  PCA explained variance: 43.7% (first 3 components)
+
+Running statistical tests...
+  English centrality permutation test (n=10000): p=0.0900
+  Mantel test (family clustering): r=0.446, p=0.0052
+
+  FDR-corrected p-values:
+    english_centrality_permutation: raw=0.0900, FDR=0.0104
+    mantel_family_clustering: raw=0.0052, FDR=0.0900
+
+✓ Phase 2 complete. Results saved to: results/steering_vectors_qwen3-4b-instruct_20260622_124421/phase2_pivot_analysis
+  Run Phase 3: python experiments/03_concept_drift_metric.py --input ./results/steering_vectors_qwen3-4b-instruct_20260622_124421
+  Saved 14 layer vectors for sw
+
+Extracting: pt (Portuguese) — 150 prompt pairs
+
+============================================================
+CLR Phase 4: Psycholinguistic Prior Validation
+============================================================
+
+Languages in analysis: ['fr', 'hi', 'de', 'sw', 'pt', 'ru', 'ja', 'ar', 'zh-CN', 'es']
+N = 10
+
+Regression Results: Predicting SCD from distance measures
+--------------------------------------------------
+
+  Typological only:
+    R² = 0.012
+    Pearson r = -0.108 (p=0.7665)
+    Spearman r = -0.127 (p=0.7261)
+
+  Psycholinguistic only:
+    R² = 0.000
+    Pearson r = 0.010 (p=0.9773)
+    Spearman r = -0.103 (p=0.7770)
+
+  Combined:
+    R² = 0.155
+    Pearson r = 0.741 (p=0.0141)
+    Spearman r = 0.661 (p=0.0376)
+
+  *** Psycholinguistic improvement over typological: ΔR² = -0.011 ***
+
+  Language breakdown saved to: results/steering_vectors_qwen3-4b-instruct_20260622_124421/phase4_psycholinguistic/language_distances.csv
+
+  [Prolific data not found — run behavioral study to add this result]
+  Tip: 50 participants × 12 languages × 15 scenarios ≈ $200 on Prolific
+
+✓ Phase 4 complete.
+
+============================================================
+CLR Phase 5: Language-Anchored Steering (LAS)
+============================================================
+
+
+Training LAS (10 languages, 2560-dim, 1000 epochs on cuda)...
+  Saved 14 layer vectors for pt
+
+Extracting: ru (Russian) — 150 prompt pairs
+  Epoch 100/1000 — Loss: 2.6410
+  Saved 14 layer vectors for ru
+
+Extracting: ja (Japanese) — 150 prompt pairs
+  Epoch 200/1000 — Loss: 3.0019
+  Saved 14 layer vectors for ja
+
+Extracting: ar (Arabic) — 150 prompt pairs
+  Epoch 300/1000 — Loss: 2.3129
+  Saved 14 layer vectors for ar
+
+Extracting: zh-CN (Chinese) — 150 prompt pairs
+  Saved 14 layer vectors for zh-CN
+
+Extracting: es (Spanish) — 150 prompt pairs
+  Epoch 400/1000 — Loss: 2.2864
+  Saved 14 layer vectors for es
+
+Running bootstrap CI analysis (10 iterations, 80% subsets)...
+  fr: SCD = 6.3° ± 1.6° (95% CI: [4.5°, 9.4°])
+  hi: SCD = 11.4° ± 1.4° (95% CI: [9.7°, 14.2°])
+  de: SCD = 19.6° ± 11.5° (95% CI: [7.6°, 41.4°])
+  sw: SCD = 11.1° ± 1.9° (95% CI: [8.9°, 14.6°])
+  pt: SCD = 6.8° ± 1.4° (95% CI: [4.8°, 9.2°])
+  ru: SCD = 39.8° ± 24.7° (95% CI: [9.4°, 67.6°])
+  ja: SCD = 13.9° ± 6.2° (95% CI: [8.8°, 28.1°])
+  ar: SCD = 9.0° ± 3.5° (95% CI: [5.6°, 16.6°])
+  zh-CN: SCD = 10.1° ± 4.2° (95% CI: [5.6°, 18.3°])
+  es: SCD = 6.9° ± 1.4° (95% CI: [4.9°, 9.6°])
+
+✓ Phase 1 complete. Results saved to: results/steering_vectors_qwen3-8b-instruct_20260622_124421
+  Run Phase 2: python experiments/02_pivot_language_analysis.py --input results/steering_vectors_qwen3-8b-instruct_20260622_124421
+
+============================================================
+CLR Paper — Phase 2: Pivot Language Analysis
+============================================================
+
+Finding most discriminative layer...
+  Most discriminative layer: 0 (SCD variance = 0.1663)
+
+Computing pairwise cosine similarity matrix...
+  Saved similarity matrix: results/steering_vectors_qwen3-8b-instruct_20260622_124421/phase2_pivot_analysis/cosine_similarity_matrix.csv
+
+Detecting pivot language...
+  Pivot (centrality method): en
+  Pivot (projection method): en
+
+  Centrality scores (higher = more central):
+    en: 0.2151
+    es: 0.2133
+    pt: 0.1851
+    zh-CN: 0.1785
+    fr: 0.1775
+    de: 0.1497
+    ja: 0.1455
+    ar: 0.0924
+    ru: 0.0882
+    sw: 0.0720
+    hi: 0.0239
+
+Computing Steering Concept Drift (SCD) scores...
+
+  SCD scores (angular distance from English steering direction):
+    hi: 88.5° (HIGH drift)
+    ru: 84.1° (HIGH drift)
+    ar: 83.6° (HIGH drift)
+    sw: 82.8° (HIGH drift)
+    fr: 77.6° (HIGH drift)
+    de: 76.3° (HIGH drift)
+    pt: 75.9° (HIGH drift)
+    es: 72.9° (HIGH drift)
+    ja: 71.4° (HIGH drift)
+    zh-CN: 61.4° (HIGH drift)
+    en: 0.0° (LOW drift)
+
+Analyzing language family clustering in steering space...
+
+  Within-family mean cosine similarities:
+    Romance: 0.3779
+    Germanic: 0.2365
+
+  Cross-family baseline similarity: 0.1242
+  → Within-family similarities are consistently higher: supports family clustering hypothesis
+
+Computing PCA projection of steering space...
+  PCA explained variance: 42.9% (first 3 components)
+
+Running statistical tests...
+  English centrality permutation test (n=10000): p=0.0935
+  Mantel test (family clustering): r=0.484, p=0.0034
+
+  FDR-corrected p-values:
+    english_centrality_permutation: raw=0.0935, FDR=0.0068
+    mantel_family_clustering: raw=0.0034, FDR=0.0935
+
+✓ Phase 2 complete. Results saved to: results/steering_vectors_qwen3-8b-instruct_20260622_124421/phase2_pivot_analysis
+  Run Phase 3: python experiments/03_concept_drift_metric.py --input ./results/steering_vectors_qwen3-8b-instruct_20260622_124421
+
+============================================================
+CLR Phase 4: Psycholinguistic Prior Validation
+============================================================
+
+Languages in analysis: ['fr', 'hi', 'de', 'sw', 'pt', 'ru', 'ja', 'ar', 'zh-CN', 'es']
+N = 10
+
+Regression Results: Predicting SCD from distance measures
+--------------------------------------------------
+
+  Typological only:
+    R² = 0.019
+    Pearson r = -0.139 (p=0.7011)
+    Spearman r = -0.188 (p=0.6032)
+
+  Psycholinguistic only:
+    R² = 0.000
+    Pearson r = -0.022 (p=0.9512)
+    Spearman r = -0.164 (p=0.6515)
+
+  Combined:
+    R² = 0.156
+    Pearson r = 0.670 (p=0.0340)
+    Spearman r = 0.539 (p=0.1076)
+
+  *** Psycholinguistic improvement over typological: ΔR² = -0.019 ***
+
+  Language breakdown saved to: results/steering_vectors_qwen3-8b-instruct_20260622_124421/phase4_psycholinguistic/language_distances.csv
+
+  [Prolific data not found — run behavioral study to add this result]
+  Tip: 50 participants × 12 languages × 15 scenarios ≈ $200 on Prolific
+
+✓ Phase 4 complete.
+
+============================================================
+CLR Phase 5: Language-Anchored Steering (LAS)
+============================================================
+
+
+Training LAS (10 languages, 4096-dim, 1000 epochs on cuda)...
+  Epoch 500/1000 — Loss: 1.5438
+  Epoch 600/1000 — Loss: 1.3637
+  Epoch 700/1000 — Loss: 1.0366
+  Epoch 800/1000 — Loss: 0.8476
+  Epoch 100/1000 — Loss: 5.0383
+  Epoch 900/1000 — Loss: 0.7689
+  Epoch 1000/1000 — Loss: 0.7517
+
+LAS Fidelity Evaluation:
+--------------------------------------------------
+Language       Baseline Sim    LAS Sim   Improvement   Rotation |R-I|
+--------------------------------------------------
+  fr                  0.267      0.999        +0.732          1.040  ✓
+  hi                  0.065      1.000        +0.935          1.062  ✓
+  de                  0.268      1.000        +0.732          1.038  ✓
+  sw                  0.104      1.000        +0.895          1.045  ✓
+  pt                  0.357      0.999        +0.642          1.038  ✓
+  ru                  0.142      1.000        +0.858          1.058  ✓
+  ja                  0.413      1.000        +0.587          1.044  ✓
+  ar                  0.106      0.999        +0.894          1.062  ✓
+  zh-CN               0.595      0.999        +0.404          1.049  ✓
+  es                  0.353      0.999        +0.646          1.041  ✓
+
+  Rotation magnitude ~ Psycholinguistic distance:
+  Pearson r = 0.582, p = 0.0773
+  → does not confirm Sapir-Whorf prediction
+
+✓ Phase 5 complete.
+
+============================================================
+CLR Phase 6: Safety Failure Prediction from SCD
+============================================================
+
+Analyzing 10 languages: ['fr', 'hi', 'de', 'sw', 'pt', 'ru', 'ja', 'ar', 'zh-CN', 'es']
+
+Correlation: SCD → Jailbreak Rate
+  Pearson  r = 0.129  (p=0.7218)
+  Spearman r = 0.115  (p=0.7514)
+
+Correlation: Psycholinguistic Distance → Jailbreak Rate
+  Pearson  r = 0.943  (p=0.0000)
+
+LOO-CV R² (SCD only):     -0.812
+LOO-CV R² (SCD + Psycho): 0.810
+Bootstrap R² (SCD, n=1000): 0.157 (95% CI: [0.000, 0.851])
+Effect size (Cohen's d, high vs low risk): -1.112
+
+  FDR-corrected p-values:
+    scd_jailbreak_pearson: raw=0.7218, FDR=0.0001
+    scd_jailbreak_spearman: raw=0.7514, FDR=0.0001
+    psycho_jailbreak: raw=0.0000, FDR=1.0000
+
+Binary Classification (high-risk threshold = 0.3)
+  AUC = 0.714
+  High-risk languages: ['sw', 'ja', 'zh-CN']
+
+  Prediction table saved to: results/steering_vectors_qwen3-4b-instruct_20260622_124421/phase6_safety_prediction/safety_prediction_table.csv
+
+✓ Phase 6 complete.
+
+============================================================
+CLR Phase 7: Code-Mixed Instability — EACL Callback
+============================================================
+
+Analyzing geometric position of code-mixed steering direction...
+  [Code-mixed steering vectors not found at results/steering_vectors_qwen3-4b-instruct_20260622_124421/cm/layer_000.npy]
+  Run Phase 1 with --languages en hi cm to generate them
+  Or add 'cm' to ALL_PROMPT_PAIRS in experiment 01
+
+Instability analysis: variance of code-mixed steering directions
+  (High variance = model is confused about which 'language mode' to use)
+  [Requires running Phase 1 with multiple code-mixed prompt subsets]
+  [If you have those results, load them here and compute variance]
+
+Connection to EACL 2026 findings:
+  Your EACL paper found that reasoning quality degrades in code-mixed text.
+  Geometric explanation:
+  - Model receives code-mixed input
+  - Activates a steering direction BETWEEN English and Hindi
+  - This direction doesn't strongly align with safety concepts in EITHER language
+  - Result: safety steering is weakened → model 'forgets' constraints
+  - Analogous to bilingual cognitive load in psycholinguistics
+  - Supports: Li et al. (2022) 'Language Confusion in Multilingual LLMs'
+              Green & Abutalebi (2013) Bilingual language control theory
+
+✓ Phase 7 complete.
+  This provides the mechanistic link between your EACL and CLR papers.
+
+============================================================
+Generating all paper figures...
+Output: results/figures_qwen3-4b-instruct
+============================================================
+
+/root/clr_paper/utils/visualization.py:60: UserWarning: Glyph 9733 (\N{BLACK STAR}) missing from font(s) DejaVu Serif.
+  fig.savefig(path, bbox_inches="tight", dpi=300)
+/root/clr_paper/utils/visualization.py:61: UserWarning: Glyph 9733 (\N{BLACK STAR}) missing from font(s) DejaVu Serif.
+  fig.savefig(str(path).replace(".pdf", ".png"), bbox_inches="tight", dpi=150)
+  Saved: results/figures_qwen3-4b-instruct/fig1_steering_pca.pdf
+  Saved: results/figures_qwen3-4b-instruct/fig2_scd_layers.pdf
+  Saved: results/figures_qwen3-4b-instruct/fig3_scd_jailbreak.pdf
+  Saved: results/figures_qwen3-4b-instruct/fig4_las_rotations.pdf
+  Saved: results/figures_qwen3-4b-instruct/fig5_similarity_heatmap.pdf
+
+✓ All figures saved to: results/figures_qwen3-4b-instruct
+RETRY complete for qwen3-4b-instruct
+==================================================
+RETRY: mt0-xl on GPU 1
+==================================================
+Running Phase 1 for mt0-xl...
+
+============================================================
+CLR Paper — Phase 1: Steering Vector Extraction
+Model: mt0-xl | Languages: ['fr', 'en', 'hi', 'de', 'sw', 'pt', 'ru', 'ja', 'ar', 'zh-CN', 'es']
+Output: results/steering_vectors_mt0-xl_20260622_130842
+============================================================
+
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files:  50%|█████     | 1/2 [00:22<00:22, 22.89s/it]Fetching 2 files: 100%|██████████| 2/2 [00:22<00:00, 11.44s/it]
+Loading weights:   0%|          | 0/558 [00:00<?, ?it/s]Loading weights:   3%|▎         | 19/558 [00:00<00:02, 189.41it/s]Loading weights:   8%|▊         | 42/558 [00:00<00:02, 207.24it/s]Loading weights:  12%|█▏        | 65/558 [00:00<00:02, 215.57it/s]Loading weights:  16%|█▌        | 87/558 [00:00<00:02, 213.49it/s]Loading weights:  20%|█▉        | 111/558 [00:00<00:02, 215.79it/s]Loading weights:  25%|██▍       | 138/558 [00:00<00:01, 227.46it/s]Loading weights:  29%|██▉       | 162/558 [00:00<00:01, 228.47it/s]Loading weights:  33%|███▎      | 185/558 [00:00<00:01, 228.20it/s]Loading weights:  37%|███▋      | 209/558 [00:00<00:01, 229.26it/s]Loading weights:  42%|████▏     | 234/558 [00:01<00:01, 233.78it/s]Loading weights:  46%|████▌     | 258/558 [00:01<00:01, 233.94it/s]Loading weights:  51%|█████     | 282/558 [00:01<00:01, 229.84it/s]Loading weights:  55%|█████▌    | 307/558 [00:01<00:01, 230.23it/s]Loading weights:  60%|█████▉    | 334/558 [00:01<00:00, 237.12it/s]Loading weights:  64%|██████▍   | 358/558 [00:01<00:00, 231.96it/s]Loading weights:  68%|██████▊   | 382/558 [00:01<00:00, 223.03it/s]Loading weights:  73%|███████▎  | 405/558 [00:01<00:00, 220.89it/s]Loading weights:  77%|███████▋  | 428/558 [00:01<00:00, 213.70it/s]Loading weights:  81%|████████  | 451/558 [00:02<00:00, 215.83it/s]Loading weights:  85%|████████▍ | 473/558 [00:02<00:00, 209.78it/s]Loading weights:  89%|████████▊ | 495/558 [00:02<00:00, 212.50it/s]Loading weights:  93%|█████████▎| 517/558 [00:02<00:00, 206.09it/s]Loading weights:  96%|█████████▋| 538/558 [00:02<00:00, 206.68it/s]Loading weights: 100%|██████████| 558/558 [00:03<00:00, 172.51it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+Analyzing layers: [0, 1, 4, 7, 10, 13, 16, 19, 22, 23] (10 total)
+
+Extracting: fr (French) — 150 prompt pairs
+Traceback (most recent call last):
+  File "/root/clr_paper/experiments/01_extract_steering_vectors.py", line 258, in <module>
+    extract_steering_vectors(
+  File "/root/clr_paper/experiments/01_extract_steering_vectors.py", line 132, in extract_steering_vectors
+    steering_vecs, per_prompt_diffs = sv_extractor.extract(
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/utils/steering.py", line 165, in extract
+    harmful_acts = self.extractor.get_activations(harmful_texts, layer_indices)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/utils/steering.py", line 93, in get_activations
+    _ = self.model(**inputs)
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/models/mt5/modeling_mt5.py", line 1128, in forward
+    decoder_outputs = self.decoder(
+                      ^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/models/mt5/modeling_mt5.py", line 668, in forward
+    raise ValueError(f"You have to specify either {err_msg_prefix}input_ids or {err_msg_prefix}inputs_embeds")
+ValueError: You have to specify either decoder_input_ids or decoder_inputs_embeds
+RETRY ERROR mt0-xl on GPU 1: Command '['python', '-u', 'experiments/01_extract_steering_vectors.py', '--model', 'mt0-xl', '--output', './results']' returned non-zero exit status 1.
+==================================================
+RETRY: olmo-2-7b-instruct on GPU 1
+==================================================
+Running Phase 1 for olmo-2-7b-instruct...
+
+============================================================
+CLR Paper — Phase 1: Steering Vector Extraction
+Model: olmo-2-7b-instruct | Languages: ['fr', 'en', 'hi', 'de', 'sw', 'pt', 'ru', 'ja', 'ar', 'zh-CN', 'es']
+Output: results/steering_vectors_olmo-2-7b-instruct_20260622_130922
+============================================================
+
+Traceback (most recent call last):
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 761, in hf_raise_for_status
+    response.raise_for_status()
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '404 Not Found' for url 'https://huggingface.co/allenai/OLMo-2-0425-7B-Instruct/resolve/main/config.json'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/utils/hub.py", line 437, in cached_files
+    hf_hub_download(
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1019, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1170, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1808, in _raise_on_head_call_error
+    raise head_call_error
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1694, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1616, in get_hf_file_metadata
+    response = _httpx_follow_relative_redirects_with_backoff(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 692, in _httpx_follow_relative_redirects_with_backoff
+    hf_raise_for_status(response)
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 835, in hf_raise_for_status
+    raise _format(RepositoryNotFoundError, message, response, repo_type=repo_type, repo_id=repo_id) from e
+huggingface_hub.errors.RepositoryNotFoundError: 404 Client Error. (Request ID: Root=1-6a393402-76a7d6233081f1f03edec761;07daacf8-d574-4ddc-a1de-c1110ecf8eba)
+
+Repository Not Found for url: https://huggingface.co/allenai/OLMo-2-0425-7B-Instruct/resolve/main/config.json.
+Please make sure you specified the correct `repo_id` and `repo_type`.
+If you are trying to access a private or gated repo, make sure you are authenticated and your token has the required permissions.
+For more details, see https://huggingface.co/docs/huggingface_hub/authentication
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py", line 696, in from_pretrained
+    config = AutoConfig.from_pretrained(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/models/auto/configuration_auto.py", line 374, in from_pretrained
+    config_dict, unused_kwargs = PreTrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/configuration_utils.py", line 686, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/configuration_utils.py", line 741, in _get_config_dict
+    resolved_config_file = cached_file(
+                           ^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/utils/hub.py", line 293, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/utils/hub.py", line 469, in cached_files
+    raise OSError(
+OSError: allenai/OLMo-2-0425-7B-Instruct is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 761, in hf_raise_for_status
+    response.raise_for_status()
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '404 Not Found' for url 'https://huggingface.co/allenai/OLMo-2-0425-7B-Instruct/resolve/main/config.json'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/utils/hub.py", line 437, in cached_files
+    hf_hub_download(
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1019, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1170, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1808, in _raise_on_head_call_error
+    raise head_call_error
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1694, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1616, in get_hf_file_metadata
+    response = _httpx_follow_relative_redirects_with_backoff(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 692, in _httpx_follow_relative_redirects_with_backoff
+    hf_raise_for_status(response)
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 835, in hf_raise_for_status
+    raise _format(RepositoryNotFoundError, message, response, repo_type=repo_type, repo_id=repo_id) from e
+huggingface_hub.errors.RepositoryNotFoundError: 404 Client Error. (Request ID: Root=1-6a393402-28c27d712313b9cd0c526088;2e4c9057-a3d7-42ec-af2b-aca23b11b700)
+
+Repository Not Found for url: https://huggingface.co/allenai/OLMo-2-0425-7B-Instruct/resolve/main/config.json.
+Please make sure you specified the correct `repo_id` and `repo_type`.
+If you are trying to access a private or gated repo, make sure you are authenticated and your token has the required permissions.
+For more details, see https://huggingface.co/docs/huggingface_hub/authentication
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/clr_paper/experiments/01_extract_steering_vectors.py", line 258, in <module>
+    extract_steering_vectors(
+  File "/root/clr_paper/experiments/01_extract_steering_vectors.py", line 100, in extract_steering_vectors
+    model, tokenizer = loader.load(model_key, quantize_4bit=quantize, hf_token=hf_token)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/models/model_loader.py", line 74, in load
+    tokenizer = AutoTokenizer.from_pretrained(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py", line 700, in from_pretrained
+    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/configuration_utils.py", line 645, in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/configuration_utils.py", line 686, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/configuration_utils.py", line 741, in _get_config_dict
+    resolved_config_file = cached_file(
+                           ^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/utils/hub.py", line 293, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/utils/hub.py", line 469, in cached_files
+    raise OSError(
+OSError: allenai/OLMo-2-0425-7B-Instruct is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+RETRY ERROR olmo-2-7b-instruct on GPU 1: Command '['python', '-u', 'experiments/01_extract_steering_vectors.py', '--model', 'olmo-2-7b-instruct', '--output', './results']' returned non-zero exit status 1.
+==================================================
+RETRY: aya-23-8b on GPU 1
+==================================================
+Running Phase 1 for aya-23-8b...
+
+============================================================
+CLR Paper — Phase 1: Steering Vector Extraction
+Model: aya-23-8b | Languages: ['fr', 'en', 'hi', 'de', 'sw', 'pt', 'ru', 'ja', 'ar', 'zh-CN', 'es']
+Output: results/steering_vectors_aya-23-8b_20260622_130927
+============================================================
+
+Traceback (most recent call last):
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 761, in hf_raise_for_status
+    response.raise_for_status()
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '403 Forbidden' for url 'https://huggingface.co/CohereForAI/aya-23-8B/resolve/main/config.json'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/utils/hub.py", line 437, in cached_files
+    hf_hub_download(
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1019, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1170, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1808, in _raise_on_head_call_error
+    raise head_call_error
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1694, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1616, in get_hf_file_metadata
+    response = _httpx_follow_relative_redirects_with_backoff(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 692, in _httpx_follow_relative_redirects_with_backoff
+    hf_raise_for_status(response)
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 787, in hf_raise_for_status
+    raise _format(GatedRepoError, message, response, repo_type=repo_type, repo_id=repo_id) from e
+huggingface_hub.errors.GatedRepoError: 403 Client Error. (Request ID: Root=1-6a393407-103ae32c7ac2acd8584d7bae;0c188a32-f133-48b9-a865-8d4a32c271c6)
+
+Cannot access gated repo for url https://huggingface.co/CohereForAI/aya-23-8B/resolve/main/config.json.
+Access to model CohereLabs/aya-23-8B is restricted and you are not in the authorized list. Visit https://huggingface.co/CohereLabs/aya-23-8B to ask for access.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py", line 696, in from_pretrained
+    config = AutoConfig.from_pretrained(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/models/auto/configuration_auto.py", line 374, in from_pretrained
+    config_dict, unused_kwargs = PreTrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/configuration_utils.py", line 686, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/configuration_utils.py", line 741, in _get_config_dict
+    resolved_config_file = cached_file(
+                           ^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/utils/hub.py", line 293, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/utils/hub.py", line 503, in cached_files
+    raise OSError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/CohereForAI/aya-23-8B.
+403 Client Error. (Request ID: Root=1-6a393407-103ae32c7ac2acd8584d7bae;0c188a32-f133-48b9-a865-8d4a32c271c6)
+
+Cannot access gated repo for url https://huggingface.co/CohereForAI/aya-23-8B/resolve/main/config.json.
+Access to model CohereLabs/aya-23-8B is restricted and you are not in the authorized list. Visit https://huggingface.co/CohereLabs/aya-23-8B to ask for access.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 761, in hf_raise_for_status
+    response.raise_for_status()
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '403 Forbidden' for url 'https://huggingface.co/CohereForAI/aya-23-8B/resolve/main/config.json'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/utils/hub.py", line 437, in cached_files
+    hf_hub_download(
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1019, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1170, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1808, in _raise_on_head_call_error
+    raise head_call_error
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1694, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1616, in get_hf_file_metadata
+    response = _httpx_follow_relative_redirects_with_backoff(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 692, in _httpx_follow_relative_redirects_with_backoff
+    hf_raise_for_status(response)
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 787, in hf_raise_for_status
+    raise _format(GatedRepoError, message, response, repo_type=repo_type, repo_id=repo_id) from e
+huggingface_hub.errors.GatedRepoError: 403 Client Error. (Request ID: Root=1-6a393407-6f0798e723d7830c43913ff1;d39ac998-78a6-4b1d-81d7-1f2d6493979f)
+
+Cannot access gated repo for url https://huggingface.co/CohereForAI/aya-23-8B/resolve/main/config.json.
+Access to model CohereLabs/aya-23-8B is restricted and you are not in the authorized list. Visit https://huggingface.co/CohereLabs/aya-23-8B to ask for access.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/clr_paper/experiments/01_extract_steering_vectors.py", line 258, in <module>
+    extract_steering_vectors(
+  File "/root/clr_paper/experiments/01_extract_steering_vectors.py", line 100, in extract_steering_vectors
+    model, tokenizer = loader.load(model_key, quantize_4bit=quantize, hf_token=hf_token)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/models/model_loader.py", line 74, in load
+    tokenizer = AutoTokenizer.from_pretrained(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py", line 700, in from_pretrained
+    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/configuration_utils.py", line 645, in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/configuration_utils.py", line 686, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/configuration_utils.py", line 741, in _get_config_dict
+    resolved_config_file = cached_file(
+                           ^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/utils/hub.py", line 293, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/utils/hub.py", line 503, in cached_files
+    raise OSError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/CohereForAI/aya-23-8B.
+403 Client Error. (Request ID: Root=1-6a393407-6f0798e723d7830c43913ff1;d39ac998-78a6-4b1d-81d7-1f2d6493979f)
+
+Cannot access gated repo for url https://huggingface.co/CohereForAI/aya-23-8B/resolve/main/config.json.
+Access to model CohereLabs/aya-23-8B is restricted and you are not in the authorized list. Visit https://huggingface.co/CohereLabs/aya-23-8B to ask for access.
+RETRY ERROR aya-23-8b on GPU 1: Command '['python', '-u', 'experiments/01_extract_steering_vectors.py', '--model', 'aya-23-8b', '--output', './results']' returned non-zero exit status 1.
+==================================================
+RETRY: deepseek-r1-distill-llama-8b on GPU 1
+==================================================
+Running Phase 1 for deepseek-r1-distill-llama-8b...
+
+============================================================
+CLR Paper — Phase 1: Steering Vector Extraction
+Model: deepseek-r1-distill-llama-8b | Languages: ['fr', 'en', 'hi', 'de', 'sw', 'pt', 'ru', 'ja', 'ar', 'zh-CN', 'es']
+Output: results/steering_vectors_deepseek-r1-distill-llama-8b_20260622_130933
+============================================================
+
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights:   0%|          | 1/291 [00:00<01:17,  3.76it/s]Loading weights:   1%|          | 2/291 [00:00<01:16,  3.78it/s]Loading weights:   2%|▏         | 6/291 [00:00<00:23, 12.32it/s]Loading weights:   5%|▍         | 14/291 [00:00<00:09, 29.25it/s]Loading weights:   8%|▊         | 23/291 [00:00<00:06, 43.47it/s]Loading weights:  11%|█         | 32/291 [00:00<00:04, 54.63it/s]Loading weights:  14%|█▍        | 41/291 [00:01<00:04, 62.39it/s]Loading weights:  17%|█▋        | 50/291 [00:01<00:03, 66.96it/s]Loading weights:  20%|██        | 59/291 [00:01<00:03, 69.89it/s]Loading weights:  23%|██▎       | 68/291 [00:01<00:03, 70.94it/s]Loading weights:  26%|██▋       | 77/291 [00:01<00:02, 71.88it/s]Loading weights:  30%|██▉       | 86/291 [00:01<00:02, 73.02it/s]Loading weights:  33%|███▎      | 95/291 [00:01<00:02, 74.81it/s]Loading weights:  36%|███▌      | 104/291 [00:01<00:02, 75.25it/s]Loading weights:  39%|███▉      | 113/291 [00:02<00:02, 75.94it/s]Loading weights:  42%|████▏     | 122/291 [00:02<00:02, 75.33it/s]Loading weights:  45%|████▌     | 131/291 [00:02<00:02, 76.13it/s]Loading weights:  48%|████▊     | 140/291 [00:02<00:01, 76.07it/s]Loading weights:  51%|█████     | 149/291 [00:02<00:01, 75.43it/s]Loading weights:  54%|█████▍    | 158/291 [00:02<00:01, 76.24it/s]Loading weights:  57%|█████▋    | 167/291 [00:02<00:01, 76.29it/s]Loading weights:  60%|██████    | 176/291 [00:02<00:01, 76.01it/s]Loading weights:  64%|██████▎   | 185/291 [00:02<00:01, 74.99it/s]Loading weights:  67%|██████▋   | 194/291 [00:03<00:01, 76.04it/s]Loading weights:  70%|██████▉   | 203/291 [00:03<00:01, 76.48it/s]Loading weights:  73%|███████▎  | 212/291 [00:03<00:01, 76.92it/s]Loading weights:  76%|███████▌  | 221/291 [00:03<00:00, 76.36it/s]Loading weights:  79%|███████▉  | 230/291 [00:03<00:00, 74.67it/s]Loading weights:  82%|████████▏ | 239/291 [00:03<00:00, 74.49it/s]Loading weights:  85%|████████▌ | 248/291 [00:03<00:00, 74.82it/s]Loading weights:  88%|████████▊ | 257/291 [00:03<00:00, 76.08it/s]Loading weights:  91%|█████████▏| 266/291 [00:04<00:00, 75.75it/s]Loading weights:  95%|█████████▍| 275/291 [00:04<00:00, 76.23it/s]Loading weights:  98%|█████████▊| 284/291 [00:04<00:00, 76.57it/s]Loading weights: 100%|██████████| 291/291 [00:04<00:00, 67.25it/s]
+Analyzing layers: [0, 1, 4, 7, 10, 13, 16, 19, 22, 25, 30, 31] (12 total)
+
+Extracting: fr (French) — 150 prompt pairs
+  Saved 12 layer vectors for fr
+
+Extracting: en (English) — 150 prompt pairs
+  Epoch 200/1000 — Loss: 4.5555
+  Saved 12 layer vectors for en
+
+Extracting: hi (Hindi) — 150 prompt pairs
+  Saved 12 layer vectors for hi
+
+Extracting: de (German) — 150 prompt pairs
+  Saved 12 layer vectors for de
+
+Extracting: sw (Swahili) — 150 prompt pairs
+  Saved 12 layer vectors for sw
+
+Extracting: pt (Portuguese) — 150 prompt pairs
+  Epoch 300/1000 — Loss: 5.0680
+  Saved 12 layer vectors for pt
+
+Extracting: ru (Russian) — 150 prompt pairs
+  Saved 12 layer vectors for ru
+
+Extracting: ja (Japanese) — 150 prompt pairs
+Traceback (most recent call last):
+  File "/root/clr_paper/experiments/01_extract_steering_vectors.py", line 258, in <module>
+    extract_steering_vectors(
+  File "/root/clr_paper/experiments/01_extract_steering_vectors.py", line 132, in extract_steering_vectors
+    steering_vecs, per_prompt_diffs = sv_extractor.extract(
+                                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/utils/steering.py", line 165, in extract
+    harmful_acts = self.extractor.get_activations(harmful_texts, layer_indices)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/utils/steering.py", line 93, in get_activations
+    _ = self.model(**inputs)
+        ^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 907, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/models/llama/modeling_llama.py", line 474, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 1036, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/utils/output_capturing.py", line 252, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/models/llama/modeling_llama.py", line 411, in forward
+    hidden_states = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/modeling_layers.py", line 93, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1845, in _call_impl
+    return inner()
+           ^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1793, in inner
+    result = forward_call(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/models/llama/modeling_llama.py", line 316, in forward
+    hidden_states, _ = self.self_attn(
+                       ^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/models/llama/modeling_llama.py", line 262, in forward
+    query_states = self.q_proj(hidden_states).view(hidden_shape).transpose(1, 2)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: cannot reshape tensor of 0 elements into shape [8, 0, -1, 128] because the unspecified dimension size -1 can be any value and is ambiguous
+RETRY ERROR deepseek-r1-distill-llama-8b on GPU 1: Command '['python', '-u', 'experiments/01_extract_steering_vectors.py', '--model', 'deepseek-r1-distill-llama-8b', '--output', './results']' returned non-zero exit status 1.
+==================================================
+RETRY: openhermes-2.5-mistral-7b on GPU 1
+==================================================
+Running Phase 1 for openhermes-2.5-mistral-7b...
+
+============================================================
+CLR Paper — Phase 1: Steering Vector Extraction
+Model: openhermes-2.5-mistral-7b | Languages: ['fr', 'en', 'hi', 'de', 'sw', 'pt', 'ru', 'ja', 'ar', 'zh-CN', 'es']
+Output: results/steering_vectors_openhermes-2.5-mistral-7b_20260622_131746
+============================================================
+
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files:  50%|█████     | 1/2 [00:20<00:20, 20.50s/it]Fetching 2 files: 100%|██████████| 2/2 [00:20<00:00, 10.25s/it]
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights:   1%|▏         | 4/291 [00:00<00:09, 29.57it/s]Loading weights:   4%|▍         | 13/291 [00:00<00:04, 57.17it/s]Loading weights:   8%|▊         | 22/291 [00:00<00:03, 67.91it/s]Loading weights:  11%|█         | 31/291 [00:00<00:03, 72.66it/s]Loading weights:  14%|█▎        | 40/291 [00:00<00:03, 74.89it/s]Loading weights:  17%|█▋        | 49/291 [00:00<00:03, 76.32it/s]Loading weights:  20%|█▉        | 58/291 [00:00<00:02, 78.42it/s]Loading weights:  23%|██▎       | 67/291 [00:00<00:02, 79.84it/s]Loading weights:  26%|██▌       | 76/291 [00:01<00:02, 79.69it/s]Loading weights:  29%|██▉       | 85/291 [00:01<00:02, 78.93it/s]Loading weights:  32%|███▏      | 94/291 [00:01<00:02, 79.64it/s]Loading weights:  35%|███▌      | 103/291 [00:01<00:02, 80.07it/s]Loading weights:  38%|███▊      | 112/291 [00:01<00:02, 80.82it/s]Loading weights:  42%|████▏     | 121/291 [00:01<00:02, 80.43it/s]Loading weights:  45%|████▍     | 130/291 [00:01<00:01, 81.34it/s]Loading weights:  48%|████▊     | 139/291 [00:01<00:01, 81.49it/s]Loading weights:  51%|█████     | 148/291 [00:01<00:01, 80.88it/s]Loading weights:  54%|█████▍    | 157/291 [00:02<00:01, 81.32it/s]Loading weights:  57%|█████▋    | 166/291 [00:02<00:01, 81.62it/s]Loading weights:  60%|██████    | 175/291 [00:02<00:01, 80.68it/s]Loading weights:  63%|██████▎   | 184/291 [00:02<00:01, 80.88it/s]Loading weights:  66%|██████▋   | 193/291 [00:02<00:01, 81.31it/s]Loading weights:  69%|██████▉   | 202/291 [00:02<00:01, 81.51it/s]Loading weights:  73%|███████▎  | 211/291 [00:02<00:00, 81.57it/s]Loading weights:  76%|███████▌  | 220/291 [00:02<00:00, 80.97it/s]Loading weights:  79%|███████▊  | 229/291 [00:02<00:00, 81.47it/s]Loading weights:  82%|████████▏ | 238/291 [00:03<00:00, 80.09it/s]Loading weights:  85%|████████▍ | 247/291 [00:03<00:00, 79.31it/s]Loading weights:  88%|████████▊ | 256/291 [00:03<00:00, 79.60it/s]Loading weights:  91%|█████████ | 265/291 [00:03<00:00, 79.56it/s]Loading weights:  94%|█████████▍| 274/291 [00:03<00:00, 79.80it/s]Loading weights:  97%|█████████▋| 283/291 [00:03<00:00, 80.75it/s]Loading weights: 100%|██████████| 291/291 [00:03<00:00, 79.19it/s]
+Analyzing layers: [0, 1, 4, 7, 10, 13, 16, 19, 22, 25, 30, 31] (12 total)
+
+Extracting: fr (French) — 150 prompt pairs
+  Saved 12 layer vectors for fr
+
+Extracting: en (English) — 150 prompt pairs
+  Saved 12 layer vectors for en
+
+Extracting: hi (Hindi) — 150 prompt pairs
+  Epoch 400/1000 — Loss: 2.9716
+  Saved 12 layer vectors for hi
+
+Extracting: de (German) — 150 prompt pairs
+  Saved 12 layer vectors for de
+
+Extracting: sw (Swahili) — 150 prompt pairs
+  Saved 12 layer vectors for sw
+
+Extracting: pt (Portuguese) — 150 prompt pairs
+  Epoch 500/1000 — Loss: 2.1130
+  Saved 12 layer vectors for pt
+
+Extracting: ru (Russian) — 150 prompt pairs
+  Saved 12 layer vectors for ru
+
+Extracting: ja (Japanese) — 150 prompt pairs
+  Saved 12 layer vectors for ja
+
+Extracting: ar (Arabic) — 150 prompt pairs
+  Epoch 600/1000 — Loss: 1.4115
+  Saved 12 layer vectors for ar
+
+Extracting: zh-CN (Chinese) — 150 prompt pairs
+  Saved 12 layer vectors for zh-CN
+
+Extracting: es (Spanish) — 150 prompt pairs
+  Saved 12 layer vectors for es
+
+Running bootstrap CI analysis (10 iterations, 80% subsets)...
+  fr: SCD = 78.2° ± 19.9° (95% CI: [44.9°, 101.4°])
+  hi: SCD = 90.0° ± 18.7° (95% CI: [59.4°, 112.6°])
+  de: SCD = 64.6° ± 15.2° (95% CI: [41.2°, 84.3°])
+  sw: SCD = 96.6° ± 20.1° (95% CI: [63.6°, 121.7°])
+  pt: SCD = 76.8° ± 20.5° (95% CI: [43.4°, 103.0°])
+  ru: SCD = 68.8° ± 17.9° (95% CI: [41.8°, 97.9°])
+  ja: SCD = 74.4° ± 14.1° (95% CI: [58.1°, 98.8°])
+  ar: SCD = 83.6° ± 18.7° (95% CI: [54.5°, 104.7°])
+  zh-CN: SCD = 63.6° ± 13.1° (95% CI: [50.2°, 88.1°])
+  es: SCD = 70.3° ± 17.8° (95% CI: [43.1°, 93.9°])
+
+✓ Phase 1 complete. Results saved to: results/steering_vectors_openhermes-2.5-mistral-7b_20260622_131746
+  Run Phase 2: python experiments/02_pivot_language_analysis.py --input results/steering_vectors_openhermes-2.5-mistral-7b_20260622_131746
+
+============================================================
+CLR Paper — Phase 2: Pivot Language Analysis
+============================================================
+
+Finding most discriminative layer...
+  Most discriminative layer: 31 (SCD variance = 0.1787)
+
+Computing pairwise cosine similarity matrix...
+  Saved similarity matrix: results/steering_vectors_openhermes-2.5-mistral-7b_20260622_131746/phase2_pivot_analysis/cosine_similarity_matrix.csv
+
+Detecting pivot language...
+  Pivot (centrality method): fr
+  Pivot (projection method): es
+
+  Centrality scores (higher = more central):
+    fr: 0.3883
+    es: 0.3847
+    pt: 0.3731
+    ru: 0.3267
+    ar: 0.3264
+    hi: 0.2657
+    de: 0.2656
+    ja: 0.2549
+    sw: 0.2085
+    zh-CN: 0.2057
+    en: 0.1801
+
+Computing Steering Concept Drift (SCD) scores...
+
+  SCD scores (angular distance from English steering direction):
+    sw: 98.3° (HIGH drift)
+    hi: 86.1° (HIGH drift)
+    ja: 84.6° (HIGH drift)
+    ar: 82.4° (HIGH drift)
+    zh-CN: 79.6° (HIGH drift)
+    de: 77.2° (HIGH drift)
+    fr: 75.0° (HIGH drift)
+    ru: 73.4° (HIGH drift)
+    pt: 69.5° (HIGH drift)
+    es: 69.2° (HIGH drift)
+    en: 0.0° (LOW drift)
+
+Analyzing language family clustering in steering space...
+
+  Within-family mean cosine similarities:
+    Romance: 0.6079
+    Germanic: 0.2222
+
+  Cross-family baseline similarity: 0.2716
+  → Within-family similarities are consistently higher: supports family clustering hypothesis
+
+Computing PCA projection of steering space...
+  PCA explained variance: 46.9% (first 3 components)
+
+Running statistical tests...
+  English centrality permutation test (n=10000): p=1.0000
+  Mantel test (family clustering): r=0.463, p=0.0038
+
+  FDR-corrected p-values:
+    english_centrality_permutation: raw=1.0000, FDR=0.0076
+    mantel_family_clustering: raw=0.0038, FDR=1.0000
+
+✓ Phase 2 complete. Results saved to: results/steering_vectors_openhermes-2.5-mistral-7b_20260622_131746/phase2_pivot_analysis
+  Run Phase 3: python experiments/03_concept_drift_metric.py --input ./results/steering_vectors_openhermes-2.5-mistral-7b_20260622_131746
+
+============================================================
+CLR Phase 4: Psycholinguistic Prior Validation
+============================================================
+
+Languages in analysis: ['fr', 'hi', 'de', 'sw', 'pt', 'ru', 'ja', 'ar', 'zh-CN', 'es']
+N = 10
+
+Regression Results: Predicting SCD from distance measures
+--------------------------------------------------
+
+  Typological only:
+    R² = 0.477
+    Pearson r = 0.692 (p=0.0266)
+    Spearman r = 0.624 (p=0.0537)
+
+  Psycholinguistic only:
+    R² = 0.525
+    Pearson r = 0.726 (p=0.0173)
+    Spearman r = 0.721 (p=0.0186)
+
+  Combined:
+    R² = 0.518
+    Pearson r = 0.720 (p=0.0188)
+    Spearman r = 0.721 (p=0.0186)
+
+  *** Psycholinguistic improvement over typological: ΔR² = 0.049 ***
+
+  Language breakdown saved to: results/steering_vectors_openhermes-2.5-mistral-7b_20260622_131746/phase4_psycholinguistic/language_distances.csv
+
+  [Prolific data not found — run behavioral study to add this result]
+  Tip: 50 participants × 12 languages × 15 scenarios ≈ $200 on Prolific
+
+✓ Phase 4 complete.
+
+============================================================
+CLR Phase 5: Language-Anchored Steering (LAS)
+============================================================
+
+
+Training LAS (10 languages, 4096-dim, 1000 epochs on cuda)...
+  Epoch 700/1000 — Loss: 1.1497
+  Epoch 100/1000 — Loss: 4.1519
+  Epoch 800/1000 — Loss: 1.0069
+  Epoch 200/1000 — Loss: 4.3919
+  Epoch 900/1000 — Loss: 0.9849
+  Epoch 300/1000 — Loss: 3.4118
+  Epoch 1000/1000 — Loss: 0.8552
+
+LAS Fidelity Evaluation:
+--------------------------------------------------
+Language       Baseline Sim    LAS Sim   Improvement   Rotation |R-I|
+--------------------------------------------------
+  fr                  0.214      0.999        +0.785          1.345  ✓
+  hi                  0.026      1.000        +0.974          1.196  ✓
+  de                  0.236      0.998        +0.762          1.137  ✓
+  sw                  0.125      0.999        +0.875          1.204  ✓
+  pt                  0.243      0.994        +0.750          1.082  ✓
+  ru                  0.104      1.000        +0.896          1.269  ✓
+  ja                  0.320      1.000        +0.680          1.206  ✓
+  ar                  0.111      0.995        +0.884          1.140  ✓
+  zh-CN               0.478      1.000        +0.522          1.118  ✓
+  es                  0.293      1.000        +0.706          1.083  ✓
+
+  Rotation magnitude ~ Psycholinguistic distance:
+  Pearson r = 0.031, p = 0.9327
+  → does not confirm Sapir-Whorf prediction
+
+✓ Phase 5 complete.
+
+============================================================
+CLR Phase 6: Safety Failure Prediction from SCD
+============================================================
+
+Analyzing 10 languages: ['fr', 'hi', 'de', 'sw', 'pt', 'ru', 'ja', 'ar', 'zh-CN', 'es']
+
+Correlation: SCD → Jailbreak Rate
+  Pearson  r = 0.077  (p=0.8332)
+  Spearman r = 0.018  (p=0.9602)
+
+Correlation: Psycholinguistic Distance → Jailbreak Rate
+  Pearson  r = 0.943  (p=0.0000)
+
+LOO-CV R² (SCD only):     -0.712
+LOO-CV R² (SCD + Psycho): 0.811
+Bootstrap R² (SCD, n=1000): 0.123 (95% CI: [0.000, 0.800])
+Effect size (Cohen's d, high vs low risk): -1.275
+
+  FDR-corrected p-values:
+    scd_jailbreak_pearson: raw=0.8332, FDR=0.0001
+    scd_jailbreak_spearman: raw=0.9602, FDR=0.0001
+    psycho_jailbreak: raw=0.0000, FDR=1.0000
+
+Binary Classification (high-risk threshold = 0.3)
+  AUC = 0.810
+  High-risk languages: ['sw', 'ja', 'zh-CN']
+
+  Prediction table saved to: results/steering_vectors_qwen3-8b-instruct_20260622_124421/phase6_safety_prediction/safety_prediction_table.csv
+
+✓ Phase 6 complete.
+
+============================================================
+CLR Phase 7: Code-Mixed Instability — EACL Callback
+============================================================
+
+Analyzing geometric position of code-mixed steering direction...
+  [Code-mixed steering vectors not found at results/steering_vectors_qwen3-8b-instruct_20260622_124421/cm/layer_000.npy]
+  Run Phase 1 with --languages en hi cm to generate them
+  Or add 'cm' to ALL_PROMPT_PAIRS in experiment 01
+
+Instability analysis: variance of code-mixed steering directions
+  (High variance = model is confused about which 'language mode' to use)
+  [Requires running Phase 1 with multiple code-mixed prompt subsets]
+  [If you have those results, load them here and compute variance]
+
+Connection to EACL 2026 findings:
+  Your EACL paper found that reasoning quality degrades in code-mixed text.
+  Geometric explanation:
+  - Model receives code-mixed input
+  - Activates a steering direction BETWEEN English and Hindi
+  - This direction doesn't strongly align with safety concepts in EITHER language
+  - Result: safety steering is weakened → model 'forgets' constraints
+  - Analogous to bilingual cognitive load in psycholinguistics
+  - Supports: Li et al. (2022) 'Language Confusion in Multilingual LLMs'
+              Green & Abutalebi (2013) Bilingual language control theory
+
+✓ Phase 7 complete.
+  This provides the mechanistic link between your EACL and CLR papers.
+
+============================================================
+Generating all paper figures...
+Output: results/figures_qwen3-8b-instruct
+============================================================
+
+/root/clr_paper/utils/visualization.py:60: UserWarning: Glyph 9733 (\N{BLACK STAR}) missing from font(s) DejaVu Serif.
+  fig.savefig(path, bbox_inches="tight", dpi=300)
+/root/clr_paper/utils/visualization.py:61: UserWarning: Glyph 9733 (\N{BLACK STAR}) missing from font(s) DejaVu Serif.
+  fig.savefig(str(path).replace(".pdf", ".png"), bbox_inches="tight", dpi=150)
+  Saved: results/figures_qwen3-8b-instruct/fig1_steering_pca.pdf
+  Saved: results/figures_qwen3-8b-instruct/fig2_scd_layers.pdf
+  Saved: results/figures_qwen3-8b-instruct/fig3_scd_jailbreak.pdf
+  Saved: results/figures_qwen3-8b-instruct/fig4_las_rotations.pdf
+  Saved: results/figures_qwen3-8b-instruct/fig5_similarity_heatmap.pdf
+
+✓ All figures saved to: results/figures_qwen3-8b-instruct
+RETRY complete for qwen3-8b-instruct
+==================================================
+RETRY: internlm2.5-7b-chat on GPU 0
+==================================================
+Running Phase 1 for internlm2.5-7b-chat...
+
+============================================================
+CLR Paper — Phase 1: Steering Vector Extraction
+Model: internlm2.5-7b-chat | Languages: ['fr', 'en', 'hi', 'de', 'sw', 'pt', 'ru', 'ja', 'ar', 'zh-CN', 'es']
+Output: results/steering_vectors_internlm2.5-7b-chat_20260622_135442
+============================================================
+
+[transformers] Encountered exception while importing einops: No module named 'einops'
+Traceback (most recent call last):
+  File "/root/clr_paper/experiments/01_extract_steering_vectors.py", line 258, in <module>
+    extract_steering_vectors(
+  File "/root/clr_paper/experiments/01_extract_steering_vectors.py", line 100, in extract_steering_vectors
+    model, tokenizer = loader.load(model_key, quantize_4bit=quantize, hf_token=hf_token)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/models/model_loader.py", line 95, in load
+    model = AutoModelForCausalLM.from_pretrained(model_id, token=hf_token, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 378, in from_pretrained
+    model_class = get_class_from_dynamic_module(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 612, in get_class_from_dynamic_module
+    final_module = get_cached_module_file(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 441, in get_cached_module_file
+    modules_needed = check_imports(resolved_module_file)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/dynamic_module_utils.py", line 258, in check_imports
+    raise ImportError(
+ImportError: This modeling file requires the following packages that were not found in your environment: einops. Run `pip install einops`
+RETRY ERROR internlm2.5-7b-chat on GPU 0: Command '['python', '-u', 'experiments/01_extract_steering_vectors.py', '--model', 'internlm2.5-7b-chat', '--output', './results']' returned non-zero exit status 1.
+  Epoch 400/1000 — Loss: 2.9137
+  Epoch 500/1000 — Loss: 2.0339
+  Epoch 600/1000 — Loss: 1.4539
+  Epoch 700/1000 — Loss: 1.1275
+  Epoch 800/1000 — Loss: 0.9967
+  Epoch 900/1000 — Loss: 0.8713
+  Epoch 1000/1000 — Loss: 0.8209
+
+LAS Fidelity Evaluation:
+--------------------------------------------------
+Language       Baseline Sim    LAS Sim   Improvement   Rotation |R-I|
+--------------------------------------------------
+  fr                  0.259      0.999        +0.739          1.076  ✓
+  hi                  0.068      1.000        +0.932          1.235  ✓
+  de                  0.222      0.998        +0.776          1.086  ✓
+  sw                 -0.144      1.000        +1.144          1.149  ✓
+  pt                  0.350      0.998        +0.648          1.114  ✓
+  ru                  0.286      0.997        +0.712          1.131  ✓
+  ja                  0.094      0.998        +0.904          1.138  ✓
+  ar                  0.132      0.996        +0.864          1.151  ✓
+  zh-CN               0.180      0.997        +0.817          1.153  ✓
+  es                  0.354      0.999        +0.644          1.070  ✓
+
+  Rotation magnitude ~ Psycholinguistic distance:
+  Pearson r = 0.699, p = 0.0246
+  → CONFIRMS Sapir-Whorf prediction
+
+✓ Phase 5 complete.
+
+============================================================
+CLR Phase 6: Safety Failure Prediction from SCD
+============================================================
+
+Analyzing 10 languages: ['fr', 'hi', 'de', 'sw', 'pt', 'ru', 'ja', 'ar', 'zh-CN', 'es']
+
+Correlation: SCD → Jailbreak Rate
+  Pearson  r = 0.876  (p=0.0009)
+  Spearman r = 0.855  (p=0.0016)
+
+Correlation: Psycholinguistic Distance → Jailbreak Rate
+  Pearson  r = 0.943  (p=0.0000)
+
+LOO-CV R² (SCD only):     0.686
+LOO-CV R² (SCD + Psycho): 0.860
+Bootstrap R² (SCD, n=1000): 0.745 (95% CI: [0.419, 0.938])
+Effect size (Cohen's d, high vs low risk): 1.772
+
+  FDR-corrected p-values:
+    scd_jailbreak_pearson: raw=0.0009, FDR=0.0001
+    scd_jailbreak_spearman: raw=0.0016, FDR=0.0001
+    psycho_jailbreak: raw=0.0000, FDR=0.0013
+
+Binary Classification (high-risk threshold = 0.3)
+  AUC = 0.857
+  High-risk languages: ['sw', 'ja', 'zh-CN']
+
+  Prediction table saved to: results/steering_vectors_openhermes-2.5-mistral-7b_20260622_131746/phase6_safety_prediction/safety_prediction_table.csv
+
+✓ Phase 6 complete.
+
+============================================================
+CLR Phase 7: Code-Mixed Instability — EACL Callback
+============================================================
+
+Analyzing geometric position of code-mixed steering direction...
+  [Code-mixed steering vectors not found at results/steering_vectors_openhermes-2.5-mistral-7b_20260622_131746/cm/layer_031.npy]
+  Run Phase 1 with --languages en hi cm to generate them
+  Or add 'cm' to ALL_PROMPT_PAIRS in experiment 01
+
+Instability analysis: variance of code-mixed steering directions
+  (High variance = model is confused about which 'language mode' to use)
+  [Requires running Phase 1 with multiple code-mixed prompt subsets]
+  [If you have those results, load them here and compute variance]
+
+Connection to EACL 2026 findings:
+  Your EACL paper found that reasoning quality degrades in code-mixed text.
+  Geometric explanation:
+  - Model receives code-mixed input
+  - Activates a steering direction BETWEEN English and Hindi
+  - This direction doesn't strongly align with safety concepts in EITHER language
+  - Result: safety steering is weakened → model 'forgets' constraints
+  - Analogous to bilingual cognitive load in psycholinguistics
+  - Supports: Li et al. (2022) 'Language Confusion in Multilingual LLMs'
+              Green & Abutalebi (2013) Bilingual language control theory
+
+✓ Phase 7 complete.
+  This provides the mechanistic link between your EACL and CLR papers.
+
+============================================================
+Generating all paper figures...
+Output: results/figures_openhermes-2.5-mistral-7b
+============================================================
+
+/root/clr_paper/utils/visualization.py:60: UserWarning: Glyph 9733 (\N{BLACK STAR}) missing from font(s) DejaVu Serif.
+  fig.savefig(path, bbox_inches="tight", dpi=300)
+/root/clr_paper/utils/visualization.py:61: UserWarning: Glyph 9733 (\N{BLACK STAR}) missing from font(s) DejaVu Serif.
+  fig.savefig(str(path).replace(".pdf", ".png"), bbox_inches="tight", dpi=150)
+  Saved: results/figures_openhermes-2.5-mistral-7b/fig1_steering_pca.pdf
+  Saved: results/figures_openhermes-2.5-mistral-7b/fig2_scd_layers.pdf
+  Saved: results/figures_openhermes-2.5-mistral-7b/fig3_scd_jailbreak.pdf
+  Saved: results/figures_openhermes-2.5-mistral-7b/fig4_las_rotations.pdf
+  Saved: results/figures_openhermes-2.5-mistral-7b/fig5_similarity_heatmap.pdf
+
+✓ All figures saved to: results/figures_openhermes-2.5-mistral-7b
+RETRY complete for openhermes-2.5-mistral-7b
+
+All retries completed!

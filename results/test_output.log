@@ -1,0 +1,10 @@
+
+============================================================
+Experiment 11: phi-4-mini-instruct
+============================================================
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] This model config has set a `rope_parameters['original_max_position_embeddings']` field, to be used together with `max_position_embeddings` to determine a scaling factor. Please set the `factor` field of `rope_parameters`with this ratio instead -- we recommend the use of this field over `original_max_position_embeddings`, as it is compatible with most model architectures.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/194 [00:00<?, ?it/s]Loading weights:   1%|          | 1/194 [00:00<01:40,  1.92it/s]Loading weights:  24%|██▎       | 46/194 [00:00<00:01, 94.56it/s]Loading weights:  36%|███▌      | 69/194 [00:00<00:01, 119.95it/s]Loading weights:  46%|████▋     | 90/194 [00:00<00:00, 132.77it/s]Loading weights:  57%|█████▋    | 110/194 [00:01<00:00, 139.44it/s]Loading weights:  66%|██████▋   | 129/194 [00:01<00:00, 144.65it/s]Loading weights:  76%|███████▋  | 148/194 [00:01<00:00, 148.66it/s]Loading weights:  86%|████████▌ | 166/194 [00:01<00:00, 153.84it/s]Loading weights:  95%|█████████▍| 184/194 [00:01<00:00, 158.02it/s]Loading weights: 100%|██████████| 194/194 [00:01<00:00, 129.65it/s]
+
+--- en ---

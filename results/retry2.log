@@ -1,0 +1,617 @@
+Waiting for main retry to complete...
+Main retry finished. Starting Phi/Falcon retry...
+====================================================
+RETRY2: falcon-7b on GPU 0
+====================================================
+
+============================================================
+CLR Paper — Phase 1: Steering Vector Extraction
+Model: falcon-7b | Languages: ['fr', 'en', 'hi', 'de', 'sw', 'pt', 'ru', 'ja', 'ar', 'zh-CN', 'es']
+Output: results/steering_vectors_falcon-7b_20260622_143043
+============================================================
+
+[transformers] You are loading your model using eetq but no linear modules were found in your model. Please double check your model architecture, or submit an issue on github if you think this is a bug.
+Traceback (most recent call last):
+  File "/root/clr_paper/experiments/01_extract_steering_vectors.py", line 258, in <module>
+    extract_steering_vectors(
+  File "/root/clr_paper/experiments/01_extract_steering_vectors.py", line 100, in extract_steering_vectors
+    model, tokenizer = loader.load(model_key, quantize_4bit=quantize, hf_token=hf_token)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/models/model_loader.py", line 95, in load
+    model = AutoModelForCausalLM.from_pretrained(model_id, token=hf_token, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 404, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4300, in from_pretrained
+    device_map = _get_device_map(model, device_map, max_memory, hf_quantizer)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/integrations/accelerate.py", line 373, in _get_device_map
+    hf_quantizer.validate_environment(device_map=device_map)
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/quantizers/quantizer_bnb_4bit.py", line 74, in validate_environment
+    raise ValueError(
+ValueError: Some modules are dispatched on the CPU or the disk. Make sure you have enough GPU RAM to fit the quantized model. If you want to dispatch the model on the CPU or the disk while keeping these modules in 32-bit, you need to set `llm_int8_enable_fp32_cpu_offload=True` and pass a custom `device_map` to `from_pretrained`. Check https://huggingface.co/docs/transformers/main/en/main_classes/quantization#offload-between-cpu-and-gpu for more details. 
+Phase 1 FAILED for falcon-7b, skipping
+====================================================
+RETRY2: falcon-7b-instruct on GPU 0
+====================================================
+
+============================================================
+CLR Paper — Phase 1: Steering Vector Extraction
+Model: falcon-7b-instruct | Languages: ['fr', 'en', 'hi', 'de', 'sw', 'pt', 'ru', 'ja', 'ar', 'zh-CN', 'es']
+Output: results/steering_vectors_falcon-7b-instruct_20260622_143053
+============================================================
+
+[transformers] You are loading your model using eetq but no linear modules were found in your model. Please double check your model architecture, or submit an issue on github if you think this is a bug.
+Traceback (most recent call last):
+  File "/root/clr_paper/experiments/01_extract_steering_vectors.py", line 258, in <module>
+    extract_steering_vectors(
+  File "/root/clr_paper/experiments/01_extract_steering_vectors.py", line 100, in extract_steering_vectors
+    model, tokenizer = loader.load(model_key, quantize_4bit=quantize, hf_token=hf_token)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/models/model_loader.py", line 95, in load
+    model = AutoModelForCausalLM.from_pretrained(model_id, token=hf_token, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 404, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4300, in from_pretrained
+    device_map = _get_device_map(model, device_map, max_memory, hf_quantizer)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/integrations/accelerate.py", line 373, in _get_device_map
+    hf_quantizer.validate_environment(device_map=device_map)
+  File "/root/clr_paper/venv/lib/python3.12/site-packages/transformers/quantizers/quantizer_bnb_4bit.py", line 74, in validate_environment
+    raise ValueError(
+ValueError: Some modules are dispatched on the CPU or the disk. Make sure you have enough GPU RAM to fit the quantized model. If you want to dispatch the model on the CPU or the disk while keeping these modules in 32-bit, you need to set `llm_int8_enable_fp32_cpu_offload=True` and pass a custom `device_map` to `from_pretrained`. Check https://huggingface.co/docs/transformers/main/en/main_classes/quantization#offload-between-cpu-and-gpu for more details. 
+Phase 1 FAILED for falcon-7b-instruct, skipping
+====================================================
+RETRY2: phi-3-mini-4k-instruct on GPU 0
+====================================================
+
+============================================================
+CLR Paper — Phase 1: Steering Vector Extraction
+Model: phi-3-mini-4k-instruct | Languages: ['fr', 'en', 'hi', 'de', 'sw', 'pt', 'ru', 'ja', 'ar', 'zh-CN', 'es']
+Output: results/steering_vectors_phi-3-mini-4k-instruct_20260622_143103
+============================================================
+
+Loading weights:   0%|          | 0/195 [00:00<?, ?it/s]Loading weights:   1%|          | 1/195 [00:00<01:18,  2.48it/s]Loading weights:   1%|          | 2/195 [00:00<01:23,  2.32it/s]Loading weights:   2%|▏         | 4/195 [00:01<00:40,  4.76it/s]Loading weights:   3%|▎         | 5/195 [00:01<00:37,  5.05it/s]Loading weights:   4%|▍         | 8/195 [00:01<00:20,  9.34it/s]Loading weights:   6%|▌         | 11/195 [00:01<00:14, 12.40it/s]Loading weights:   8%|▊         | 16/195 [00:01<00:09, 18.65it/s]Loading weights:  10%|▉         | 19/195 [00:01<00:08, 20.62it/s]Loading weights:  11%|█▏        | 22/195 [00:01<00:07, 22.75it/s]Loading weights:  13%|█▎        | 25/195 [00:01<00:07, 23.71it/s]Loading weights:  15%|█▍        | 29/195 [00:02<00:07, 22.56it/s]Loading weights:  17%|█▋        | 34/195 [00:02<00:05, 27.92it/s]Loading weights:  19%|█▉        | 38/195 [00:02<00:05, 27.28it/s]Loading weights:  21%|██        | 41/195 [00:02<00:05, 26.33it/s]Loading weights:  24%|██▎       | 46/195 [00:02<00:04, 31.43it/s]Loading weights:  26%|██▌       | 50/195 [00:02<00:04, 29.88it/s]Loading weights:  28%|██▊       | 54/195 [00:02<00:04, 31.13it/s]Loading weights:  30%|███       | 59/195 [00:03<00:04, 30.17it/s]Loading weights:  33%|███▎      | 64/195 [00:03<00:03, 34.13it/s]Loading weights:  35%|███▍      | 68/195 [00:03<00:03, 32.97it/s]Loading weights:  37%|███▋      | 72/195 [00:03<00:03, 33.68it/s]Loading weights:  39%|███▉      | 77/195 [00:03<00:03, 31.98it/s]Loading weights:  43%|████▎     | 83/195 [00:03<00:03, 32.92it/s]Loading weights:  46%|████▌     | 89/195 [00:03<00:03, 33.13it/s]Loading weights:  48%|████▊     | 94/195 [00:04<00:02, 36.59it/s]Loading weights:  50%|█████     | 98/195 [00:04<00:02, 35.63it/s]Loading weights:  52%|█████▏    | 102/195 [00:04<00:02, 35.55it/s]Loading weights:  55%|█████▍    | 107/195 [00:04<00:02, 33.40it/s]Loading weights:  58%|█████▊    | 113/195 [00:04<00:02, 33.75it/s]Loading weights:  61%|██████    | 118/195 [00:04<00:02, 37.13it/s]Loading weights:  63%|██████▎   | 122/195 [00:04<00:02, 34.52it/s]Loading weights:  65%|██████▍   | 126/195 [00:04<00:02, 31.82it/s]Loading weights:  67%|██████▋   | 130/195 [00:05<00:02, 32.35it/s]Loading weights:  69%|██████▊   | 134/195 [00:05<00:01, 32.00it/s]Loading weights:  71%|███████   | 138/195 [00:05<00:01, 32.82it/s]Loading weights:  73%|███████▎  | 143/195 [00:05<00:01, 32.08it/s]Loading weights:  76%|███████▌  | 148/195 [00:05<00:01, 33.68it/s]Loading weights:  78%|███████▊  | 152/195 [00:05<00:01, 32.83it/s]Loading weights:  80%|████████  | 156/195 [00:05<00:01, 32.55it/s]Loading weights:  82%|████████▏ | 160/195 [00:06<00:01, 34.05it/s]Loading weights:  84%|████████▍ | 164/195 [00:06<00:00, 31.33it/s]Loading weights:  86%|████████▌ | 168/195 [00:06<00:00, 31.53it/s]Loading weights:  89%|████████▊ | 173/195 [00:06<00:00, 29.70it/s]Loading weights:  92%|█████████▏| 179/195 [00:06<00:00, 31.17it/s]Loading weights:  94%|█████████▍| 184/195 [00:06<00:00, 34.31it/s]Loading weights:  96%|█████████▋| 188/195 [00:06<00:00, 32.92it/s]Loading weights:  98%|█████████▊| 192/195 [00:07<00:00, 31.89it/s]Loading weights: 100%|██████████| 195/195 [00:07<00:00, 27.33it/s]
+Analyzing layers: [0, 1, 4, 7, 10, 13, 16, 19, 22, 25, 30, 31] (12 total)
+
+Extracting: fr (French) — 150 prompt pairs
+  Saved 12 layer vectors for fr
+
+Extracting: en (English) — 150 prompt pairs
+  Saved 12 layer vectors for en
+
+Extracting: hi (Hindi) — 150 prompt pairs
+  Saved 12 layer vectors for hi
+
+Extracting: de (German) — 150 prompt pairs
+  Saved 12 layer vectors for de
+
+Extracting: sw (Swahili) — 150 prompt pairs
+  Saved 12 layer vectors for sw
+
+Extracting: pt (Portuguese) — 150 prompt pairs
+  Saved 12 layer vectors for pt
+
+Extracting: ru (Russian) — 150 prompt pairs
+  Saved 12 layer vectors for ru
+
+Extracting: ja (Japanese) — 150 prompt pairs
+  Saved 12 layer vectors for ja
+
+Extracting: ar (Arabic) — 150 prompt pairs
+  Saved 12 layer vectors for ar
+
+Extracting: zh-CN (Chinese) — 150 prompt pairs
+  Saved 12 layer vectors for zh-CN
+
+Extracting: es (Spanish) — 150 prompt pairs
+  Saved 12 layer vectors for es
+
+Running bootstrap CI analysis (10 iterations, 80% subsets)...
+  fr: SCD = 81.5° ± 30.9° (95% CI: [34.4°, 134.5°])
+  hi: SCD = 90.0° ± 29.5° (95% CI: [44.3°, 138.9°])
+  de: SCD = 72.1° ± 29.5° (95% CI: [30.6°, 120.2°])
+  sw: SCD = 90.3° ± 30.9° (95% CI: [42.8°, 142.4°])
+  pt: SCD = 79.5° ± 31.2° (95% CI: [33.2°, 131.3°])
+  ru: SCD = 78.2° ± 28.3° (95% CI: [36.4°, 125.9°])
+  ja: SCD = 77.3° ± 23.6° (95% CI: [41.5°, 120.4°])
+  ar: SCD = 85.8° ± 29.0° (95% CI: [42.5°, 134.1°])
+  zh-CN: SCD = 64.0° ± 19.1° (95% CI: [37.1°, 102.3°])
+  es: SCD = 76.1° ± 30.2° (95% CI: [32.9°, 127.0°])
+
+✓ Phase 1 complete. Results saved to: results/steering_vectors_phi-3-mini-4k-instruct_20260622_143103
+  Run Phase 2: python experiments/02_pivot_language_analysis.py --input results/steering_vectors_phi-3-mini-4k-instruct_20260622_143103
+
+============================================================
+CLR Paper — Phase 2: Pivot Language Analysis
+============================================================
+
+Finding most discriminative layer...
+  Most discriminative layer: 31 (SCD variance = 0.1819)
+
+Computing pairwise cosine similarity matrix...
+  Saved similarity matrix: results/steering_vectors_phi-3-mini-4k-instruct_20260622_143103/phase2_pivot_analysis/cosine_similarity_matrix.csv
+
+Detecting pivot language...
+  Pivot (centrality method): es
+  Pivot (projection method): es
+
+  Centrality scores (higher = more central):
+    es: 0.2872
+    pt: 0.2811
+    fr: 0.2285
+    en: 0.2159
+    de: 0.2013
+    ja: 0.1576
+    zh-CN: 0.1409
+    ar: 0.1211
+    hi: 0.1102
+    ru: 0.0824
+    sw: -0.0571
+
+Computing Steering Concept Drift (SCD) scores...
+
+  SCD scores (angular distance from English steering direction):
+    sw: 93.3° (HIGH drift)
+    ru: 90.6° (HIGH drift)
+    ar: 89.5° (HIGH drift)
+    ja: 81.6° (HIGH drift)
+    de: 79.2° (HIGH drift)
+    fr: 75.2° (HIGH drift)
+    hi: 68.1° (HIGH drift)
+    es: 65.9° (HIGH drift)
+    pt: 65.6° (HIGH drift)
+    zh-CN: 64.1° (HIGH drift)
+    en: 0.0° (LOW drift)
+
+Analyzing language family clustering in steering space...
+
+  Within-family mean cosine similarities:
+    Romance: 0.5272
+    Germanic: 0.1870
+
+  Cross-family baseline similarity: 0.1388
+  → Within-family similarities are consistently higher: supports family clustering hypothesis
+
+Computing PCA projection of steering space...
+  PCA explained variance: 50.3% (first 3 components)
+
+Running statistical tests...
+  English centrality permutation test (n=10000): p=0.3637
+  Mantel test (family clustering): r=0.412, p=0.0032
+
+  FDR-corrected p-values:
+    english_centrality_permutation: raw=0.3637, FDR=0.0064
+    mantel_family_clustering: raw=0.0032, FDR=0.3637
+
+✓ Phase 2 complete. Results saved to: results/steering_vectors_phi-3-mini-4k-instruct_20260622_143103/phase2_pivot_analysis
+  Run Phase 3: python experiments/03_concept_drift_metric.py --input results/steering_vectors_phi-3-mini-4k-instruct_20260622_143103
+
+============================================================
+CLR Phase 4: Psycholinguistic Prior Validation
+============================================================
+
+Languages in analysis: ['fr', 'hi', 'de', 'sw', 'pt', 'ru', 'ja', 'ar', 'zh-CN', 'es']
+N = 10
+
+Regression Results: Predicting SCD from distance measures
+--------------------------------------------------
+
+  Typological only:
+    R² = 0.091
+    Pearson r = 0.302 (p=0.3967)
+    Spearman r = 0.103 (p=0.7770)
+
+  Psycholinguistic only:
+    R² = 0.148
+    Pearson r = 0.385 (p=0.2715)
+    Spearman r = 0.200 (p=0.5796)
+
+  Combined:
+    R² = 0.194
+    Pearson r = 0.456 (p=0.1856)
+    Spearman r = 0.503 (p=0.1383)
+
+  *** Psycholinguistic improvement over typological: ΔR² = 0.057 ***
+
+  Language breakdown saved to: results/steering_vectors_phi-3-mini-4k-instruct_20260622_143103/phase4_psycholinguistic/language_distances.csv
+
+  [Prolific data not found — run behavioral study to add this result]
+  Tip: 50 participants × 12 languages × 15 scenarios ≈ $200 on Prolific
+
+✓ Phase 4 complete.
+
+============================================================
+CLR Phase 5: Language-Anchored Steering (LAS)
+============================================================
+
+
+Training LAS (10 languages, 3072-dim, 1000 epochs on cuda)...
+  Epoch 100/1000 — Loss: 5.3910
+  Epoch 200/1000 — Loss: 5.4415
+  Epoch 300/1000 — Loss: 3.2999
+  Epoch 400/1000 — Loss: 2.7330
+  Epoch 500/1000 — Loss: 2.2817
+  Epoch 600/1000 — Loss: 1.5439
+  Epoch 700/1000 — Loss: 1.6945
+  Epoch 800/1000 — Loss: 1.2476
+  Epoch 900/1000 — Loss: 1.4453
+  Epoch 1000/1000 — Loss: 1.0673
+
+LAS Fidelity Evaluation:
+--------------------------------------------------
+Language       Baseline Sim    LAS Sim   Improvement   Rotation |R-I|
+--------------------------------------------------
+  fr                  0.256      0.999        +0.743          1.152  ✓
+  hi                  0.373      0.913        +0.540          1.447  ✓
+  de                  0.187      0.999        +0.812          1.102  ✓
+  sw                 -0.058      1.000        +1.058          1.152  ✓
+  pt                  0.413      0.997        +0.585          1.409  ✓
+  ru                 -0.011      1.000        +1.011          1.161  ✓
+  ja                  0.146      1.000        +0.854          1.262  ✓
+  ar                  0.009      1.000        +0.991          1.154  ✓
+  zh-CN               0.436      0.933        +0.496          1.537  ✓
+  es                  0.408      0.999        +0.590          1.372  ✓
+
+  Rotation magnitude ~ Psycholinguistic distance:
+  Pearson r = 0.132, p = 0.7159
+  → does not confirm Sapir-Whorf prediction
+
+✓ Phase 5 complete.
+
+============================================================
+CLR Phase 6: Safety Failure Prediction from SCD
+============================================================
+
+Analyzing 10 languages: ['fr', 'hi', 'de', 'sw', 'pt', 'ru', 'ja', 'ar', 'zh-CN', 'es']
+
+Correlation: SCD → Jailbreak Rate
+  Pearson  r = 0.496  (p=0.1445)
+  Spearman r = 0.442  (p=0.2004)
+
+Correlation: Psycholinguistic Distance → Jailbreak Rate
+  Pearson  r = 0.943  (p=0.0000)
+
+LOO-CV R² (SCD only):     -0.229
+LOO-CV R² (SCD + Psycho): 0.806
+Bootstrap R² (SCD, n=1000): 0.299 (95% CI: [0.002, 0.794])
+Effect size (Cohen's d, high vs low risk): 0.325
+
+  FDR-corrected p-values:
+    scd_jailbreak_pearson: raw=0.1445, FDR=0.0001
+    scd_jailbreak_spearman: raw=0.2004, FDR=0.0001
+    psycho_jailbreak: raw=0.0000, FDR=0.2168
+
+Binary Classification (high-risk threshold = 0.3)
+  AUC = 0.571
+  High-risk languages: ['sw', 'ja', 'zh-CN']
+
+  Prediction table saved to: results/steering_vectors_phi-3-mini-4k-instruct_20260622_143103/phase6_safety_prediction/safety_prediction_table.csv
+
+✓ Phase 6 complete.
+
+============================================================
+CLR Phase 7: Code-Mixed Instability — EACL Callback
+============================================================
+
+Analyzing geometric position of code-mixed steering direction...
+  [Code-mixed steering vectors not found at results/steering_vectors_phi-3-mini-4k-instruct_20260622_143103/cm/layer_031.npy]
+  Run Phase 1 with --languages en hi cm to generate them
+  Or add 'cm' to ALL_PROMPT_PAIRS in experiment 01
+
+Instability analysis: variance of code-mixed steering directions
+  (High variance = model is confused about which 'language mode' to use)
+  [Requires running Phase 1 with multiple code-mixed prompt subsets]
+  [If you have those results, load them here and compute variance]
+
+Connection to EACL 2026 findings:
+  Your EACL paper found that reasoning quality degrades in code-mixed text.
+  Geometric explanation:
+  - Model receives code-mixed input
+  - Activates a steering direction BETWEEN English and Hindi
+  - This direction doesn't strongly align with safety concepts in EITHER language
+  - Result: safety steering is weakened → model 'forgets' constraints
+  - Analogous to bilingual cognitive load in psycholinguistics
+  - Supports: Li et al. (2022) 'Language Confusion in Multilingual LLMs'
+              Green & Abutalebi (2013) Bilingual language control theory
+
+✓ Phase 7 complete.
+  This provides the mechanistic link between your EACL and CLR papers.
+
+============================================================
+Generating all paper figures...
+Output: results/figures_phi-3-mini-4k-instruct
+============================================================
+
+/root/clr_paper/utils/visualization.py:60: UserWarning: Glyph 9733 (\N{BLACK STAR}) missing from font(s) DejaVu Serif.
+  fig.savefig(path, bbox_inches="tight", dpi=300)
+/root/clr_paper/utils/visualization.py:61: UserWarning: Glyph 9733 (\N{BLACK STAR}) missing from font(s) DejaVu Serif.
+  fig.savefig(str(path).replace(".pdf", ".png"), bbox_inches="tight", dpi=150)
+  Saved: results/figures_phi-3-mini-4k-instruct/fig1_steering_pca.pdf
+  Saved: results/figures_phi-3-mini-4k-instruct/fig2_scd_layers.pdf
+  Saved: results/figures_phi-3-mini-4k-instruct/fig3_scd_jailbreak.pdf
+  Saved: results/figures_phi-3-mini-4k-instruct/fig4_las_rotations.pdf
+  Saved: results/figures_phi-3-mini-4k-instruct/fig5_similarity_heatmap.pdf
+
+✓ All figures saved to: results/figures_phi-3-mini-4k-instruct
+RETRY2 complete for phi-3-mini-4k-instruct
+====================================================
+RETRY2: phi-4-mini-instruct on GPU 1
+====================================================
+
+============================================================
+CLR Paper — Phase 1: Steering Vector Extraction
+Model: phi-4-mini-instruct | Languages: ['fr', 'en', 'hi', 'de', 'sw', 'pt', 'ru', 'ja', 'ar', 'zh-CN', 'es']
+Output: results/steering_vectors_phi-4-mini-instruct_20260622_150753
+============================================================
+
+[transformers] This model config has set a `rope_parameters['original_max_position_embeddings']` field, to be used together with `max_position_embeddings` to determine a scaling factor. Please set the `factor` field of `rope_parameters`with this ratio instead -- we recommend the use of this field over `original_max_position_embeddings`, as it is compatible with most model architectures.
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files:  50%|█████     | 1/2 [00:08<00:08,  8.96s/it]Fetching 2 files: 100%|██████████| 2/2 [00:08<00:00,  4.48s/it]
+Loading weights:   0%|          | 0/194 [00:00<?, ?it/s]Loading weights:   1%|          | 1/194 [00:00<00:41,  4.62it/s]Loading weights:   5%|▍         | 9/194 [00:00<00:05, 34.43it/s]Loading weights:  11%|█         | 21/194 [00:00<00:02, 64.26it/s]Loading weights:  17%|█▋        | 33/194 [00:00<00:02, 80.07it/s]Loading weights:  23%|██▎       | 45/194 [00:00<00:01, 92.00it/s]Loading weights:  29%|██▉       | 57/194 [00:00<00:01, 99.75it/s]Loading weights:  36%|███▌      | 69/194 [00:00<00:01, 105.06it/s]Loading weights:  42%|████▏     | 81/194 [00:00<00:01, 108.90it/s]Loading weights:  48%|████▊     | 93/194 [00:01<00:00, 110.98it/s]Loading weights:  54%|█████▍    | 105/194 [00:01<00:00, 113.18it/s]Loading weights:  61%|██████    | 118/194 [00:01<00:00, 88.52it/s] Loading weights:  67%|██████▋   | 130/194 [00:01<00:00, 94.07it/s]Loading weights:  73%|███████▎  | 142/194 [00:01<00:00, 97.33it/s]Loading weights:  79%|███████▉  | 154/194 [00:01<00:00, 101.19it/s]Loading weights:  86%|████████▌ | 166/194 [00:01<00:00, 100.00it/s]Loading weights:  92%|█████████▏| 178/194 [00:01<00:00, 102.76it/s]Loading weights:  98%|█████████▊| 190/194 [00:02<00:00, 105.19it/s]Loading weights: 100%|██████████| 194/194 [00:02<00:00, 94.79it/s] 
+Analyzing layers: [0, 1, 4, 7, 10, 13, 16, 19, 22, 25, 30, 31] (12 total)
+
+Extracting: fr (French) — 150 prompt pairs
+  Saved 12 layer vectors for fr
+
+Extracting: en (English) — 150 prompt pairs
+  Saved 12 layer vectors for en
+
+Extracting: hi (Hindi) — 150 prompt pairs
+  Saved 12 layer vectors for hi
+
+Extracting: de (German) — 150 prompt pairs
+  Saved 12 layer vectors for de
+
+Extracting: sw (Swahili) — 150 prompt pairs
+  Saved 12 layer vectors for sw
+
+Extracting: pt (Portuguese) — 150 prompt pairs
+  Saved 12 layer vectors for pt
+
+Extracting: ru (Russian) — 150 prompt pairs
+  Saved 12 layer vectors for ru
+
+Extracting: ja (Japanese) — 150 prompt pairs
+  Saved 12 layer vectors for ja
+
+Extracting: ar (Arabic) — 150 prompt pairs
+  Saved 12 layer vectors for ar
+
+Extracting: zh-CN (Chinese) — 150 prompt pairs
+  Saved 12 layer vectors for zh-CN
+
+Extracting: es (Spanish) — 150 prompt pairs
+  Saved 12 layer vectors for es
+
+Running bootstrap CI analysis (10 iterations, 80% subsets)...
+  fr: SCD = 11.2° ± 6.5° (95% CI: [6.6°, 26.1°])
+  hi: SCD = 16.7° ± 8.3° (95% CI: [9.1°, 33.8°])
+  de: SCD = 23.4° ± 8.7° (95% CI: [10.8°, 36.7°])
+  sw: SCD = 15.9° ± 7.3° (95% CI: [9.6°, 32.4°])
+  pt: SCD = 12.3° ± 7.5° (95% CI: [6.5°, 29.2°])
+  ru: SCD = 37.7° ± 24.7° (95% CI: [16.1°, 92.1°])
+  ja: SCD = 44.8° ± 29.3° (95% CI: [14.6°, 99.7°])
+  ar: SCD = 15.3° ± 6.8° (95% CI: [9.6°, 30.4°])
+  zh-CN: SCD = 48.5° ± 37.5° (95% CI: [15.5°, 113.8°])
+  es: SCD = 11.5° ± 6.6° (95% CI: [6.9°, 26.7°])
+
+✓ Phase 1 complete. Results saved to: results/steering_vectors_phi-4-mini-instruct_20260622_150753
+  Run Phase 2: python experiments/02_pivot_language_analysis.py --input results/steering_vectors_phi-4-mini-instruct_20260622_150753
+
+============================================================
+CLR Paper — Phase 2: Pivot Language Analysis
+============================================================
+
+Finding most discriminative layer...
+  Most discriminative layer: 31 (SCD variance = 0.1538)
+
+Computing pairwise cosine similarity matrix...
+  Saved similarity matrix: results/steering_vectors_phi-4-mini-instruct_20260622_150753/phase2_pivot_analysis/cosine_similarity_matrix.csv
+
+Detecting pivot language...
+  Pivot (centrality method): es
+  Pivot (projection method): es
+
+  Centrality scores (higher = more central):
+    es: 0.3751
+    fr: 0.3674
+    pt: 0.3586
+    ru: 0.3339
+    de: 0.3300
+    zh-CN: 0.2859
+    ar: 0.2785
+    hi: 0.2708
+    ja: 0.2445
+    en: 0.2195
+    sw: 0.1754
+
+Computing Steering Concept Drift (SCD) scores...
+
+  SCD scores (angular distance from English steering direction):
+    ja: 83.6° (HIGH drift)
+    zh-CN: 82.9° (HIGH drift)
+    de: 78.4° (HIGH drift)
+    ar: 78.4° (HIGH drift)
+    hi: 77.3° (HIGH drift)
+    ru: 75.9° (HIGH drift)
+    pt: 75.7° (HIGH drift)
+    sw: 74.1° (HIGH drift)
+    es: 74.1° (HIGH drift)
+    fr: 72.5° (HIGH drift)
+    en: 0.0° (LOW drift)
+
+Analyzing language family clustering in steering space...
+
+  Within-family mean cosine similarities:
+    Romance: 0.6206
+    Germanic: 0.2007
+
+  Cross-family baseline similarity: 0.2772
+  → Within-family similarities are consistently higher: supports family clustering hypothesis
+
+Computing PCA projection of steering space...
+  PCA explained variance: 47.7% (first 3 components)
+
+Running statistical tests...
+  English centrality permutation test (n=10000): p=0.9086
+  Mantel test (family clustering): r=0.488, p=0.0039
+
+  FDR-corrected p-values:
+    english_centrality_permutation: raw=0.9086, FDR=0.0078
+    mantel_family_clustering: raw=0.0039, FDR=0.9086
+
+✓ Phase 2 complete. Results saved to: results/steering_vectors_phi-4-mini-instruct_20260622_150753/phase2_pivot_analysis
+  Run Phase 3: python experiments/03_concept_drift_metric.py --input results/steering_vectors_phi-4-mini-instruct_20260622_150753
+
+============================================================
+CLR Phase 4: Psycholinguistic Prior Validation
+============================================================
+
+Languages in analysis: ['fr', 'hi', 'de', 'sw', 'pt', 'ru', 'ja', 'ar', 'zh-CN', 'es']
+N = 10
+
+Regression Results: Predicting SCD from distance measures
+--------------------------------------------------
+
+  Typological only:
+    R² = 0.428
+    Pearson r = 0.656 (p=0.0395)
+    Spearman r = 0.527 (p=0.1173)
+
+  Psycholinguistic only:
+    R² = 0.397
+    Pearson r = 0.632 (p=0.0502)
+    Spearman r = 0.733 (p=0.0158)
+
+  Combined:
+    R² = 0.423
+    Pearson r = 0.651 (p=0.0416)
+    Spearman r = 0.527 (p=0.1173)
+
+  *** Psycholinguistic improvement over typological: ΔR² = -0.031 ***
+
+  Language breakdown saved to: results/steering_vectors_phi-4-mini-instruct_20260622_150753/phase4_psycholinguistic/language_distances.csv
+
+  [Prolific data not found — run behavioral study to add this result]
+  Tip: 50 participants × 12 languages × 15 scenarios ≈ $200 on Prolific
+
+✓ Phase 4 complete.
+
+============================================================
+CLR Phase 5: Language-Anchored Steering (LAS)
+============================================================
+
+
+Training LAS (10 languages, 3072-dim, 1000 epochs on cuda)...
+  Epoch 100/1000 — Loss: 3.1663
+  Epoch 200/1000 — Loss: 3.5249
+  Epoch 300/1000 — Loss: 3.9921
+  Epoch 400/1000 — Loss: 2.3438
+  Epoch 500/1000 — Loss: 1.5148
+  Epoch 600/1000 — Loss: 1.4008
+  Epoch 700/1000 — Loss: 1.0553
+  Epoch 800/1000 — Loss: 0.9817
+  Epoch 900/1000 — Loss: 0.8716
+  Epoch 1000/1000 — Loss: 0.8290
+
+LAS Fidelity Evaluation:
+--------------------------------------------------
+Language       Baseline Sim    LAS Sim   Improvement   Rotation |R-I|
+--------------------------------------------------
+  fr                  0.301      0.999        +0.699          1.107  ✓
+  hi                  0.219      0.995        +0.776          1.230  ✓
+  de                  0.201      0.999        +0.799          1.112  ✓
+  sw                  0.273      0.997        +0.723          1.256  ✓
+  pt                  0.247      0.999        +0.752          1.135  ✓
+  ru                  0.243      0.998        +0.755          1.121  ✓
+  ja                  0.112      1.000        +0.888          1.120  ✓
+  ar                  0.202      0.999        +0.798          1.174  ✓
+  zh-CN               0.123      1.000        +0.877          1.132  ✓
+  es                  0.274      0.999        +0.724          1.093  ✓
+
+  Rotation magnitude ~ Psycholinguistic distance:
+  Pearson r = 0.536, p = 0.1102
+  → does not confirm Sapir-Whorf prediction
+
+✓ Phase 5 complete.
+
+============================================================
+CLR Phase 6: Safety Failure Prediction from SCD
+============================================================
+
+Analyzing 10 languages: ['fr', 'hi', 'de', 'sw', 'pt', 'ru', 'ja', 'ar', 'zh-CN', 'es']
+
+Correlation: SCD → Jailbreak Rate
+  Pearson  r = 0.434  (p=0.2101)
+  Spearman r = 0.576  (p=0.0816)
+
+Correlation: Psycholinguistic Distance → Jailbreak Rate
+  Pearson  r = 0.943  (p=0.0000)
+
+LOO-CV R² (SCD only):     -0.186
+LOO-CV R² (SCD + Psycho): 0.773
+Bootstrap R² (SCD, n=1000): 0.306 (95% CI: [0.001, 0.857])
+Effect size (Cohen's d, high vs low risk): 1.493
+
+  FDR-corrected p-values:
+    scd_jailbreak_pearson: raw=0.2101, FDR=0.0001
+    scd_jailbreak_spearman: raw=0.0816, FDR=0.1223
+    psycho_jailbreak: raw=0.0000, FDR=0.2101
+
+Binary Classification (high-risk threshold = 0.3)
+  AUC = 0.762
+  High-risk languages: ['sw', 'ja', 'zh-CN']
+
+  Prediction table saved to: results/steering_vectors_phi-4-mini-instruct_20260622_150753/phase6_safety_prediction/safety_prediction_table.csv
+
+✓ Phase 6 complete.
+
+============================================================
+CLR Phase 7: Code-Mixed Instability — EACL Callback
+============================================================
+
+Analyzing geometric position of code-mixed steering direction...
+  [Code-mixed steering vectors not found at results/steering_vectors_phi-4-mini-instruct_20260622_150753/cm/layer_031.npy]
+  Run Phase 1 with --languages en hi cm to generate them
+  Or add 'cm' to ALL_PROMPT_PAIRS in experiment 01
+
+Instability analysis: variance of code-mixed steering directions
+  (High variance = model is confused about which 'language mode' to use)
+  [Requires running Phase 1 with multiple code-mixed prompt subsets]
+  [If you have those results, load them here and compute variance]
+
+Connection to EACL 2026 findings:
+  Your EACL paper found that reasoning quality degrades in code-mixed text.
+  Geometric explanation:
+  - Model receives code-mixed input
+  - Activates a steering direction BETWEEN English and Hindi
+  - This direction doesn't strongly align with safety concepts in EITHER language
+  - Result: safety steering is weakened → model 'forgets' constraints
+  - Analogous to bilingual cognitive load in psycholinguistics
+  - Supports: Li et al. (2022) 'Language Confusion in Multilingual LLMs'
+              Green & Abutalebi (2013) Bilingual language control theory
+
+✓ Phase 7 complete.
+  This provides the mechanistic link between your EACL and CLR papers.
+
+============================================================
+Generating all paper figures...
+Output: results/figures_phi-4-mini-instruct
+============================================================
+
+/root/clr_paper/utils/visualization.py:60: UserWarning: Glyph 9733 (\N{BLACK STAR}) missing from font(s) DejaVu Serif.
+  fig.savefig(path, bbox_inches="tight", dpi=300)
+/root/clr_paper/utils/visualization.py:61: UserWarning: Glyph 9733 (\N{BLACK STAR}) missing from font(s) DejaVu Serif.
+  fig.savefig(str(path).replace(".pdf", ".png"), bbox_inches="tight", dpi=150)
+  Saved: results/figures_phi-4-mini-instruct/fig1_steering_pca.pdf
+  Saved: results/figures_phi-4-mini-instruct/fig2_scd_layers.pdf
+  Saved: results/figures_phi-4-mini-instruct/fig3_scd_jailbreak.pdf
+  Saved: results/figures_phi-4-mini-instruct/fig4_las_rotations.pdf
+  Saved: results/figures_phi-4-mini-instruct/fig5_similarity_heatmap.pdf
+
+✓ All figures saved to: results/figures_phi-4-mini-instruct
+RETRY2 complete for phi-4-mini-instruct
+All Phi/Falcon retries done!

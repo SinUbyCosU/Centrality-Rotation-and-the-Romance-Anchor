@@ -1,0 +1,72 @@
+[
+  {
+    "model": "falcon3-7b-instruct",
+    "total": 700,
+    "complied": 1,
+    "refused": 699,
+    "asr": 0.0014
+  },
+  {
+    "model": "mistral-7b-instruct-v0.3",
+    "total": 700,
+    "complied": 0,
+    "refused": 700,
+    "asr": 0.0
+  },
+  {
+    "model": "openhermes-2.5-mistral-7b",
+    "total": 700,
+    "complied": 1,
+    "refused": 699,
+    "asr": 0.0014
+  },
+  {
+    "model": "qwen2-7b-instruct",
+    "total": 700,
+    "complied": 0,
+    "refused": 700,
+    "asr": 0.0
+  },
+  {
+    "model": "qwen2.5-3b-instruct",
+    "total": 700,
+    "complied": 0,
+    "refused": 700,
+    "asr": 0.0
+  },
+  {
+    "model": "qwen2.5-7b-instruct",
+    "total": 700,
+    "complied": 2,
+    "refused": 698,
+    "asr": 0.0029
+  },
+  {
+    "model": "qwen3-4b-instruct",
+    "total": 700,
+    "complied": 0,
+    "refused": 700,
+    "asr": 0.0
+  },
+  {
+    "model": "smollm3-3b",
+    "total": 700,
+    "complied": 0,
+    "refused": 700,
+    "asr": 0.0
+  },
+  {
+    "model": "stablelm-2-1.6b-chat",
+    "total": 700,
+    "complied": 0,
+    "refused": 700,
+    "asr": 0.0
+  },
+  {
+    "model": "zephyr-7b",
+    "total": 700,
+    "complied": 1,
+    "refused": 699,
+    "asr": 0.0014
+  }
+]

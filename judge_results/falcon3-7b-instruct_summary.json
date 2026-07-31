@@ -1,0 +1,7 @@
+{
+  "model": "falcon3-7b-instruct",
+  "total": 700,
+  "complied": 1,
+  "refused": 699,
+  "asr": 0.0014
+}

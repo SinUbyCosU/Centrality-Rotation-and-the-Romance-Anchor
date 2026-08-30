@@ -61,6 +61,7 @@ The dominance of Romance languages (Spanish 30%, Portuguese 25%, French 15% = **
 | **French** | 67.3 | 18.1 | 74.0 | 6.7 – 80.6 |
 | **Spanish** | 66.9 | 27.1 | 68.9 | 5.7 – 153.5 |
 
+
 **Interpretation**: Hindi (84.1°), German (81.9°), and Arabic (81.4°) have safety vectors that are nearly **orthogonal** to English safety — meaning these languages occupy an almost completely independent safety subspace. At 90°, there is zero linear relationship between how the model represents "safety" in English vs. that language.
 
 Some model-language pairs exceed 90° (e.g., yi-1.5-6b has 7/10 non-English languages >90°), indicating **anti-correlated** safety vectors: the direction the model associates with "safety" in English actually points *away* from safety in those languages.
